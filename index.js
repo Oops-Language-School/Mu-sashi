@@ -13,7 +13,9 @@ const
   session = require('express-session');
 
 // connect mongoDB
-mongoose.connect('mongodb://localhost:27017/fb_chatbot');
+//(node:14690) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+mongoose.set('useCreateIndex', true)
+mongoose.connect('mongodb://localhost:27017/fb_chatbot', { useNewUrlParser: true });
 let FB_TOKEN = require('./fb_pass');
 const PAGE_ACCESS_TOKEN= FB_TOKEN.TOKEN
 
