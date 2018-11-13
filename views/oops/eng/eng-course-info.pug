@@ -1,0 +1,214 @@
+extends L2_layout_eng
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content.bg-lighter
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12
+                            h2.title.text-white.text-center 課程資訊
+                            ol.breadcrumb.text-left.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-gray-silver Page Title
+        // Section: Blog
+        section
+            .container.mt-30.mb-0.pt-30.pb-30
+                .row
+                    .col-md-8.blog-pull-right
+                        .single-service
+                            img(src="https://placehold.it/750x500" alt="")
+                            h3.text-theme-colored Accounting Technologies
+                            h5
+                                em
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde, 
+                                    span.text-theme-color-2 Accounting Technologies
+                                    |  corporis dolorum blanditiis ullam officia 
+                                    span.text-theme-color-2 car repairing 
+                                    | natus minima fugiat repellat! Corrupti voluptatibus aperiam voluptatem. Exercitationem, placeat, cupiditate.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit, inventore aliquid incidunt, quasi error! Natus esse rem eaque asperiores eligendi dicta quidem iure, excepturi doloremque eius neque autem sint error qui tenetur, modi provident aut, maiores laudantium reiciendis expedita. Eligendi
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatem officiis quod animi possimus a, iure nam sunt quas aperiam non recusandae reprehenderit, nesciunt cumque pariatur totam repellendus delectus? Maxime quasi earum nobis, dicta, aliquam facere reiciendis, delectus voluptas, ea assumenda blanditiis placeat dignissimos quas iusto repellat cumque.
+                            .row
+                                .col-md-12
+                                    h3.text-theme-colored Features of the course 
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et optio cum velit autem dolor reprehenderit saepe assumenda eos, qui. Voluptatem eveniet, illum dolor nemo? Velit maiores quaerat a non dolor praesentium, corporis optio ullam, voluptatem fuga consequatur sed cupiditate quam!
+                                    br
+                                    .row
+                                        .col-xs-4.col-sm-4.col-md-4
+                                            .icon-box.box-border.text-center.mb-20.p-15
+                                                i.fa.fa-desktop.text-theme-color-2.font-36
+                                                h4 Best Lab
+                                        .col-xs-4.col-sm-4.col-md-4
+                                            .icon-box.box-border.text-center.mb-20.p-15
+                                                i.fa.fa-user.text-theme-color-2.font-36
+                                                h4 Best Teachers
+                                        .col-xs-4.col-sm-4.col-md-4
+                                            .icon-box.box-border.text-center.mb-20.p-15
+                                                i.fa.fa-money.text-theme-color-2.font-36
+                                                h4 Low Cost Services
+                            .row
+                                .col-md-12
+                                    h3.text-theme-colored.title-border.mb-30.mt-50 Get A Free Registration!
+                                    // Appointment Form Sart
+                                    form#appointment_form.form-transparent.mt-30(name="appointment_form" method="post" action="includes/appointment.php")
+                                        .row
+                                            .col-sm-12
+                                                .form-group.mb-10
+                                                    input#form_name.form-control(name="form_name" type="text" required="" placeholder="Enter Name" aria-required="true")
+                                            .col-sm-12
+                                                .form-group.mb-10
+                                                    input#form_email.form-control.required.email(name="form_email" type="email" placeholder="Enter Email" aria-required="true")
+                                            .col-sm-12
+                                                .form-group.mb-10
+                                                    input#form_phone.form-control.required(name="form_phone" type="text" placeholder="Enter Phone" aria-required="true")
+                                            .col-sm-12
+                                                .form-group.mb-10
+                                                    input.form-control.required.datetime-picker(name="form_appontment_date" type="text" placeholder="Appoinment Date & Time" aria-required="true")
+                                        .form-group.mb-10
+                                            textarea#form_message.form-control.required(name="form_message" placeholder="Enter Message" rows="5" aria-required="true")
+                                        .form-group.mb-0.mt-20
+                                            input#form_botcheck.form-control(name="form_botcheck" type="hidden" value="")
+                                            button.btn.btn-dark.btn-theme-colored(type="submit" data-loading-text="Please wait...") Submit
+                                    // Appointment Form Validation
+                                    script(type="text/javascript").
+                                        $("#appointment_form").validate({
+                                        submitHandler: function(form) {
+                                        var form_btn = $(form).find('button[type="submit"]');
+                                        var form_result_div = '#form-result';
+                                        $(form_result_div).remove();
+                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                        var form_btn_old_msg = form_btn.html();
+                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                        $(form).ajaxSubmit({
+                                        dataType:  'json',
+                                        success: function(data) {
+                                        if( data.status == 'true' ) {
+                                        $(form).find('.form-control').val('');
+                                        }
+                                        form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                        $(form_result_div).html(data.message).fadeIn('slow');
+                                        setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                                        }
+                                        });
+                                        }
+                                        });
+                                    // Appointment Form Ends
+                    .col-sm-12.col-md-4
+                        .sidebar.sidebar-left.mt-sm-30.ml-40
+                            .widget
+                                h4.widget-title.line-bottom Courses List
+                                .services-list
+                                    ul.list.list-border.angle-double-right
+                                        li
+                                            a.gray(href="page-courses-accounting-technologies.html") Accounting Technologies
+                                        li
+                                            a.gray(href="page-courses-chemical-engineering.html") Chemical Engineering
+                                        li
+                                            a.gray(href="page-courses-computer-technologies.html") Computer Technologies
+                                        li
+                                            a.gray(href="page-courses-development-studies.html") Development Studies
+                                        li
+                                            a.gray(href="page-courses-electrical-electronic.html") Electrical & Electronic
+                                        li
+                                            a.gray(href="page-courses-modern-languages.html") Modern Languages
+                                        li.active
+                                            a(href="page-courses-modern-technologies.html") Modern Technologies
+                                        li
+                                            a.gray(href="page-courses-software-engineering.html") Software Engineering
+                            .widget
+                                h4.widget-title.line-bottom Opening Hours
+                                .opening-hours
+                                    ul.list-border
+                                        li.clearfix
+                                            span  Mon - Tues :  
+                                            .value.pull-right  6.00 am - 10.00 pm 
+                                        li.clearfix
+                                            span  Wednes - Thurs :
+                                            .value.pull-right  8.00 am - 6.00 pm 
+                                        li.clearfix
+                                            span  Fri : 
+                                            .value.pull-right  3.00 pm - 8.00 pm 
+                                        li.clearfix
+                                            span  Sun : 
+                                            .value.pull-right  Colosed 
+                            .widget
+                                h4.widget-title.line-bottom Latest News
+                                .latest-posts
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Sustainable Construction
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Industrial Coatings
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Storefront Installations
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                            .widget
+                                .mt-30.p-30(style="border: 10px solid #f1f1f1;")
+                                    h5.text-theme-colored.title-border.mb-20 student's Feedback
+                                    .testimonial-carousel-info.owl-nav-top
+                                        .item
+                                            .comment
+                                                p
+                                                    | Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.
+                                            .content.mt-20
+                                                .thumb.pull-right
+                                                    img.img-circle(alt="" src="https://placehold.it/90x90")
+                                                .patient-details.text-right.pull-right.mr-20.mt-10
+                                                    h5.author Jonathan Smith
+                                                    h6.title cici inc.
+                                        .item
+                                            .comment
+                                                p
+                                                    | Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.
+                                            .content.mt-20
+                                                .thumb.pull-right
+                                                    img.img-circle(alt="" src="https://placehold.it/90x90")
+                                                .patient-details.text-right.pull-right.mr-20.mt-10
+                                                    h5.author Jonathan Smith
+                                                    h6.title cici inc.
+                                        .item
+                                            .comment
+                                                p
+                                                    | Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.
+                                            .content.mt-20
+                                                .thumb.pull-right
+                                                    img.img-circle(alt="" src="https://placehold.it/90x90")
+                                                .patient-details.text-right.pull-right.mr-20.mt-10
+                                                    h5.author Jonathan Smith
+                                                    h6.title cici inc.
+                            .widget
+                                h4.widget-title.line-bottom Photos from Flickr
+                                #flickr-feed.clearfix
+                                    // Flickr Link
+                                    script(type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=8&display=latest&size=s&layout=x&source=user&user=52617155@N08")
+    // end main-content
+
+
+block script
+

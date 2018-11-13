@@ -1,0 +1,703 @@
+extends L2_layout_kr
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12
+                            h2.title.text-white.text-center Oops韓語課程
+                            ol.breadcrumb.text-left.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-gray-silver Page Title
+        // Section: Course list
+        section
+            .container
+                .row
+                    .col-md-9.blog-pull-right
+                        .grid
+                            .element-item.free(data-category='free')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語免費聽" src="../../images/kr-index/course/韓語免費聽.jpg")
+                                            //img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語免費聽
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有中級班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 中級班課程介紹
+                                hr
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語正規班" src="../../images/kr-index/course/正規班/正規班 02.jpg")
+                                            //img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語正規班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有中級班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 中級班課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語會話班 - 初級" src="../../images/kr-index/course/會話班/生活會話班 初級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語會話班 - 初級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有初級I會話班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 初級I會話班課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語會話班 - 中級" src="../../images/kr-index/course/會話班/生活會話班 中級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語會話班 - 中級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有初級II會話班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 初級II會話班課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語會話班 - 高級" src="../../images/kr-index/course/會話班/生活會話班 高級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語會話班 - 高級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有進階I會話班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 進階I會話班課程介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK檢定班" src="../../images/kr-index/course/TOPIK檢定班/TOPIK 初級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK I 初級 1
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK I 初級 1課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK I 初級 1課程介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK I 初級 2" src="../../images/kr-index/course/TOPIK檢定班/TOPIK 初級02.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK I 初級 2
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK I 初級 2課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK I 初級 2介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 中級 1" src="../../images/kr-index/course/TOPIK檢定班/TOPIK 中級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 中級 1
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 中級 1課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 中級 1介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 中高 1" src="../../images/kr-index/course/TOPIK檢定班/TOPIK會話班 中高 01.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 中高 1
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 中高 1課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 中高 1介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 中高 2" src="../../images/kr-index/course/TOPIK檢定班/TOPIK會話班 中高 02.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 中高 2
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 中高 2課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 中高 2介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 高級 1" src="../../images/kr-index/course/TOPIK檢定班/TOPIK 高級01.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 高級 1
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 高級 1課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 高級 1介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 高級 2" src="../../images/kr-index/course/TOPIK檢定班/TOPIK 高級02.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 高級 2
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 高級 2課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 高級 2介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="TOPIK II 進階" src="../../images/kr-index/course/TOPIK檢定班/TOPIK會話班 進階 01.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 TOPIK II 進階
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有TOPIK II 進階課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") TOPIK II 進階介紹
+                                hr
+                                br
+                            .element-item.business(data-category='business') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="商用韓語班 - 初級" src="../../images/kr-index/course/商用韓語/商用韓語 初級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 商用韓語班 - 初級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有商用韓語班 - 初級
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 商用韓語班 - 初級介紹
+                                hr
+                                br
+                            .element-item.business(data-category='business') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="商用韓語班 - 中級" src="../../images/kr-index/course/商用韓語/商用韓語 中級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 商用韓語班 - 中級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有商用韓語班 - 中級課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 商用韓語班 - 中級介紹
+                                hr
+                                br
+                            .element-item.business(data-category='business') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="商用韓語班 - 高級" src="../../images/kr-index/course/商用韓語/商用韓語 高級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 商用韓語班 - 高級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有商用韓語班 - 中級
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 商用韓語班 - 中級介紹
+                                hr
+                                br
+                            .element-item.personal(data-category='personal') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="韓語個別班" src="https://placehold.it/262x210")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 韓語個別班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有寒假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 寒假密集班介紹
+                                hr
+                                br 
+                            .element-item.intensive(data-category='intensive') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="寒假密集班" src="../../images/kr-index/course/韓語 寒密班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 寒假密集班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有寒假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 寒假密集班介紹
+                                hr
+                                br
+                            .element-item.intensive(data-category='intensive') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="暑假密集班" src="../../images/kr-index/course/韓語 暑密班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 暑假密集班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有暑假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 暑假密集班介紹
+                                hr
+                                br
+
+                            .element-item.abroad(data-category='abroad') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="留學先修班" src="../../images/kr-index/course/留遊學先修班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 留遊學先修班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有留遊學先修班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 留遊學先修班介紹
+                                hr
+                                br
+                            .element-item.workingHoliday(data-category='workingHoliday') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="打工度假先修班" src="../../images/kr-index/course/打工度假先修班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 打工度假先修班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有打工度假先修班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 打工度假先修班介紹
+                                hr
+                                br
+                            .element-item.dispatch(data-category='dispatch') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                            //img.img-fullwidth(alt="企業培訓" src="../../images/kr-index/course/企業培訓.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 企業培訓
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有企業培訓課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 企業培訓介紹
+                                hr
+                                br
+                            .element-item.dispatch(data-category='dispatch') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                            //img.img-fullwidth(alt="學校派遣" src="../../images/kr-index/course/學校派遣.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 學校派遣
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有學校派遣課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 學校派遣介紹
+                                hr
+                    .col-md-3
+                        .sidebar.sidebar-left.mt-sm-30
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Search 
+                                    span.text-theme-color-2 Courses
+                                .search-form
+                                    form
+                                        .input-group
+                                            input.form-control.search-input(type="text" placeholder="Click to Search")
+                                            span.input-group-btn
+                                                button.btn.search-button(type="submit")
+                                                    i.fa.fa-search
+                            .widget
+
+                                h5.widget-title.line-bottom
+                                    | Oops韓語 
+                                    span.text-theme-color-2 課程
+                                .categoriess
+                                    .filter-button-group
+                                        ul.list.list-border.angle-double-right
+                                            li.oops-course.oops-active(data-filter='*' )
+                                                 button.button(data-filter='*' )  
+                                                    | 全部韓語課程
+                                                    span (12)
+                                            li.oops-course(data-filter='oops.free')
+                                                 button.button(data-filter='.free')
+                                                    | 韓語免費聽
+                                                    span (19)
+                                            li.oops-course(data-filter='oops.regular')
+                                                 button.button(data-filter='.regular')
+                                                    | TOPIK 韓檢正規班
+                                                    span (21)
+                                            li.oops-course(data-filter='oops.conversation')
+                                                 button.button(data-filter='.conversation')
+                                                    | 韓語會話班
+                                                    span (15)
+                                            li.oops-course(data-filter='oops.concentration')
+                                                 button.button(data-filter='.concentration' )
+                                                    | 韓檢對策班
+                                                    span (35)
+                                            li.oops-course(data-filter='oops.business')
+                                                 button.button(data-filter='.business')
+                                                    | 商用韓語班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.personal')
+                                                 button.button(data-filter='.personal' )
+                                                    | 韓語個別班
+                                                    span (35)
+                                            li.oops-course(data-filter='oops.intensive')
+                                                 button.button(data-filter='.intensive')
+                                                    | 寒暑假密集班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.abroad')
+                                                 button.button(data-filter='.abroad')
+                                                    | 留遊學先修班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.workingHoliday')
+                                                 button.button(data-filter='.workingHoliday')
+                                                    | 打工度假先修班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.dispatch')
+                                                 button.button(data-filter='.dispatch')
+                                                    | 企業學校派遣
+                                                    span (16)
+                                               
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Latest 
+                                    span.text-theme-color-2 Course
+                                .latest-posts
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Sustainable Construction
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Industrial Coatings
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Storefront Installations
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Photos 
+                                    span.text-theme-color-2 from Flickr
+                                #flickr-feed.clearfix
+                                    // Flickr Link
+                                    script(type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=x&source=user&user=52617155@N08")
+                .row
+                    .col-sm-12
+                        nav
+                            ul.pagination.xs-pull-center.m-0
+                                li
+                                    a(href="#" aria-label="Previous")
+                                        span(aria-hidden="true") «
+                                li.active
+                                    a(href="#") 1
+                                li
+                                    a(href="#") 2
+                                li
+                                    a(href="#") 3
+                                li
+                                    a(href="#") 4
+                                li
+                                    a(href="#") 5
+                                li
+                                    a(href="#") ...
+                                li
+                                    a(href="#" aria-label="Next")
+                                        span(aria-hidden="true") »
+    // end main-content
+block script
+    script(src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js')
+    script.
+        // external js: isotope.pkgd.js
+
+        // filter functions unused
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+            },
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
+        };
+
+        function getHashFilter() {
+            // get filter=filterName
+            var matches = location.hash.match( /filter=([^&]+)/i );
+            var hashFilter = matches && matches[1];
+            return hashFilter && decodeURIComponent( hashFilter );
+        }
+
+        // init Isotope
+        var $grid = $('.grid');
+
+        // bind filter button click
+        var $filterButtonGroup = $('.filter-button-group');
+        //alert(filterButtonGroup);
+        $filterButtonGroup.on( 'click', 'button', function() {
+            var filterAttr = $( this ).attr('data-filter');
+            
+            // set filter in hash
+            location.hash = 'filter=' + encodeURIComponent( filterAttr );
+        });
+
+        var isIsotopeInit = false;
+
+        function onHashchange() {
+            var hashFilter = getHashFilter();
+            if ( !hashFilter && isIsotopeInit ) {
+                return;
+            }
+            isIsotopeInit = true;
+            // filter isotope
+            $grid.isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'fitRows',
+                // use filterFns
+                filter: filterFns[ hashFilter ] || hashFilter
+            });
+            // set selected class on button
+            if ( hashFilter ) {
+                $filterButtonGroup.find('.oops-active').removeClass('oops-active');
+                $filterButtonGroup.find('[data-filter="oops' + hashFilter + '"]').addClass('oops-active');
+                //this.className += " oops-active";
+            }
+        }
+
+        $(window).on( 'hashchange', onHashchange );
+
+        // trigger event handler to init Isotope
+        onHashchange();

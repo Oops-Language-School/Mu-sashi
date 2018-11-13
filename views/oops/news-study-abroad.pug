@@ -1,0 +1,363 @@
+extends L2_layout
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-8(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-60.pb-60
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12.text-center
+                            h2.title.text-white 留遊學情報
+                            ol.breadcrumb.text-center.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-white Page Title
+        section
+            .container.mt-30.mb-30.pt-30.pb-30
+                .row
+                    .col-md-9.pull-right.flip.sm-pull-none
+                        .blog-posts
+                            .col-md-12
+                                .row.list-dashed
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb.thumb
+                                                img.img-responsive.img-fullwidth(src="https://placehold.it/370x247" alt="")
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.no-bg.no-border.mt-15.pb-20
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0
+                                                            a(href="blog-single-right-sidebar.html") Post title here
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb.thumb
+                                                img.img-responsive.img-fullwidth(src="https://placehold.it/900x450" alt="")
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Image Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Text Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb
+                                                iframe(src="//player.vimeo.com/video/114959015?title=0&byline=0&portrait=0" width="360" height="205" allowfullscreen="")
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Vimeo Video Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb
+                                                iframe(width="600" height="340" src="https://www.youtube.com/embed/oIDqz2BrVec?autoplay=0" allowfullscreen="")
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Youtube Video Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb
+                                                // Portfolio Gallery Grid
+                                                .gallery-isotope.grid-5.masonry.gutter-small.clearfix(data-lightbox="gallery")
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 1")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item.wide
+                                                        a(href="https://placehold.it/800x600" data-lightbox="gallery-item" title="Title Here 2")
+                                                            img(src="https://placehold.it/800x600" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 3")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x600" data-lightbox="gallery-item" title="Title Here 4")
+                                                            img(src="https://placehold.it/400x600" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x600" data-lightbox="gallery-item" title="Title Here 5")
+                                                            img(src="https://placehold.it/400x600" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 6")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 6")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 6")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 6")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                    // Portfolio Item Start
+                                                    .gallery-item
+                                                        a(href="https://placehold.it/400x300" data-lightbox="gallery-item" title="Title Here 6")
+                                                            img(src="https://placehold.it/400x300" alt="")
+                                                    // Portfolio Item End
+                                                // End Portfolio Gallery Grid
+                                        .clearfix
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Gallery Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                        .clearfix
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Quote Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            blockquote
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eligendi quibusdam doloremque necessitatibus doloribus blanditiis, praesentium ex error aliquid? Corporis dolores consequuntur cupiditate.
+                                                footer
+                                                    | Someone famous in 
+                                                    cite(title="Source Title") Source Title
+                                            .clearfix
+                                    article.post.clearfix.mb-30.pb-30
+                                        .entry-header
+                                            .post-thumb
+                                                .owl-carousel-1col(data-nav="true")
+                                                    .item
+                                                        img(src="https://placehold.it/900x500" alt="")
+                                                    .item
+                                                        img(src="https://placehold.it/900x500" alt="")
+                                                    .item
+                                                        img(src="https://placehold.it/900x500" alt="")
+                                        .clearfix
+                                        .entry-content.border-1px.p-20.pr-10
+                                            .entry-meta.media.mt-0.no-bg.no-border
+                                                .entry-date.media-left.text-center.flip.bg-theme-colored.pt-5.pr-15.pb-5.pl-15
+                                                    ul
+                                                        li.font-16.text-white.font-weight-600 28
+                                                        li.font-12.text-white.text-uppercase Feb
+                                                .media-body.pl-15
+                                                    .event-content.pull-left.flip
+                                                        h4.entry-title.text-white.text-uppercase.m-0.mt-5
+                                                            a(href="#") Images Carousel Post
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-commenting-o.mr-5.text-theme-colored
+                                                            |  214 Comments
+                                                        span.mb-10.text-gray-darkgray.mr-10.font-13
+                                                            i.fa.fa-heart-o.mr-5.text-theme-colored
+                                                            |  895 Likes
+                                            p.mt-10
+                                                | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.
+                                            a.btn-read-more(href="#") Read more
+                                            .clearfix
+                                    article.post.clearfix.pb-30
+                                        .clearfix
+                                        .entry-content
+                                            a.post-link.text-center.text-white.bg-theme-colored.display-block.font-20.p-30(href="#")
+                                                | kodesolution.com
+                                                br
+                                                span.font-13 https://kodesolution.com
+                            .col-md-12
+                                nav
+                                    ul.pagination
+                                        li
+                                            a(aria-label="Previous" href="#")
+                                                span(aria-hidden="true") «
+                                        li.active
+                                            a(href="#") 1
+                                        li
+                                            a(href="#") 2
+                                        li
+                                            a(href="#") 3
+                                        li
+                                            a(href="#") 4
+                                        li
+                                            a(href="#") 5
+                                        li
+                                            a(href="#") ...
+                                        li
+                                            a(aria-label="Next" href="#")
+                                                span(aria-hidden="true") »
+                    .col-md-3
+                        .sidebar.sidebar-right.mt-sm-30
+                            .widget
+                                h5.widget-title.line-bottom Archives
+                                ul.list-divider.list-border.list.check
+                                    li
+                                        a.black(href="#") Vehicle Accidents
+                                    li
+                                        a.black(href="#") Family Law
+                                    li
+                                        a.black(ref="#") Personal Injury
+                                    li
+                                        a.black(href="#") Personal Injury
+                                    li
+                                        a.black(href="#") Case Investigation
+                                    li
+                                        a.black(href="#") Business Taxation
+                            .widget
+                                h5.widget-title.line-bottom Twitter Feed
+                                //.twitter-feed.list-border.clearfix(data-username="Envato")
+                            .widget
+                                h5.widget-title.line-bottom Image gallery with text
+                                .widget-image-carousel
+                                    .item
+                                        img(src="https://placehold.it/365x230" alt="")
+                                        h4.title This is a Demo Title
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae illum amet illo.
+                                    .item
+                                        img(src="https://placehold.it/365x230" alt="")
+                                        h4.title This is a Demo Title
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae illum amet illo.
+                                    .item
+                                        img(src="https://placehold.it/365x230" alt="")
+                                        h4.title This is a Demo Title
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae illum amet illo.
+                            .widget
+                                h5.widget-title.line-bottom Tags
+                                .tags
+                                    a.black(href="#") travel
+                                    a.black(href="#") blog
+                                    a.black(href="#") lifestyle
+                                    a.black(href="#") feature
+                                    a.black(href="#") mountain
+                                    a.black(href="#") design
+                                    a.black(href="#") restaurant
+                                    a.black(href="#") journey
+                                    a.black(href="#") classic
+                                    a.black(href="#") sunset
+
+block script
+

@@ -1,0 +1,219 @@
+extends ../nav_layout
+block title
+    title #{title}
+block style
+    link(rel='stylesheet', href='/css/nav.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+        }
+        body {
+            background-image: url("../assets/img/backgrounds/1.jpg");
+        }
+        table 
+        { 
+            width: 85%;
+            margin:10px auto;
+            border-spacing: 0px;
+            
+        }
+
+        th 
+        { 
+            background: #3498db; 
+            color: white; 
+            text-align: center; 
+            font-weight: bold; 
+        }
+        td{
+            background: grey;
+            
+        }
+        td, th 
+        { 
+            position: static;
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            text-align: center;
+            background-clip: padding-box;
+            font-size: 16px;
+            
+        }
+
+        .labels tr td {
+            background-color: #2cc16a;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .label tr td label {
+            display: block;
+        }
+
+        [data-toggle="toggle"] {
+            display: none;
+        }
+        h1{
+            margin:30px auto;
+            color: #fff;
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .txtCenter{
+            text-align: center; 
+        }
+        .color{
+            color:black;
+            font-weight: bold;
+        }
+        .color:hover{
+            color:white;
+            font-weight: bold;
+            
+        }
+        .fee{
+            width:25%;
+            text-align:left;
+        }
+        .selectbox{
+            margin: auto;
+            width: 85%;
+        }
+
+    //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+block content
+    h1(align="center") #{title}
+    .selectbox
+        select#filter(onchange="myFilter()")
+            option(value='') 顯示全部
+            option(value='日語發音') 日語發音
+            option(value='日語初級1') 日語初級1
+            option(value='日語初級2') 日語初級2
+            option(value='日語進階1') 日語進階1
+            option(value='日語進階2') 日語進階2
+            option(value='日語中級1') 日語中級1
+            option(value='日語中級2') 日語中級2
+            option(value='日語中級3') 日語中級3
+            option(value='日語中級4') 日語中級4
+            option(value='日語高級') 日語高級
+            option(value='日語寒假密集班') 日語寒假密集班
+            option(value='日語暑假密集班') 日語暑假密集班
+            option(value='商用日語') 商用日語
+            option(value='韓語發音') 韓語發音
+            option(value='韓語初級(TOPIK I Level 1)') 韓語初級(TOPIK I Level 1)
+            option(value='韓語進階(TOPIK I Level 2)') 韓語進階(TOPIK I Level 2)
+            option(value='韓語中級(TOPIK II Level 3)') 韓語中級(TOPIK II Level 3)
+            option(value='韓語中高級(TOPIK II Level 4)') 韓語中高級(TOPIK II Level 4)
+            option(value='韓語高級(TOPIK II Level 5)') 韓語高級(TOPIK II Level 5)
+            option(value='韓語優級(TOPIK II Level 6)') 韓語優級(TOPIK II Level 6)
+
+            option(value='商用韓語') 商用韓語
+            option(value='韓語初級會話') 韓語初級會話
+            option(value='韓語進階會話') 韓語進階會話
+            option(value='韓語中級會話') 韓語中級會話
+            option(value='韓語中高級會話') 韓語中高級會話
+            option(value='韓語高級會話') 韓語高級會話
+            option(value='韓語優級會話') 韓語優級會話
+            option(value='韓語寒假密集班') 韓語寒假密集班
+            option(value='韓語暑假密集班') 韓語暑假密集班
+
+
+    form#delFrom(action='/course/delete', method='post')
+        table#mytable
+            thead
+                tr  
+                    th 
+                        input(type='checkbox', onclick='toggle(this)')
+                    th 課程名稱
+                    th 適合程度
+                    th 開始日期 
+                    th 結束日期
+                    th 授課時間
+                    th 時間類別 
+                    th 授課教師
+                    th 開班人數
+                    th 其他說明
+                    th 建立時間
+            tbody
+                tbody.labels
+                    tr
+                        td.txtCenter(colspan='11')
+                            label(for='jp') 日語
+                            input#jp(type='checkbox', name='jp', data-toggle='toggle')
+                tbody.hideContent
+                    each jp_course in jp_courses
+                        tr
+                            td
+                                input(type='checkbox', name='course', value=`${jp_course._id} ${jp_course.lang_type}`)
+                            td.content
+                                a.color(href=`/admin/edit_jp_course/${jp_course._id}`)=jp_course.type
+                            td=jp_course.course_type
+                            td=`${jp_course.begin_date.getFullYear()}-${jp_course.begin_date.getMonth()+1}-${jp_course.begin_date.getDate()} (${jp_course.begin_dayOfWeek})`
+                            td=`${jp_course.end_date.getFullYear()}-${jp_course.end_date.getMonth()+1}-${jp_course.end_date.getDate()} (${jp_course.end_dayOfWeek})`
+                            td=`${jp_course.begin_time}-${jp_course.end_time}`
+                            td=jp_course.time_type
+                            td=jp_course.teacher_name
+                            td=jp_course.min_students
+                            td.fee=jp_course.fee
+                            td=`${jp_course.createdAt.getFullYear()}-${jp_course.createdAt.getMonth()+1}-${jp_course.createdAt.getDate()} ${('0'+jp_course.createdAt.getHours()).substr(-2)}:${('0'+jp_course.createdAt.getMinutes()).substr(-2)}`
+                tbody.labels
+                    tr
+                        td.txtCenter(colspan='11')
+                            label(for='kr') 韓語
+                            input#kr(type='checkbox', name='kr', data-toggle='toggle')
+                tbody.hideContent
+                    each kr_course in kr_courses
+                        tr
+                            td
+                                input(type='checkbox', name='course', value=`${kr_course._id} ${kr_course.lang_type}`)
+                            td.content
+                                a.color(href=`/admin/edit_kr_course/${kr_course._id}`)=kr_course.type
+                            td=kr_course.course_type
+                            td=`${kr_course.begin_date.getFullYear()}-${kr_course.begin_date.getMonth()+1}-${kr_course.begin_date.getDate()} (${kr_course.begin_dayOfWeek})`
+                            td=`${kr_course.end_date.getFullYear()}-${kr_course.end_date.getMonth()+1}-${kr_course.end_date.getDate()} (${kr_course.end_dayOfWeek})`
+                            td=`${kr_course.begin_time}-${kr_course.end_time}`
+                            td=kr_course.time_type
+                            td=kr_course.teacher_name
+                            td=kr_course.min_students
+                            td.fee=kr_course.fee
+                            td=`${kr_course.createdAt.getFullYear()}-${kr_course.createdAt.getMonth()+1}-${kr_course.createdAt.getDate()} ${('0'+kr_course.createdAt.getHours()).substr(-2)}:${('0'+kr_course.createdAt.getMinutes()).substr(-2)}`
+                    td(colspan='50%')  
+                        input.center(type='button', onclick='myFormClear()', value='清除勾選')
+                        input.center(type='submit', value='刪除')
+block script
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.5/js/jquery.tablesorter.js")
+    script.
+        $(document).ready(function() {
+            $("table").tablesorter();
+            $('[data-toggle="toggle"]').change(function(){
+                $(this).parents().next('.hideContent').toggle();
+            });
+        });
+        function myFormClear() {
+            document.getElementById("delFrom").reset();
+        }
+        function toggle(source) {
+            checkboxes = document.getElementsByName('course');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+        function myFilter() {
+            var choice = document.getElementById("filter").value.toUpperCase();
+            $("table tr").each(function (index) {
+                        if (index !== 0) {
+                            $row = $(this);
+                            var id = $row.find("td.content").text().toUpperCase();
+                            if (id.indexOf(choice) == -1) {
+                                $row.hide();
+                            }
+                            else {
+                                $row.show();
+                            }
+                        }
+                    });
+        };

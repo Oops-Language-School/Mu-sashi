@@ -1,0 +1,439 @@
+extends L2_layout
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+    style.
+        #more {display: none;}
+block content
+        #wrapper.clearfix
+            // Start main-content
+            .main-content.bg-lighter
+                // Section: inner-header
+                section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img='https://placehold.it/1920x1280')
+                    .container.pt-70.pb-20
+                        // Section Content
+                        .section-content
+                            .row
+                                .col-md-12
+                                    h2.title.text-white.text-center Oops源起
+                                    ol.breadcrumb.text-left.text-black.mt-10
+                                        li
+                                            a(href='#') Home
+                                        li
+                                            a(href='#') Pages
+                                        li.active.text-gray-silver Page Title
+                // Section: About
+                section#about
+                    .container.mt-50.pb-70.pt-0
+                        .section-content
+                            .row.mt-10
+                                .col-sm-12.col-md-6.mb-sm-20.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    h3.text-uppercase.mt-15
+                                        | Oops
+                                        span.text-theme-color-2 源起 
+                                    p.lead
+                                        | 台中武藏日韓語教學學習中心主要是以教學日語、韓語為主。其誕生是由多位分別熱愛英文、日文、韓文的創辦人所設立。
+                                    p.mb-15
+                                        | 在創辦台中武藏日語韓語教學學習中心之前，從大學時期開始，靠著打工上班存的錢，展開了人生的海外之旅。至今足跡遍布了泰國、荷蘭、柬埔寨、新加坡、捷克、奧地利、日本、中國、加拿大、美國、關島、韓國、香港、澳門、馬來西亞、印尼、蒙古等地。
+                                        | 這麼多年的海外深度之旅，深刻體悟到日語韓語英語與國際接軌的重要性，決定創辦『臺中市私立武藏外語短期補習班』來提升國人在日文以及韓文的學習課程。並經主管機關臺中市政府教育局核准 , 立案文號 : 中市教社字第1030005498號 .
+                                        span#dots ...
+                                    span#more
+                                        p.mb-10
+                                            | 台中武藏日語韓語教學學習中心由政治大學(北一女)..等學校畢業的學姐率軍組成。不論是日文、韓文外語課程方面都趨向『原汁原味』的教學學習風格，日語韓語之外語老師師資禮聘深具教學經驗的日韓台籍老師團隊負責所有日文韓文外語課程編排。
+                                            | 以期完成從日語韓語發音、詞彙、文法一條龍式的教學學習課程。台中武藏日語韓語除了基本的日文、韓文基礎養成課程以外，更增加了以通過日本語能力試驗(JLPT)以及韓國語檢定考(TOPIK)的實力養成課程。此外，亦針對未來打算進入日商、韓商工作的學生們，提供商用日文、韓文的實用訓練學習課程。
+                                            | 台中武藏日韓語教學中心辦學理念：成人班採小班制教學。本中心希望能以陪伴學習的方式，透過日語韓語小班教學，全面注重學生聽說讀寫的能力。陪伴同學從日語韓語發音、日語韓語初級、日語韓語中級、日語韓語高級，進而取得JLPT日語檢定N5至N1日語證書及TOPIK韓語檢定考1到6級韓語證書。
+                                            | 本中心日語韓語課程授課時數皆依據日本語言學校日語學習時數編排，擺脫傳統教學產生的後遺症，不僅擁有閱讀、寫作能力，更能在日語韓語聽、說兩方面表現優異。想擺脫22K的薪水嗎？投資自己就趁現在！你還在猶豫什麼？
+                                    button#myBtn.btn.btn-colored.btn-theme-colored.btn-lg.text-uppercase.font-13.mt-0(onclick="moreInfo()") 查看更多
+                                .col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    iframe.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(frameborder='0', height='330', width='555', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5079518909933!2d120.68343291541954!3d24.15391237915732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d6656f75385%3A0xf88e88e7c292a50e!2zNDA05Y-w5Lit5biC5YyX5Y2A5LiJ5rCR6Lev5LiJ5q61MjE36Jmf!5e0!3m2!1szh-TW!2stw!4v1450667171231')
+                                    img.img-responsive.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(alt='', src='../images/oops_map.jpg')
+                                    //img.img-responsive.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(alt='', src='https://placehold.it/555x330')
+                                            
+
+                // Section: teachers
+                section.bg-lightest
+                    .container.pt-50.pb-80
+                        .section-content
+                            .row
+                                .col-md-6.wow.mt-20.fadeInRight(data-wow-duration='1s', data-wow-delay='0.3s')
+                                    h3.text-uppercase.title.line-bottom.mt-0.mb-30
+                                        | 師資 
+                                        span.text-theme-color-2 陣容
+                                    .owl-carousel-2col
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Bae.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') 裴老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳幽默獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Peter Han.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') Peter韓老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳幽默獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Aaron.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') Aaron老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳幽默獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Shimato.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') 島本老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳氣質獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Fujimoto.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') 藤本老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳勤奮獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Miko.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') Miko主任
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳領導獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='../images/teachers/Angel.jpg')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') Angel主任
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳團結獎
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                        .item
+                                            .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                                .team-thumb
+                                                    img.img-fullwidth(alt='', src='https://placehold.it/275x370')
+                                                    .team-overlay
+                                                .team-details.bg-silver-light.pt-10.pb-10
+                                                    h4.text-uppercase.font-weight-600.m-5
+                                                        a(href='page-teachers-details.html') TEST老師
+                                                    h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳TEST
+                                                    ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-facebook
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-twitter
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-instagram
+                                                        li
+                                                            a(href='#')
+                                                                .fab.fa-skype
+                                .col-md-6.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.3s')
+                                    h3.text-uppercase.ml-15.title.line-bottom
+                                        | 近期 
+                                        span.text-theme-color-2.font-weight-700 活動
+                                    .bxslider.bx-nav-top.p-0.m-0
+                                        .col-xs-12.pr-0.col-sm-6.col-md-6.mb-20
+                                            .pricing.table-horizontal.maxwidth400
+                                                .row
+                                                    .col-md-6
+                                                        .thumb
+                                                            img.img-fullwidth.mb-sm-0(src='https://placehold.it/235x165', alt='')
+                                                    .col-md-6.p-10.pl-sm-50
+                                                        h4.mt-0.mb-5.mt-10
+                                                            a.text-white(href='#') Upcoming Event Title
+                                                        ul.list-inline.font-16.mb-5.text-white
+                                                            li.pr-0
+                                                                i.fa.fa-calendar.mr-5
+                                                                |  June 26, 2016 |
+                                                            li.pl-5
+                                                                i.fa.fa-map-marker.mr-5
+                                                                | New York
+                                                        p.mb-0.font-13.text-white.mr-5.pr-10 Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Quas eveniet.
+                                                        a.font-16.text-white.mt-20(href='#') Read More →
+                                        .col-xs-12.pr-0.col-sm-6.col-md-6.mb-30
+                                            .pricing.table-horizontal.maxwidth400
+                                                .row
+                                                    .col-md-6
+                                                        .thumb
+                                                            img.img-fullwidth.mb-sm-0(src='https://placehold.it/235x165', alt='')
+                                                    .col-md-6.p-10.pl-sm-50
+                                                        h4.mt-0.mb-5.mt-10
+                                                            a.text-white(href='#') Upcoming Event Title
+                                                        ul.list-inline.font-16.mb-5.text-white
+                                                            li.pr-0
+                                                                i.fa.fa-calendar.mr-5
+                                                                |  June 26, 2016 |
+                                                            li.pl-5
+                                                                i.fa.fa-map-marker.mr-5
+                                                                | New York
+                                                        p.mb-0.font-13.text-white.mr-5.pr-10 Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Quas eveniet.
+                                                        a.font-16.text-white.mt-20(href='#') Read More →
+                                        .col-xs-12.pr-0.col-sm-6.col-md-6.mb-30
+                                            .pricing.table-horizontal.maxwidth400
+                                                .row
+                                                    .col-md-6
+                                                        .thumb
+                                                            img.img-fullwidth.mb-sm-0(src='https://placehold.it/235x165', alt='')
+                                                    .col-md-6.p-10.pl-sm-50
+                                                        h4.mt-0.mb-5.mt-10
+                                                            a.text-white(href='#') Upcoming Event Title
+                                                        ul.list-inline.font-16.mb-5.text-white
+                                                            li.pr-0
+                                                                i.fa.fa-calendar.mr-5
+                                                                |  June 26, 2016 |
+                                                            li.pl-5
+                                                                i.fa.fa-map-marker.mr-5
+                                                                | New York
+                                                        p.mb-0.font-13.text-white.mr-5.pr-10 Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Quas eveniet.
+                                                        a.font-16.text-white.mt-20(href='#') Read More →
+                                        .col-xs-12.pr-0.col-sm-6.col-md-6.mb-30
+                                            .pricing.table-horizontal.maxwidth400
+                                                .row
+                                                    .col-md-6
+                                                        .thumb
+                                                            img.img-fullwidth.mb-sm-0(src='https://placehold.it/235x165', alt='')
+                                                    .col-md-6.p-10.pl-sm-50
+                                                        h4.mt-0.mb-5.mt-10
+                                                            a.text-white(href='#') Upcoming Event Title
+                                                        ul.list-inline.font-16.mb-5.text-white
+                                                            li.pr-0
+                                                                i.fa.fa-calendar.mr-5
+                                                                |  June 26, 2016 |
+                                                            li.pl-5
+                                                                i.fa.fa-map-marker.mr-5
+                                                                | New York
+                                                        p.mb-0.font-13.text-white.mr-5.pr-10 Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Quas eveniet.
+                                                        a.font-16.text-white.mt-20(href='#') Read More →
+                // Divider: Reservation Form
+                section
+                    .container.pt-0.pb-0
+                        .row
+                            .col-md-7
+                                .p-40.pl-0
+                                    // Reservation Form Start
+                                    form#reservation_form.reservation-form(name='reservation_form', method='post', action='includes/reservation.php')
+                                        h3.mt-0.line-bottom.mb-40
+                                            | 聯絡
+                                            span.text-theme-color-2  Oops
+                                        .row
+                                            .col-sm-12
+                                                .form-group.mb-30
+                                                    input#reservation_name.form-control(placeholder='請輸入姓名', type='text', name='reservation_name', required='')
+                                            .col-sm-6
+                                                .form-group.mb-30
+                                                    input#reservation_email.form-control(placeholder='請輸入Email', type='text', name='reservation_email', required='')
+                                            .col-sm-6
+                                                .form-group.mb-30
+                                                    input#reservation_phone.form-control(placeholder='請輸入電話號碼', type='text', name='reservation_phone', required='')
+                                            .col-sm-6
+                                                .form-group.mb-30
+                                                    .styled-select
+                                                        select#booking_service.form-control(name='booking_service', required='')
+                                                            option(value='') - 選擇您要諮詢的類別 -
+                                                            option(value='Accounting Technoloiges') 日語課程
+                                                            option(value='Chemical Engineering') 日語課程
+                                                            option(value='Computer Technologies') 英語課程
+                                                            option(value='Development Studies') 英語課程
+                                                            option(value='Electrical & Electronic') 留遊學代辦
+                                                            option(value='Modern Languages') 其他
+                                            .col-sm-6
+                                                .form-group.mb-30
+                                                    input.form-control.required.date-picker(name='reservation_date', type='text', placeholder='預計出發/上課日期', aria-required='true')
+                                            .col-sm-12
+                                                .form-group.mb-0.mt-0
+                                                    input.form-control(name='form_botcheck', type='hidden', value='')
+                                                    button.btn.btn-colored.btn-theme-colored.btn-lg.btn-flat.border-left-theme-color-2-4px(type='submit', data-loading-text='Please wait...') 送出
+                                    // Reservation Form End
+                                    // Reservation Form Validation Start
+                                    script(type='text/javascript').
+                                        $("#reservation_form").validate({
+                                        submitHandler: function(form) {
+                                        var form_btn = $(form).find('button[type="submit"]');
+                                        var form_result_div = '#form-result';
+                                        $(form_result_div).remove();
+                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                        var form_btn_old_msg = form_btn.html();
+                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                        $(form).ajaxSubmit({
+                                        dataType:  'json',
+                                        success: function(data) {
+                                        if( data.status == 'true' ) {
+                                        $(form).find('.form-control').val('');
+                                        }
+                                        form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                        $(form_result_div).html(data.message).fadeIn('slow');
+                                        setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                                        }
+                                        });
+                                        }
+                                        });
+                                    // Reservation Form Validation Start
+                            .col-md-5
+                                img(src='https://placehold.it/319x480', alt='')
+                // Divider: Clients
+                section.clients.bg-theme-colored
+                    .container.pt-10.pb-0.pt-sm-0.pb-sm-0
+                        .row
+                            .col-md-12
+                                // Section: Clients
+                                .owl-carousel-6col.transparent.text-center.owl-nav-top
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+            // end main-content
+            // end wrapper
+block script
+append script
+    script(type="text/javascript").
+        function moreInfo() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none"){
+            dots.style.display = "inline";
+            btnText.innerHTML = "查看更多"; 
+            moreText.style.display = "none";
+            } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "復原"; 
+            moreText.style.display = "inline";
+            }
+        }

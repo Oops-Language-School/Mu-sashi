@@ -1,0 +1,491 @@
+doctype html
+html(dir='ltr', lang='en')
+    head    
+        block title
+        // Meta Tags
+        meta(name='viewport', content='width=device-width,initial-scale=1.0')
+        meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+        meta(name='description', content='LearnPress | Education & Courses HTML Template')
+        meta(name='keywords', content='academy, course, education, education html theme, elearning, learning,')
+        meta(name='author', content='ThemeMascot')
+        // Page Title
+        //title About OoPs
+        // Favicon and Touch Icons
+        link(href='https://i.imgur.com/zVzrC1D.png', rel='shortcut icon', type='image/png')
+        link(href='https://i.imgur.com/zVzrC1D.png', rel='apple-touch-icon')
+        link(href='https://i.imgur.com/zVzrC1D.png', rel='apple-touch-icon', sizes='72x72')
+        link(href='https://i.imgur.com/zVzrC1D.png', rel='apple-touch-icon', sizes='114x114')
+        link(href='https://i.imgur.com/zVzrC1D.png', rel='apple-touch-icon', sizes='144x144')
+        // Stylesheet
+        link(href='../css/bootstrap.min.css', rel='stylesheet', type='text/css')
+        link(href='../css/jquery-ui.min.css', rel='stylesheet', type='text/css')
+        link(href='../css/animate.css', rel='stylesheet', type='text/css')
+        link(href='../css/css-plugin-collections.css', rel='stylesheet')
+        // CSS | menuzord megamenu skins
+        link#menuzord-menu-skins(href='../css/menuzord-skins/menuzord-rounded-boxed.css', rel='stylesheet')
+        // CSS | Main style file
+        link(href='../css/style-main.css', rel='stylesheet', type='text/css')
+        // CSS | Preloader Styles
+        link(href='../css/preloader.css', rel='stylesheet', type='text/css')
+        // CSS | Custom Margin Padding Collection
+        link(href='../css/custom-bootstrap-margin-padding.css', rel='stylesheet', type='text/css')
+        // CSS | Responsive media queries
+        link(href='../css/responsive.css', rel='stylesheet', type='text/css')
+        // CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it.
+        // <link href="../css/style.css" rel="stylesheet" type="text/css">
+        // CSS | Theme Color
+        link(href='../css/colors/theme-skin-color-set-1.css', rel='stylesheet', type='text/css')
+        // external javascripts
+        //script(src='../js/jquery-2.2.4.min.js')
+        script(src='https://code.jquery.com/jquery-2.2.4.min.js', integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=', crossorigin='anonymous')
+        
+
+
+        script(src='../js/jquery-ui.min.js')
+        script(src='../js/bootstrap.min.js')
+        // JS | jquery plugin collection for this theme
+        script(src='../js/jquery-plugin-collection.js')
+        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+            script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+            script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+        block style 
+    body
+        // preloader
+        // #preloader
+        //    #spinner
+        //        img(alt='', src='../images/preloaders/5.gif')
+        //    #disable-preloader.btn.btn-default.btn-sm Disable Preloader
+        // Header
+        header#header.header
+            .header-top.bg-theme-color-2.sm-text-center
+                .container
+                    .row
+                        .col-md-oops
+                            .widget.no-border.m-0
+                                ul.list-inline
+                                    li.m-0.pl-10.pr-10
+                                        a(href='tel:+886422211568')
+                                            i.fa.fa-phone.text-white
+                                        a.text-white(href='tel:+886422211568')  (+886) 4-2221-1568
+                                    li.text-white.m-0.pl-10.pr-10
+                                        i.fa.fa-clock-o.text-white
+                                        |  周一至周五 13:00~22:00
+                                    li.m-0.pl-10.pr-10
+                                        a(href='mailto:info@mu-sashi.com.tw')
+                                            i.fa.fa-envelope.text-white
+                                        a.text-white(href='mailto:info@mu-sashi.com.tw')  info@mu-sashi.com.tw
+                                    li.m-0.pl-10.pr-10
+                                        a(href='https://chatbot.mu-sashi.com.tw/oops/kr-index')
+                                            img(alt='', src='../images/main-page/footer/韓 14x15.png',width="14" ,height="15")
+                                        a.text-white(href='https://chatbot.mu-sashi.com.tw/oops/kr-index')  Oops韓語
+                                    li.m-0.pl-10.pr-10
+                                        a(href='https://chatbot.mu-sashi.com.tw/oops/jp-index')
+                                            img(alt='', src='../images/main-page/footer/日 14x15.png',width="14" ,height="15")
+                                        a.text-white(href='https://chatbot.mu-sashi.com.tw/oops/jp-index')  Oops日語
+                                    li.m-0.pl-10.pr-10
+                                        a(href='https://chatbot.mu-sashi.com.tw/oops/eng-index')
+                                            img(alt='', src='../images/main-page/footer/美 14x15.png',width="14" ,height="15")
+                                        a.text-white(href='https://chatbot.mu-sashi.com.tw/oops/eng-index')  Oops美語
+
+                        .col-md-oops1
+                            .widget.no-border.m-0
+                                ul.list-inline.text-right.sm-text-center
+                                    li
+                                        a.text-white(href='/oops/contact-us') 企業教學
+                                    li.text-white |
+                                    li
+                                        a.text-white(href='/oops/career') 人才招募
+                                    li.text-white |
+                                    li
+                                        a.text-white(href='https://www.facebook.com/ilovemusashi/') 武藏粉絲團
+            .header-nav
+                .header-nav-wrapper.navbar-scrolltofixed.bg-white
+                    .container
+                        nav#menuzord-right.menuzord.default
+                            a.menuzord-brand.pull-left.flip(href='javascript:void(0)')
+                                img(src='../images/logo-wide.png', alt='')
+                            ul.menuzord-menu
+                                li.active
+                                    a(href='/oops') 首頁
+                                li
+                                    a(href='#') 關於Oops
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/about') Oops簡介
+                                        li
+                                            a(href='/oops/environment') 環境介紹
+                                        li
+                                            a(href='/oops/teachers') 教師介紹
+                                        li
+                                            a(href='/oops/regulation') 補教法規
+                                        
+                                li
+                                    a(href='#') 最新消息
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/announcement') Oops公告
+                                        li
+                                            a(href='/oops/activity') 活動公告
+                                        li
+                                            a(href='/oops/exam-info') 考試資訊
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/exam-info') 日語
+                                                li
+                                                    a(href='/oops/exam-info') 韓語
+                                                li
+                                                    a(href='/oops/exam-info') 美語
+                                        li
+                                            a(href='/oops/over-sea-info') 海外情報
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/over-sea-info') 日語
+                                                li
+                                                    a(href='/oops/over-sea-info') 韓語
+                                                li
+                                                    a(href='/oops/over-sea-info') 美語
+                                        li
+                                            a(href='/oops/news-study-abroad') 留遊學情報
+                                            
+                                li
+                                    a(href='/oops/jp-course-list') Oops日語
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/course-info') 範例-課程介紹內頁
+                                        li
+                                            a(href='/oops/jp-course-list' ) 日語免費聽
+                                        li
+                                            a(href='/oops/jp-course-list') 日語正規班
+                                        li
+                                            a(href='/oops/jp-course-list') 日語會話班
+                                        li
+                                            a(href='/oops/jp-course-list') 日檢對策班
+                                        li
+                                            a(href='/oops/jp-course-list') 寒暑假密集班
+                                        li
+                                            a(href='/oops/jp-course-list') 商用日語
+                                        li
+                                            a(href='/oops/jp-course-list') 留遊學先修班
+                                        li
+                                            a(href='/oops/jp-course-list') 打工度假先修班                                            
+                                        li
+                                            a(href='/oops/jp-course-list') 企業學校派遣
+                                li
+                                    a(href='/oops/kr-course-list') Oops韓語
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/kr-course-list') 韓語免費聽
+                                        li
+                                            a(href='/oops/kr-course-list') TOPIK 韓檢正規班 
+                                        li
+                                            a(href='/oops/kr-course-list') 韓語會話班
+                                        li
+                                            a(href='/oops/kr-course-list') 韓檢對策班
+                                        li
+                                            a(href='/oops/kr-course-list') 寒暑假密集班
+                                        li
+                                            a(href='/oops/kr-course-list') 商用韓語
+                                        li
+                                            a(href='/oops/kr-course-list') 留遊學先修班
+                                        li
+                                            a(href='/oops/kr-course-list') 打工度假先修班
+                                        li
+                                            a(href='/oops/kr-course-list') 企業學校派遣
+                                            
+                                li
+                                    a(href='/oops/eng-course-list') Oops美語
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/eng-course-list') 美語免費聽
+                                        li
+                                            a(href='/oops/eng-course-list') ESL 實力養成課程
+                                        li
+                                            a(href='/oops/eng-course-list') TOEIC 多益課程
+                                        li
+                                            a(href='/oops/eng-course-list') IELTS 雅思課程
+                                        li
+                                            a(href='/oops/eng-course-list') TOEFL 托福課程
+                                        li
+                                            a(href='/oops/eng-course-list') GEPT 全民英檢課程
+                                        li
+                                            a(href='/oops/eng-course-list') 寒暑假密集班
+                                        li
+                                            a(href='/oops/eng-course-list') 打工度假先修班                                           
+                                        li
+                                            a(href='/oops/eng-course-list') 企業學校派遣
+                                            
+                                            
+                                li
+                                    a(href='#') 留遊學代辦
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/study-abroad-jp') 日本
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-jp') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-jp') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-jp') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-jp') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-kr') 韓國
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-kr') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-kr') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-kr') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-kr') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-us') 美國
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-us') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-us') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-us') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-us') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-ca') 加拿大
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-ca') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-ca') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-ca') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-ca') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-uk') 英國
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-uk') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-uk') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-uk') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-uk') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-au') 澳洲
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-au') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-au') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-au') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-au') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-nz') 紐西蘭
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-nz') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-nz') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-nz') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-nz') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-ph') 菲律賓
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-ph') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-ph') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-ph') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-ph') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-sg') 新加坡
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-sg') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-sg') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-sg') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-sg') Q&A
+                                        li
+                                            a(href='/oops/study-abroad-my') 馬來西亞
+                                            ul.dropdown
+                                                li
+                                                    a(href='/oops/study-abroad-my') 申請流程
+                                                li
+                                                    a(href='/oops/study-abroad-my') 準備資料
+                                                li
+                                                    a(href='/oops/study-abroad-my') 推薦學校
+                                                li
+                                                    a(href='/oops/study-abroad-my') Q&A
+                                li
+                                    a(href='/oops/contact-us') 連絡我們
+                                    ul.dropdown
+                                        li
+                                            a(href='/oops/contact-us') 如何前往
+                                        li
+                                            a(href='/oops/contact-us') 異業結合
+                                        li
+                                            a(href='/oops/career') 人才招募
+
+        block content
+        // Footer
+        footer#footer.footer.bg-black-222(data-bg-img='../images/footer-bg.png')
+            .container.pt-70.pb-40
+                .row
+                    .col-sm-6.col-md-3
+                        .widget.dark
+                            img.mt-10.mb-15(alt='', src='../images/logo-wide-white.png')
+                            p.font-16.mb-10 OoPs提供日語.韓語.美語正規課程及會話課程。讓您能夠不出國，就能輕鬆開口說外語。
+                            a.font-14(href='#')
+                                i.fa.fa-angle-double-right.text-theme-colored
+                                | 了解更多
+                            ul.styled-icons.icon-dark.mt-oops
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.1s', data-wow-offset='10')
+                                    a.icon(href='https://www.facebook.com/ilovemusashi/', data-bg-color='#3B5998')
+                                        .fab.fa-facebook
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.5s', data-wow-offset='10')
+                                    a.icon(href='https://www.instagram.com/oops.top/', data-bg-color='#f09433')
+                                        .fab.fa-instagram
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.5s', data-wow-offset='10')
+                                    a.icon(href='https://www.youtube.com/channel/UCrbmaegmomSGoYCXYxCJ22A', data-bg-color='#C22E2A')
+                                        .fab.fa-youtube
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.2s', data-wow-offset='10')
+                                    a.icon(href='#', data-bg-color='#02B0E8')
+                                        .fab.fa-twitter
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.3s', data-wow-offset='10')
+                                    a.icon(href='#', data-bg-color='#05A7E3')
+                                        .fab.fa-skype
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.4s', data-wow-offset='10')
+                                    a.icon(href='https://plus.google.com/u/0/b/108459116980731438657/108459116980731438657', data-bg-color='#A11312')
+                                        .fab.fa-google-plus
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.4s', data-wow-offset='10')
+                                    a.icon(href='https://line.me/R/ti/p/%40xat.0000116750.rxi', data-bg-color='#00c300')
+                                        .fab.fa-line
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.4s', data-wow-offset='10')
+                                    a.icon(href='#', data-bg-color='#7bb32e')
+                                        .fab.fa-weixin
+                                li.wow.fadeInLeft(data-wow-duration='1.5s', data-wow-delay='.4s', data-wow-offset='10')
+                                    a.icon(href='#', data-bg-color='#25d366')
+                                        .fab.fa-whatsapp
+
+                    .col-sm-6.col-md-3
+                        .widget.dark
+                            h5.widget-title.line-bottom 其他課程
+                            .latest-posts
+                                article.post.media-post.clearfix.pb-0.mb-10
+                                    a.post-thumb(href='https://chatbot.mu-sashi.com.tw/oops/kr-index')
+                                        img(alt='', src='../images/main-page/footer/kr_80x55.jpg',width="80" ,height="55")
+                                    .post-right
+                                        h5.post-title.mt-0.mb-5
+                                            a(href='https://chatbot.mu-sashi.com.tw/oops/kr-index') 韓語課程
+                                        p.post-date.mb-0.font-12 2018.9.27
+                                article.post.media-post.clearfix.pb-0.mb-10
+                                    a.post-thumb(href='https://chatbot.mu-sashi.com.tw/oops/jp-index')
+                                        //img(alt='', src='https://placehold.it/80x55')
+                                        img(alt='', src='../images/main-page/footer/jp_80x55.jpg',width="80" ,height="55")
+                                    .post-right
+                                        h5.post-title.mt-0.mb-5
+                                            a(href='https://chatbot.mu-sashi.com.tw/oops/jp-index') 日語課程
+                                        p.post-date.mb-0.font-12 2018.10.03
+                                article.post.media-post.clearfix.pb-0.mb-10
+                                    a.post-thumb(href='https://chatbot.mu-sashi.com.tw/oops/eng-index')
+                                        img(alt='', src='../images/main-page/footer/us_80x55.jpg',width="80" ,height="55")
+                                        //img(alt='', src='https://placehold.it/80x55')
+                                    .post-right
+                                        h5.post-title.mt-0.mb-5
+                                            a(href='https://chatbot.mu-sashi.com.tw/oops/eng-index') 美語課程
+                                        p.post-date.mb-0.font-12 2018.10.18
+                                article.post.media-post.clearfix.pb-0.mb-10
+                                    a.post-thumb(href='#')
+                                        //img(alt='', src='https://placehold.it/80x55')
+                                        img(alt='', src='../images/main-page/footer/abroad_80x55.jpg',width="80" ,height="55")
+                                    .post-right
+                                        h5.post-title.mt-0.mb-5
+                                            a(href='#') 留遊學代辦
+                                        p.post-date.mb-0.font-12 2018.10.29
+                    .col-sm-6.col-md-3
+                        .widget.dark
+                            h5.widget-title.line-bottom 相關連結
+                            ul.list.angle-double-right.list-border
+                                li
+                                    a(href='#') 補教法規
+                                li
+                                    a(href='#') 活動影片
+                                li
+                                    a(href='#') 學校資訊
+                                li
+                                    a(href='#') 如何前往
+                                li
+                                    a(href='#') 聯絡OoPs
+                    .col-sm-6.col-md-3
+                        .widget.dark
+                            h5.widget-title.line-bottom 關於OoPs
+                            ul.list-border
+                                li
+                                    a(href='#') +(886) 4-2221-1568
+                                li
+                                    a(href='#') info@mu-sashi.com.tw
+                                li
+                                    a.lineheight-20(href='#') 臺中市北區三民路3段217號10樓之5
+                            p.font-16.text-white.mb-5.mt-15 訂閱電子報
+                            form#footer-mailchimp-subscription-form.newsletter-form.mt-10
+                                label.display-block(for='mce-EMAIL')
+                                .input-group
+                                    input#mce-EMAIL.form-control(type='email', value='', name='EMAIL', placeholder='請填寫您的Email', data-height='37px')
+                                    span.input-group-btn
+                                        button.btn.btn-colored.btn-theme-colored.m-0(type='submit')
+                                            i.fa.fa-paper-plane-o.text-white
+                            // Mailchimp Subscription Form Validation
+                            script(type='text/javascript').
+                                $('#footer-mailchimp-subscription-form').ajaxChimp({
+                                callback: mailChimpCallBack,
+                                url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+                                });
+                                function mailChimpCallBack(resp) {
+                                // Hide any previous response text
+                                var $mailchimpform = $('#footer-mailchimp-subscription-form'),
+                                $response = '';
+                                $mailchimpform.children(".alert").remove();
+                                if (resp.result === 'success') {
+                                $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                } else if (resp.result === 'error') {
+                                $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                }
+                                $mailchimpform.prepend($response);
+                                }
+            .footer-bottom.bg-black-333
+                .container.pt-20.pb-20
+                    .row
+                        .col-md-6
+                            p.font-11.text-black-777.m-0 Copyright ©2018 Oops. All Rights Reserved
+                        .col-md-6.text-right
+                            .widget.no-border.m-0
+                                ul.list-inline.sm-text-center.mt-5.font-12
+                                    li
+                                        a(href='#') 企業教學
+                                    li |
+                                    li
+                                        a(href='#') 人才招募
+                                    li |
+                                    li
+                                        a(href='https://www.facebook.com/ilovemusashi/') 武藏粉絲團
+        a.scrollToTop(href='#')
+            i.fa.fa-angle-up
+            
+        script(src="../js/custom_L1_JP.js")
+        block script
+
+        

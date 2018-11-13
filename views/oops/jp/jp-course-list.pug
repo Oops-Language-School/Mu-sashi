@@ -1,0 +1,660 @@
+extends L2_layout_jp
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12
+                            h2.title.text-white.text-center Oops日語課程
+                            ol.breadcrumb.text-left.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-gray-silver Page Title
+        // Section: Course list
+        section
+            .container
+                .row
+                    .col-md-9.blog-pull-right
+                        .grid
+                            .element-item.free(data-category='free')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語免費聽" src="../../images/jp-index/course/日語免費聽.jpg")
+                                            //img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語免費聽
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語免費聽課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語免費聽課程介紹
+                                hr
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 初級 I" src="../../images/jp-index/course/正規班/正規班-初級I.jpg")
+                                            //img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 初級 I
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 初級 I課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 初級 I課程介紹
+                                hr
+                                br
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 初級 II" src="../../images/jp-index/course/正規班/正規班-初級II.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 初級 II
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 初級 II課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 初級 II課程介紹
+                                hr
+                                br
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 中級" src="../../images/jp-index/course/正規班/正規班-中級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 中級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 中級課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 中級課程介紹
+                                hr
+                                br
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 進階 I" src="../../images/jp-index/course/正規班/正規班-進階I.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 進階 I
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 進階 I課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 進階 I課程介紹
+                                hr
+                                br
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 進階 II" src="../../images/jp-index/course/正規班/正規班-進階II.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 進階 II
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 進階 II課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 進階 II課程介紹
+                                hr
+                                br
+                            .element-item.regular(data-category='regular')   
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語正規班 - 高級" src="../../images/jp-index/course/正規班/正規班-高級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語正規班 - 高級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語正規班 - 高級課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語正規班 - 高級課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語會話班 - 初級" src="../../images/jp-index/course/會話班/1日語會話班-初級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語會話班 - 初級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語會話班 - 初級課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語會話班 - 初級課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語會話班 - 中級" src="../../images/jp-index/course/會話班/2日語會話班-中級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語會話班 - 中級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語會話班 - 中級課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語會話班 - 中級課程介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語會話班 - 高級" src="../../images/jp-index/course/會話班/3日語會話班-高級.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語會話班 - 高級
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語會話班 - 高級
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語會話班 - 高級介紹
+                                hr
+                                br
+                            .element-item.conversation(data-category='conversation') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語會話班 - 生活會話" src="../../images/jp-index/course/會話班/4日語會話班-生活會話.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語會話班 - 生活會話
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日語會話班 - 生活會話課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日語會話班 - 生活會話課程介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                            //img.img-fullwidth(alt="日檢N2對策班" src="../../images/jp-index/course/日語免費聽.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日檢N2對策班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日檢N2對策班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日檢N2對策班介紹
+                                hr
+                                br
+                            .element-item.concentration(data-category='concentration') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="featured project" src="https://placehold.it/262x210")
+                                            //img.img-fullwidth(alt="日檢N1對策班" src="../../images/jp-index/course/日語免費聽.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日檢N1對策班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有日檢N1對策班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 日檢N1對策班介紹
+                                hr
+                                br
+                            .element-item.business(data-category='business') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="商用日語班" src="../../images/jp-index/course/商用日語班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 商用日語班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有商用日語班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 商用日語班介紹
+                                hr
+                                br
+                            .element-item.personal(data-category='personal') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="日語個別班" src="../../images/jp-index/course/個別班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 日語個別班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有寒假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 寒假密集班介紹
+                                hr
+                                br
+                            .element-item.intensive(data-category='intensive') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="寒假密集班" src="../../images/jp-index/course/寒假密班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 寒假密集班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有寒假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 寒假密集班介紹
+                                hr
+                                br
+                            .element-item.intensive(data-category='intensive') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="暑假密集班" src="../../images/jp-index/course/暑假密班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 暑假密集班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有暑假密集班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 暑假密集班介紹
+                                hr
+                                br
+                            .element-item.abroad(data-category='abroad') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="留學先修班" src="../../images/jp-index/course/留學先修班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 留遊學先修班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有留遊學先修班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 留遊學先修班介紹
+                                hr
+                                br
+                            .element-item.workingHoliday(data-category='workingHoliday') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="打工度假先修班" src="../../images/jp-index/course/打工度假先修班.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 打工度假先修班
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有打工度假先修班課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 打工度假先修班介紹
+                                hr
+                                br
+                            .element-item.dispatch(data-category='dispatch') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="企業培訓" src="../../images/jp-index/course/企業培訓.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 企業培訓
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有企業培訓課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 企業培訓介紹
+                                hr
+                                br
+                            .element-item.dispatch(data-category='dispatch') 
+                                .row.mb-15
+                                    .col-sm-6.col-md-4
+                                        .thumb
+                                            img.img-fullwidth(alt="學校派遣" src="../../images/jp-index/course/學校派遣.jpg")
+                                    .col-sm-6.col-md-8
+                                        h4.line-bottom-oops.mt-0.mt-sm-20 學校派遣
+                                        ul.review_text.list-inline
+                                            li
+                                                h4.mt-0
+                                                    span.text-theme-color-2 價格 :
+                                                    |  $125
+                                            li
+                                                .star-rating(title="Rated 4.50 out of 5")
+                                                    span(style="width: 90%;") 4.50
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.Aliquam ipsum quis ipsum facilisis sit ame ipsum quis ipsum facilisis sit amet facilisis consecte.
+                                        a.btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 顯示所有學校派遣課程
+                                        a(style="margin-left:10px;").btn.btn-dark.btn-theme-colored.btn-sm.text-uppercase.mt-10(href="page-courses-accounting-technologies.html") 學校派遣介紹
+                                hr
+                    .col-md-3
+                        .sidebar.sidebar-left.mt-sm-30
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Search 
+                                    span.text-theme-color-2 Courses
+                                .search-form
+                                    form
+                                        .input-group
+                                            input.form-control.search-input(type="text" placeholder="Click to Search")
+                                            span.input-group-btn
+                                                button.btn.search-button(type="submit")
+                                                    i.fa.fa-search
+                            .widget
+
+                                h5.widget-title.line-bottom
+                                    | Oops日語 
+                                    span.text-theme-color-2 課程
+                                .categoriess
+                                    .filter-button-group
+                                        ul.list.list-border.angle-double-right
+                                            li.oops-course.oops-active(data-filter='*' )
+                                                 button.button(data-filter='*' )  
+                                                    | 全部日語課程
+                                                    span (12)
+                                            li.oops-course(data-filter='oops.free')
+                                                 button.button(data-filter='.free')
+                                                    | 日語免費聽
+                                                    span (19)
+                                            li.oops-course(data-filter='oops.regular')
+                                                 button.button(data-filter='.regular')
+                                                    | 日語正規班
+                                                    span (21)
+                                            li.oops-course(data-filter='oops.conversation')
+                                                 button.button(data-filter='.conversation')
+                                                    | 日語會話班
+                                                    span (15)
+                                            li.oops-course(data-filter='oops.concentration')
+                                                 button.button(data-filter='.concentration' )
+                                                    | 日檢對策班
+                                                    span (35)
+                                            li.oops-course(data-filter='oops.business')
+                                                 button.button(data-filter='.business')
+                                                    | 商用日語班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.personal')
+                                                 button.button(data-filter='.personal')
+                                                    | 日語個別班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.intensive')
+                                                 button.button(data-filter='.intensive')
+                                                    | 寒暑假密集班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.abroad')
+                                                 button.button(data-filter='.abroad')
+                                                    | 留遊學先修班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.workingHoliday')
+                                                 button.button(data-filter='.workingHoliday')
+                                                    | 打工度假先修班
+                                                    span (16)
+                                            li.oops-course(data-filter='oops.dispatch')
+                                                 button.button(data-filter='.dispatch')
+                                                    | 企業學校派遣
+                                                    span (16)
+                                               
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Latest 
+                                    span.text-theme-color-2 Course
+                                .latest-posts
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Sustainable Construction
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Industrial Coatings
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                                    article.post.media-post.clearfix.pb-0.mb-10
+                                        a.post-thumb(href="#")
+                                            img(src="https://placehold.it/75x75" alt="")
+                                        .post-right
+                                            h5.post-title.mt-0
+                                                a(href="#") Storefront Installations
+                                            p Lorem ipsum dolor sit amet adipisicing elit...
+                            .widget
+                                h5.widget-title.line-bottom-oops
+                                    | Photos 
+                                    span.text-theme-color-2 from Flickr
+                                #flickr-feed.clearfix
+                                    // Flickr Link
+                                    script(type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=x&source=user&user=52617155@N08")
+                .row
+                    .col-sm-12
+                        nav
+                            ul.pagination.xs-pull-center.m-0
+                                li
+                                    a(href="#" aria-label="Previous")
+                                        span(aria-hidden="true") «
+                                li.active
+                                    a(href="#") 1
+                                li
+                                    a(href="#") 2
+                                li
+                                    a(href="#") 3
+                                li
+                                    a(href="#") 4
+                                li
+                                    a(href="#") 5
+                                li
+                                    a(href="#") ...
+                                li
+                                    a(href="#" aria-label="Next")
+                                        span(aria-hidden="true") »
+    // end main-content
+block script
+    script(src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js')
+    script.
+        // external js: isotope.pkgd.js
+
+        // filter functions unused
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+            },
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
+        };
+
+        function getHashFilter() {
+            // get filter=filterName
+            var matches = location.hash.match( /filter=([^&]+)/i );
+            var hashFilter = matches && matches[1];
+            return hashFilter && decodeURIComponent( hashFilter );
+        }
+
+        // init Isotope
+        var $grid = $('.grid');
+
+        // bind filter button click
+        var $filterButtonGroup = $('.filter-button-group');
+        //alert(filterButtonGroup);
+        $filterButtonGroup.on( 'click', 'button', function() {
+            var filterAttr = $( this ).attr('data-filter');
+            
+            // set filter in hash
+            location.hash = 'filter=' + encodeURIComponent( filterAttr );
+        });
+
+        var isIsotopeInit = false;
+
+        function onHashchange() {
+            var hashFilter = getHashFilter();
+            if ( !hashFilter && isIsotopeInit ) {
+                return;
+            }
+            isIsotopeInit = true;
+            // filter isotope
+            $grid.isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'fitRows',
+                // use filterFns
+                filter: filterFns[ hashFilter ] || hashFilter
+            });
+            // set selected class on button
+            if ( hashFilter ) {
+                $filterButtonGroup.find('.oops-active').removeClass('oops-active');
+                $filterButtonGroup.find('[data-filter="oops' + hashFilter + '"]').addClass('oops-active');
+                //this.className += " oops-active";
+            }
+        }
+
+        $(window).on( 'hashchange', onHashchange );
+
+        // trigger event handler to init Isotope
+        onHashchange();

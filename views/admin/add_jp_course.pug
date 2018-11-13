@@ -1,0 +1,190 @@
+extends ../nav_layout
+block title
+    title #{title}
+block style
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500')
+    link(rel='stylesheet', href='/assets/bootstrap/css/bootstrap.min.css')
+    //link(rel='stylesheet', href='/assets/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/assets/css/form-elements.css')
+    link(rel='stylesheet', href='/assets/css/style.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+        script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+        script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    // Favicon and touch icons
+    link(rel='shortcut icon', href='/assets/ico/favicon.png')
+    link(rel='stylesheet', href='/css/nav.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+
+        }
+        label{
+            width: 30%;
+        }
+        input,select{
+            width: 70%;
+        }
+        select{
+            height: 4.7vh;
+        }
+        body {
+            transition: background-color .5s;
+        }
+        textarea {
+            resize: none;
+            width: 70%;
+        }
+block script
+   
+    // jQuery library
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
+    // Latest compiled JavaScript
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js", integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D", crossorigin="anonymous")
+    //script(src='/assets/js/jquery-1.11.1.min.js')
+    //script(src='/assets/bootstrap/js/bootstrap.min.js')
+    script(src='/assets/js/jquery.backstretch.min.js')
+    script(src='/assets/js/scripts.js')
+    script.
+        $('document').ready(function(){
+            var today = new Date();
+            today = today.toISOString().split('T')[0];
+            var max = new Date();
+            max.setFullYear(max.getFullYear() + 1);   
+            max = max.toISOString().split('T')[0];       
+            //document.getElementsByName("begin_date")[0].setAttribute('min', today);
+            document.getElementsByName("begin_date")[0].setAttribute('max', max);
+            //document.getElementsByName("end_date")[0].setAttribute('min', today);
+            //document.getElementsByName("end_date")[0].setAttribute('max', max);
+        });
+        function myEndDate() {
+            let begin_date = document.getElementById('begin_date').value;
+            var max = new Date(begin_date);
+            max.setFullYear(max.getFullYear() + 1); 
+            max = max.toISOString().split('T')[0];  
+            document.getElementsByName("end_date")[0].setAttribute('min', begin_date);
+            document.getElementsByName("end_date")[0].setAttribute('max', max);
+
+            const myBeginDate= new Date(document.getElementById('begin_date').value)
+            const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+            const beginDate = days[myBeginDate.getUTCDay()];
+            //console.log(dayName);
+            document.getElementById('begin_dayOfWeek').value = beginDate;
+        }
+        function myDayOfWeek() {
+            const myEndDate= new Date(document.getElementById('end_date').value)
+            const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+            const endDate = days[myEndDate.getUTCDay()];
+            //console.log(dayName);
+            document.getElementById('end_dayOfWeek').value = endDate;
+        }
+block content
+    .top-content
+            .container
+                .row
+                    .col-sm-8.col-sm-offset-2.text
+                        h1
+                            |   武藏日語課程後台
+                            strong (非試聽!)
+                .row
+                    .col-sm-6.col-sm-offset-3.form-box
+                        .form-top
+                            .form-top-left
+                                h3 新增日語課程(非試聽!)
+                                p 請輸入日語課程相關資料:
+                            .form-top-right
+                                i.fa.fa-lock
+                        .form-bottom
+                            form.login-form(role='form', action='/admin/add_jp_course', method='post')
+                                input(name="lang_type" type="hidden" value="日語")
+                                .form-group
+                                    label 課程名稱 
+                                    //input(type='text', name='type', placeholder='課程名稱' , required='required',autocomplete="off" )
+                                    select(name='type' required='required' )
+                                        option(value='' hidden)
+                                        option(value='日語發音') 日語發音
+                                        option(value='日語初級1') 日語初級1
+                                        option(value='日語初級2') 日語初級2
+                                        option(value='日語進階1') 日語進階1
+                                        option(value='日語進階2') 日語進階2
+                                        option(value='日語中級1') 日語中級1
+                                        option(value='日語中級2') 日語中級2
+                                        option(value='日語中級3') 日語中級3
+                                        option(value='日語中級4') 日語中級4
+                                        option(value='日語高級') 日語高級
+                                        option(value='日語寒假密集班') 日語寒假密集班
+                                        option(value='日語暑假密集班') 日語暑假密集班
+                                        option(value='商用日語') 商用日語
+
+                                .form-group
+                                    label 適合程度
+                                    select(name='course_type' required='required' autocomplete="off" )
+                                        option(value='' hidden)
+                                        option(value='適合初學者') 適合初學者
+                                        option(value='學過基礎發音') 學過基礎發音
+                                        option(value='已具備N5程度') 已具備N5程度
+                                        option(value='已具備N4程度') 已具備N4程度
+                                        option(value='已具備N3程度') 已具備N3程度
+                                        option(value='已具備N2程度') 已具備N2程度
+                                        option(value='已具備N2以上程度') 已具備N2以上程度
+                                .form-group
+                                    label 課程開始日期 
+                                    input(type='date', name='begin_date', id="begin_date", placeholder='課程開始日期' , required='required', min="", max="", onchange="myEndDate()",autocomplete="off")
+                                    input(name="begin_dayOfWeek" type="hidden" id="begin_dayOfWeek" value="")
+                                .form-group
+                                    label 課程結束日期 
+                                    input(type='date', name='end_date', id="end_date", placeholder='課程結束日期' , required='required' , min="", max="", onchange="myDayOfWeek()",autocomplete="off")
+                                    input(name="end_dayOfWeek" type="hidden" id="end_dayOfWeek" value="")
+                                .form-group
+                                    label 課程開始時間 
+                                    input(type='time', name='begin_time', placeholder='課程開始時間' , required='required',autocomplete="off" )
+                                .form-group
+                                    label 課程結束時間 
+                                    input(type='time', name='end_time', placeholder='課程結束時間' , required='required',autocomplete="off" )
+                                .form-group
+                                    label 時間類別 
+                                    select(name='time_type' required='required' ,autocomplete="off")
+                                        option(value='' hidden)
+                                        option(value='平日上午') 平日上午(10:00-13:00)
+                                        option(value='平日下午') 平日下午 (13:00-18:00)
+                                        option(value='平日晚上') 平日晚上 (18:00-22:00)
+                                        option(value='假日上午') 假日上午 (10:00-13:00)
+                                        option(value='假日下午') 假日下午 (13:00-17:00)
+                                .form-group
+                                    label 授課教師 
+                                    //input(type='text', name='teacher_name', placeholder='授課教師' , required='required',autocomplete="off" )
+                                    select(name='teacher_name' required='required' ,autocomplete="off")
+                                        option(value='' hidden )
+                                        option(value='日籍教師') 日籍教師
+                                        option(value='台籍教師') 台籍教師
+                                        option(value='中外師聯合執教') 中外師聯合執教
+                                .form-group
+                                    label 最低開班人數
+                                    select(name='min_students' required='required' ,autocomplete="off")
+                                        option(value='' hidden)
+                                        option(value='1人') 1人
+                                        option(value='2人') 2人
+                                        option(value='3人') 3人
+                                        option(value='4人') 4人
+                                        option(value='5人') 5人
+                                        option(value='6人') 6人
+                                        option(value='7人') 7人
+                                        option(value='8人') 8人
+                                        option(value='9人') 9人
+                                        option(value='10人') 10人
+                                        option(value='11人') 11人
+                                        option(value='12人') 12人
+                                        option(value='13人') 13人
+                                        option(value='14人') 14人
+                                        option(value='15人') 15人
+                                .form-group
+                                    label 其他/費用說明
+                                    //input(type='text', name='fee', placeholder='費用說明' , required='required',autocomplete="off" )
+                                    textarea(name='fee', placeholder='其他/費用說明', required ,autocomplete="off")
+                                button.btn(type='submit') 送出

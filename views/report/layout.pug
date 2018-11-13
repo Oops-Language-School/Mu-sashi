@@ -1,0 +1,28 @@
+doctype html
+html
+    head    
+        block title
+        block style 
+        
+    body
+        h1 #{title}
+        a(href="/abroad/jp_report") 日本留遊學一覽表
+        br
+        a(href="/abroad/kr_report") 韓國留遊學一覽表
+        br
+        a(href="/abroad/eng_report") 英語系國家留遊學一覽表
+        br
+        a(href="/course/course_info") 課程諮詢總表
+        br
+        a(href="/course/available") 日韓英開課總表
+        br
+        a(href="/admin/add_jp_course") 新增日語課程
+        br
+        a(href="/admin/add_kr_course") 新增韓語課程
+        br
+        a(href="/admin/logout") 登出
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        block script
+        block content
+

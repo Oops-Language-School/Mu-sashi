@@ -1,0 +1,153 @@
+extends ../layout
+block title
+    title 武藏外語教育中心
+block style
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/styles.css')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+        }
+        body {
+            background: #CB769E;
+        }
+block script
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+    
+    script.
+        (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'Messenger'));
+        
+        //- Using a function pointer:
+        //document.getElementById("clickMe").onclick = doFunction;
+
+        //- Using an anonymous function:
+        //document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+
+
+        /*$(function() {
+            $("#submit").click(function() {
+                alert("hit me");
+                MessengerExtensions.requestCloseBrowser(
+                function success() {
+                    alert("Close Successfully");
+
+                },
+                function error(err) {
+                    alert("ERR: " + err)
+                }
+                );
+                return false;
+            });
+        });*/
+
+        function jp_Course_Submit() {
+            //alert("The form was submitted");
+                MessengerExtensions.requestCloseBrowser(
+                    function success() {
+                        //var date = document.getElementById("jp_level").value;
+                    },
+                    function error(err) {
+                        //alert("jp course ERR: " + err);
+                        //console.log("test: ");
+                        //var b = document.getElementById("jp_level").value;
+                        //alert("b ERR: " + b);
+                        //console.log("b: " + b);
+
+                    }
+
+                );
+        }
+        window.extAsyncInit = function() {
+            var today = new Date();
+            today = today.toISOString().split('T')[0];
+            var max = new Date();
+            max.setFullYear(max.getFullYear() + 1);   
+            max = max.toISOString().split('T')[0];       
+            document.getElementsByName("available_begin_date")[0].setAttribute('min', today);
+            document.getElementsByName("available_begin_date")[0].setAttribute('max', max);
+            //alert("js sdk finished loading");
+            MessengerExtensions.getContext('327862871063543', 
+                function success(thread_context){
+                    //alert("Success: "+thread_context.psid);
+                    document.getElementById('fb_psid').value = thread_context.psid;
+                },
+                function error(err){
+                    //alert("Error: " + JSON.stringify(err));
+                }
+            );
+        };
+        // (action='' method="POST" action="/action_page.php" method="post")
+block content
+    .container
+        form(onsubmit="jp_Course_Submit()"  method="POST", action="/course/jp")
+       
+            input(name="fb_psid" type="hidden" id="fb_psid" value="")
+            input(name="lang_type" type="hidden" id="lang_type" value="日語")
+            ul.flex-outer
+                li
+                    label 請問您目前的日語程度是?
+                    select#jp_level(name='course_type'  required='required' ,autocomplete="off")
+                        option(value='' hidden)
+                        option(value='適合初學者') 初學者(無程度)
+                        option(value='學過基礎發音') 學過基礎發音
+                        option(value='已具備N5程度') 已具備N5程度
+                        option(value='已具備N4程度') 已具備N4程度
+                        option(value='已具備N3程度') 已具備N3程度
+                        option(value='已具備N2程度') 已具備N2程度
+                        option(value='已具備N2以上程度') 已具備N2以上程度
+                    
+                li
+                    label 請問您想報名的課程類別是?
+                    select(name='teaching_method'  required='required',autocomplete="off")
+                        option(value='' hidden)
+                        option(value='團體') 團體
+                        option(value='1對1') 1對1
+                        option(value='線上1對1課程(Skype)') 線上1對1課程(Skype)
+
+                li
+                    label 請問您偏好的課程時間是?
+                    select(name='available_time' , required='required' ,autocomplete="off")
+                        option(value='' hidden)
+                        option(value='平日上午') 平日上午(10:00-13:00)
+                        option(value='平日下午') 平日下午 (13:00-18:00)
+                        option(value='平日晚上') 平日晚上 (18:00-22:00)
+                        option(value='假日上午') 假日上午 (10:00-13:00)
+                        option(value='假日下午') 假日下午 (13:00-17:00)
+                        option(value='上述時間以外') 上述時間以外
+                li
+                    label 請問您最快可開始上課的日期是?
+                    input(name="available_begin_date" type="date"  min="" max="" required='required' ,autocomplete="off")  
+                li
+                    label 請問您的姓名是？
+                    input( name="name" type='text', placeholder='請輸入姓名', maxlength='8', required='required' ,autocomplete="off")
+                li
+                    label 請問您的電話是？
+                    input( name="phone" type='number', placeholder='請輸入電話', maxlength='12', required='required' ,autocomplete="off")
+                li
+                    label 請問您的Line是？
+                    input( name="lineID" type='text', placeholder='請輸入Line ID', maxlength='20', required='required' ,autocomplete="off")
+                li
+                    label 請問武藏方便和您連絡的時間是？
+                    select(name='contact_time', required='required' ,autocomplete="off")
+                        option(value='' hidden)
+                        option(value='平日上午') 平日上午(10:00-13:00)
+                        option(value='平日下午') 平日下午 (13:00-18:00)
+                        option(value='平日晚上') 平日晚上 (18:00-22:00)
+                        option(value='假日上午') 假日上午 (10:00-13:00)
+                        option(value='假日下午') 假日下午 (13:00-17:00)
+                        option(value='皆可') 皆可
+                        option(value='暫不方便聯絡') 暫不方便聯絡               
+                li
+                    input#submit(type='submit', value='送出')
