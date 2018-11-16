@@ -127,6 +127,66 @@ router.post('/edit_kr_course/:id',(req,res) => {
 });
 
 
+router.get('/add_jp_trial', (req, res, next) => {
+    if(req.user){
+        res.render('./chatbot/admin/add_jp_trial',{
+            title:"新增日語試聽課程",
+        });
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.post('/add_jp_trial', (req, res, next) => {
+
+    if(req.user){
+        const jp_trial = new JP_Trial(req.body);
+        jp_trial.save((err,doc) => {
+          if(err){
+              return next(err)
+          }
+          res.redirect('/admin/add_jp_trial');
+        })
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.get('/edit_jp_trial/:id', (req, res) => {
+    if(req.user){
+        JP_Trial.findOne({_id:req.params.id},(err,trial) => {
+            if(err){
+                return next(err);
+            }
+            //console.log("thisone");
+            res.render("./admin/edit_trial",{
+                trial,
+                title:"修改日語試聽課程",
+                subtitle:"日語",
+                link:"edit_jp_trial",
+            });
+            //console.log(req.parms.id);
+        });
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.post('/edit_jp_trial/:id',(req,res) => {
+    if(req.user){
+        JP_Trial.update({_id:req.params.id},req.body,(err) =>{
+            if(err){
+                return next(err)
+            }
+            res.redirect('/trial/available');
+        });
+
+    }else{
+        res.redirect('/');
+    }
+});
+
+
 router.get('/login', (req, res, next) => {
     if(req.user){
         res.redirect('/');
