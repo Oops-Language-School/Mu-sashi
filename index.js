@@ -58,7 +58,7 @@ app.use('/',index);
 
 const admin = require('./routes/chatbot/admin');
 app.use('/admin',admin);
-
+/*
 const course = require('./routes/chatbot/course');
 app.use('/course',course);
 
@@ -68,7 +68,7 @@ app.use('/abroad',abroad);
 const trial = require('./routes/chatbot/trial');
 app.use('/trial',trial);
 
-
+*/
 //Oops Website
 const oops = require('./routes/oops');
 app.use('/oops',oops);
