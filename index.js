@@ -55,10 +55,10 @@ app.set('view engine', 'pug');
 //Chatbot
 const index = require('./routes/chatbot/index');
 app.use('/',index);
-/*
+
 const admin = require('./routes/chatbot/admin');
 app.use('/admin',admin);
-
+/*
 const course = require('./routes/chatbot/course');
 app.use('/course',course);
 
