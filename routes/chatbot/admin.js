@@ -38,7 +38,7 @@ router.get('/edit_jp_course/:id', (req, res) => {
                 return next(err);
             }
             //console.log("thisone");
-            res.render("./admin/edit_course",{
+            res.render("./chatbot/admin/edit_course",{
                 course,
                 title:"修改日語正式課程",
                 subtitle:"日語",

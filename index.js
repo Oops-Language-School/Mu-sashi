@@ -61,14 +61,14 @@ app.use('/admin',admin);
 
 const course = require('./routes/chatbot/course');
 app.use('/course',course);
-/*
+
 const abroad = require('./routes/chatbot/abroad');
 app.use('/abroad',abroad);
 
 const trial = require('./routes/chatbot/trial');
 app.use('/trial',trial);
 
-*/
+
 //Oops Website
 const oops = require('./routes/oops');
 app.use('/oops',oops);
