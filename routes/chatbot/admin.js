@@ -99,7 +99,7 @@ router.get('/edit_kr_course/:id', (req, res) => {
                 return next(err);
             }
             //console.log("thisone");
-            res.render("./admin/edit_course",{
+            res.render("./chatbot/admin/edit_course",{
                 course,
                 title:"修改韓語正式課程",
                 subtitle:"韓語",
@@ -159,7 +159,7 @@ router.get('/edit_jp_trial/:id', (req, res) => {
                 return next(err);
             }
             //console.log("thisone");
-            res.render("./admin/edit_trial",{
+            res.render("./chatbot/admin/edit_trial",{
                 trial,
                 title:"修改日語試聽課程",
                 subtitle:"日語",
@@ -221,7 +221,7 @@ router.get('/edit_kr_trial/:id', (req, res) => {
                 return next(err);
             }
             //console.log("thisone");
-            res.render("./admin/edit_trial",{
+            res.render("./chatbot/admin/edit_trial",{
                 trial,
                 title:"修改韓語試聽課程",
                 subtitle:"韓語",
@@ -248,6 +248,66 @@ router.post('/edit_kr_trial/:id',(req,res) => {
     }
 });
 
+router.get('/add_eng_trial', (req, res, next) => {
+    if(req.user){
+        res.render('./chatbot/admin/add_eng_trial',{
+            title:"新增英語試聽課程",
+        });
+    }else{
+        res.redirect('/');
+    }
+
+});
+
+router.post('/add_eng_trial', (req, res, next) => {
+
+    if(req.user){
+        const eng_trial = new ENG_Trial(req.body);
+        eng_trial.save((err,doc) => {
+          if(err){
+              return next(err)
+          }
+          res.redirect('/admin/add_eng_trial');
+        })
+    }else{
+        res.redirect('/');
+    }
+
+});
+
+router.get('/edit_eng_trial/:id', (req, res) => {
+    if(req.user){
+        ENG_Trial.findOne({_id:req.params.id},(err,trial) => {
+            if(err){
+                return next(err);
+            }
+            //console.log("thisone");
+            res.render("./chatbot/admin/edit_trial",{
+                trial,
+                title:"修改英語試聽課程",
+                subtitle:"英語",
+                link:"edit_eng_trial",
+            });
+            //console.log(req.parms.id);
+        });
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.post('/edit_eng_trial/:id',(req,res) => {
+    if(req.user){
+        ENG_Trial.update({_id:req.params.id},req.body,(err) =>{
+            if(err){
+                return next(err)
+            }
+            res.redirect('/trial/available');
+        });
+
+    }else{
+        res.redirect('/');
+    }
+});
 
 router.get('/login', (req, res, next) => {
     if(req.user){
