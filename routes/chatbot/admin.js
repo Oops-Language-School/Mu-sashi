@@ -66,6 +66,15 @@ router.post('/edit_jp_course/:id',(req,res) => {
 });
 
 
+router.get('/login', (req, res, next) => {
+    if(req.user){
+        res.redirect('/');
+    }else{
+        res.render('./chatbot/admin/login');
+    }
+
+});
+
 router.post('/login', passport.authenticate('local'), (req, res) => {
     res.redirect('/');
 });
