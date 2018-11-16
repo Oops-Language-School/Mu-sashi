@@ -8,7 +8,7 @@ const AbroadENG = require('../models/abroad/eng_report');
 
 
 router.get('/jp', (req, res, next) => {
-    res.render('./abroad/jp');
+    res.render('./chatbot/abroad/jp');
 
 });
 
@@ -27,7 +27,7 @@ router.post('/jp', function(req, res) {
 });
   
 router.get('/kr', (req, res, next) => {
-    res.render('./abroad/kr');
+    res.render('./chatbot/abroad/kr');
 
 });
 
@@ -48,7 +48,7 @@ router.post('/kr', function(req, res) {
     
 });
 router.get('/eng', (req, res, next) => {
-    res.render('./abroad/eng');
+    res.render('./chatbot/abroad/eng');
 
 });
 router.post('/eng', function(req, res) {
@@ -80,7 +80,7 @@ router.get('/report', (req, res, next) => {
                     if(err){
                         return next(err)
                     }
-                    res.render('./report/abroad_report',{
+                    res.render('./chatbot/report/abroad_report',{
                         title:"留遊學諮詢總表",
                         abroadJP: abroadJP,
                         abroadKR: abroadKR,

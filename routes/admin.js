@@ -10,7 +10,7 @@ const ENG_Trial = require('../models/trial/eng');
 
 router.get('/add_jp_course', (req, res, next) => {
     if(req.user){
-        res.render('./admin/add_jp_course',{
+        res.render('./chatbot/admin/add_jp_course',{
             title:"新增日語課程",
         });
     }else{
@@ -67,7 +67,7 @@ router.post('/edit_jp_course/:id',(req,res) => {
 
 router.get('/add_kr_course', (req, res, next) => {
     if(req.user){
-        res.render('./admin/add_kr_course',{
+        res.render('./chatbot/admin/add_kr_course',{
             title:"新增韓語課程",
         });
     }else{
@@ -129,7 +129,7 @@ router.post('/edit_kr_course/:id',(req,res) => {
 
 router.get('/add_jp_trial', (req, res, next) => {
     if(req.user){
-        res.render('./admin/add_jp_trial',{
+        res.render('./chatbot/admin/add_jp_trial',{
             title:"新增日語試聽課程",
         });
     }else{
@@ -189,7 +189,7 @@ router.post('/edit_jp_trial/:id',(req,res) => {
 
 router.get('/add_kr_trial', (req, res, next) => {
     if(req.user){
-        res.render('./admin/add_kr_trial',{
+        res.render('./chatbot/admin/add_kr_trial',{
             title:"新增韓語試聽課程",
         });
     }else{
@@ -250,7 +250,7 @@ router.post('/edit_kr_trial/:id',(req,res) => {
 
 router.get('/add_eng_trial', (req, res, next) => {
     if(req.user){
-        res.render('./admin/add_eng_trial',{
+        res.render('./chatbot/admin/add_eng_trial',{
             title:"新增英語試聽課程",
         });
     }else{
@@ -313,7 +313,7 @@ router.get('/login', (req, res, next) => {
     if(req.user){
         res.redirect('/');
     }else{
-        res.render('./admin/login');
+        res.render('./chatbot/admin/login');
     }
 
 });
@@ -326,7 +326,7 @@ router.get('/signup', (req, res) => {
     if(req.user){
         res.redirect('/');
     }else{
-        res.render('./admin/signup');
+        res.render('./chatbot/admin/signup');
     }
 });
   
