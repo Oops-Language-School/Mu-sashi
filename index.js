@@ -39,7 +39,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // passport config
-const Account = require('./models/users');
+const Account = require('./models/chatbot/users');
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
@@ -55,10 +55,10 @@ app.set('view engine', 'pug');
 //Chatbot
 const index = require('./routes/chatbot/index');
 app.use('/',index);
-
+/*
 const admin = require('./routes/chatbot/admin');
 app.use('/admin',admin);
-/*
+
 const course = require('./routes/chatbot/course');
 app.use('/course',course);
 
