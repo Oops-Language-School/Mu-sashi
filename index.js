@@ -52,27 +52,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set pug as view engine
 app.set('view engine', 'pug');
 
-const index = require('./routes/index');
+//Chatbot
+const index = require('./routes/chatbot/index');
 app.use('/',index);
 
-const admin = require('./routes/admin');
+const admin = require('./routes/chatbot/admin');
 app.use('/admin',admin);
+
+const course = require('./routes/chatbot/course');
+app.use('/course',course);
+
+const abroad = require('./routes/chatbot/abroad');
+app.use('/abroad',abroad);
+
+const trial = require('./routes/chatbot/trial');
+app.use('/trial',trial);
+
+
+//Oops Website
+const oops = require('./routes/oops');
+app.use('/oops',oops);
 
 const oops_admin = require('./routes/oops-admin');
 app.use('/oops-admin',oops_admin);
 
-const course = require('./routes/course');
-app.use('/course',course);
-
-const abroad = require('./routes/abroad');
-app.use('/abroad',abroad);
-
-const trial = require('./routes/trial');
-app.use('/trial',trial);
-
-
-const oops = require('./routes/oops');
-app.use('/oops',oops);
 /*
 // catch 404 and forward to error handler
 

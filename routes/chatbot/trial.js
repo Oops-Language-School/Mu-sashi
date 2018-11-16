@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const api = require('../index');
-const JP_Trials = require('../models/trial/jp');
-const JP_Report = require('../models/trial/jp_report');
-const KR_Trials = require('../models/trial/kr');
-const KR_Report = require('../models/trial/kr_report');
-const ENG_Trials = require('../models/trial/eng');
-const ENG_Report = require('../models/trial/eng_report');
+const api = require('./indexdex');
+const JP_Trials = require('../../models/trial/jp');
+const JP_Report = require('../../models/trial/jp_report');
+const KR_Trials = require('../../models/trial/kr');
+const KR_Report = require('../../models/trial/kr_report');
+const ENG_Trials = require('../../models/trial/eng');
+const ENG_Report = require('../../models/trial/eng_report');
 //const Courses = require('../models/course_search');
 
 router.get('/jp', (req, res, next) => {

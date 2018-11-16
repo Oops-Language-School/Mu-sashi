@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const api = require('../index');
-const JP_Courses = require('../models/course/jp');
-const JP_Report = require('../models/course/jp_report');
-const KR_Courses = require('../models/course/kr');
-const KR_Report = require('../models/course/kr_report');
+const api = require('./indexdex');
+const JP_Courses = require('../../models/course/jp');
+const JP_Report = require('../../models/course/jp_report');
+const KR_Courses = require('../../models/course/kr');
+const KR_Report = require('../../models/course/kr_report');
 router.get('/jp', (req, res, next) => {
     res.render('./chatbot/course/jp');
 
