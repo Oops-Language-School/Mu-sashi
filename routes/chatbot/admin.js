@@ -65,6 +65,67 @@ router.post('/edit_jp_course/:id',(req,res) => {
     }
 });
 
+router.get('/add_kr_course', (req, res, next) => {
+    if(req.user){
+        res.render('./chatbot/admin/add_kr_course',{
+            title:"新增韓語課程",
+        });
+    }else{
+        res.redirect('/');
+    }
+
+});
+
+router.post('/add_kr_course', (req, res, next) => {
+    if(req.user){
+        const kr_course = new KR_Course(req.body);
+        kr_course.save((err,doc) => {
+          if(err){
+              return next(err)
+          }
+          res.redirect('/admin/add_kr_course');
+        })
+    }else{
+        res.redirect('/');
+    }
+
+
+});
+
+router.get('/edit_kr_course/:id', (req, res) => {
+    if(req.user){
+        KR_Course.findOne({_id:req.params.id},(err,course) => {
+            if(err){
+                return next(err);
+            }
+            //console.log("thisone");
+            res.render("./admin/edit_course",{
+                course,
+                title:"修改韓語正式課程",
+                subtitle:"韓語",
+                link:"edit_kr_course",
+            });
+            //console.log(req.parms.id);
+        });
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.post('/edit_kr_course/:id',(req,res) => {
+    if(req.user){
+        KR_Course.update({_id:req.params.id},req.body,(err) =>{
+            if(err){
+                return next(err)
+            }
+            res.redirect('/course/available');
+        });
+
+    }else{
+        res.redirect('/');
+    }
+});
+
 
 router.get('/login', (req, res, next) => {
     if(req.user){
