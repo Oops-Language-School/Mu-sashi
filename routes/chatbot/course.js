@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const api = require('./indexdex');
+const api = require('../../index.js');
 const JP_Courses = require('../../models/course/jp');
 const JP_Report = require('../../models/course/jp_report');
 const KR_Courses = require('../../models/course/kr');
