@@ -15,7 +15,7 @@ router.get('/jp', (req, res, next) => {
             return next(err)
         }
         //console.log(`courses in index.js: ${courses}`);
-        res.render('./trial/jp',{
+        res.render('./chatbot/trial/jp',{
             title:"武藏外語教育中心",
             jp_trials: jp_trials,
         });
@@ -66,7 +66,7 @@ router.get('/kr', (req, res, next) => {
             return next(err)
         }
         //console.log(`courses in index.js: ${courses}`);
-        res.render('./trial/kr',{
+        res.render('./chatbot/trial/kr',{
             title:"武藏外語教育中心",
             kr_trials: kr_trials,
         });
@@ -101,7 +101,7 @@ router.get('/eng', (req, res, next) => {
             return next(err)
         }
         //console.log(`courses in index.js: ${courses}`);
-        res.render('./trial/eng',{
+        res.render('./chatbot/trial/eng',{
             title:"武藏外語教育中心",
             eng_trials: eng_trials,
         });
@@ -140,7 +140,7 @@ router.get('/report', (req, res, next) => {
                         return next(err)
                     }
                     //console.log(`courses in index.js: ${courses}`);
-                    res.render('./report/trial_report',{
+                    res.render('./chatbot/report/trial_report',{
                         title:"試聽課程諮詢總表",
                         jp_reports: jp_reports,
                         kr_reports: kr_reports,
@@ -170,7 +170,7 @@ router.get('/available', (req, res, next) => {
                         return next(err)
                     }
                     //console.log(`courses in index.js: ${courses}`);
-                    res.render('./trial/available',{
+                    res.render('./chatbot/trial/available',{
                         title:"試聽課程開課總表",
                         jp_trials: jp_trials,
                         kr_trials: kr_trials,

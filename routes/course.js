@@ -6,7 +6,7 @@ const JP_Report = require('../models/course/jp_report');
 const KR_Courses = require('../models/course/kr');
 const KR_Report = require('../models/course/kr_report');
 router.get('/jp', (req, res, next) => {
-    res.render('./course/jp');
+    res.render('./chatbot/course/jp');
 
 });
 router.post('/jp', function(req, res) {
@@ -37,7 +37,7 @@ router.post('/jp', function(req, res) {
 
 });
 router.get('/kr', (req, res, next) => {
-    res.render('./course/kr');
+    res.render('./chatbot/course/kr');
 });
 router.post('/kr', function(req, res) {
     //console.log(req.body.teaching_method + "  teaching_method from test backend");
@@ -84,7 +84,7 @@ router.get('/available', (req, res, next) => {
                     return next(err)
                 }
                 //console.log(`courses in index.js: ${courses}`);
-                res.render('./course/available',{
+                res.render('./chatbot/course/available',{
                     title:"正式課程開課總表",
                     jp_courses: jp_courses,
                     kr_courses: kr_courses,
@@ -108,7 +108,7 @@ router.get('/report', (req, res, next) => {
                     return next(err)
                 }
                 //console.log(`courses in index.js: ${courses}`);
-                res.render('./report/course_report',{
+                res.render('./chatbot/report/course_report',{
                     title:"正式課程諮詢總表",
                     jp_reports: jp_reports,
                     kr_reports: kr_reports,

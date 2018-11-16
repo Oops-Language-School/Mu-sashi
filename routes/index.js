@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
     //console.log("REQ.USER: "+ req.user);
     if(req.user){
     //res.render('chat', { user: req.user, messages })
-        res.render('/chatbot/index',{
+        res.render('./chatbot/index',{
             title:"武藏後台一覽表",
         });
     } else {
