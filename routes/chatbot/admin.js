@@ -187,6 +187,68 @@ router.post('/edit_jp_trial/:id',(req,res) => {
 });
 
 
+router.get('/add_kr_trial', (req, res, next) => {
+    if(req.user){
+        res.render('./chatbot/admin/add_kr_trial',{
+            title:"新增韓語試聽課程",
+        });
+    }else{
+        res.redirect('/');
+    }
+
+});
+
+router.post('/add_kr_trial', (req, res, next) => {
+
+    if(req.user){
+        const kr_trial = new KR_Trial(req.body);
+        kr_trial.save((err,doc) => {
+          if(err){
+              return next(err)
+          }
+          res.redirect('/admin/add_kr_trial');
+        })
+    }else{
+        res.redirect('/');
+    }
+
+});
+
+router.get('/edit_kr_trial/:id', (req, res) => {
+    if(req.user){
+        KR_Trial.findOne({_id:req.params.id},(err,trial) => {
+            if(err){
+                return next(err);
+            }
+            //console.log("thisone");
+            res.render("./admin/edit_trial",{
+                trial,
+                title:"修改韓語試聽課程",
+                subtitle:"韓語",
+                link:"edit_kr_trial",
+            });
+            //console.log(req.parms.id);
+        });
+    }else{
+        res.redirect('/');
+    }
+});
+
+router.post('/edit_kr_trial/:id',(req,res) => {
+    if(req.user){
+        KR_Trial.update({_id:req.params.id},req.body,(err) =>{
+            if(err){
+                return next(err)
+            }
+            res.redirect('/trial/available');
+        });
+
+    }else{
+        res.redirect('/');
+    }
+});
+
+
 router.get('/login', (req, res, next) => {
     if(req.user){
         res.redirect('/');
