@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
-const Users = require('../../models/users');
-const JP_Course = require('../../models/course/jp');
-const JP_Trial = require('../../models/trial/jp');
-const KR_Course = require('../../models/course/kr');
-const KR_Trial = require('../../models/trial/kr');
-const ENG_Trial = require('../../models/trial/eng');
+const Users = require('../../models/chatbot/users');
+const JP_Course = require('../../models/chatbot/course/jp');
+const JP_Trial = require('../../models/chatbot/trial/jp');
+const KR_Course = require('../../models/chatbot/course/kr');
+const KR_Trial = require('../../models/chatbot/trial/kr');
+const ENG_Trial = require('../../models/chatbot/trial/eng');
 
 router.get('/add_jp_course', (req, res, next) => {
     if(req.user){

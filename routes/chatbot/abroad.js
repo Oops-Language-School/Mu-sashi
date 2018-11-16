@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const api = require('../../index.js');
-const AbroadJP = require('../../models/abroad/jp_report');
-const AbroadKR = require('../../models/abroad/kr_report');
-const AbroadENG = require('../../models/abroad/eng_report');
+const AbroadJP = require('../../models/chatbot/abroad/jp_report');
+const AbroadKR = require('../../models/chatbot/abroad/kr_report');
+const AbroadENG = require('../../models/chatbot/abroad/eng_report');
 
 
 
