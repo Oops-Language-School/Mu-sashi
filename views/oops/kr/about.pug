@@ -1,0 +1,276 @@
+extends L2_layout_kr
+block title
+    title OoPs Language Center
+    title #{title}
+    //page-about-style2.pug
+block style
+    //style.
+        #more {display: none;}
+block content
+    #wrapper.clearfix
+        // Start main-content
+        .main-content
+            // Section: Experts Details
+            section
+                .container
+                    .section-content
+                        .row
+                            .col-md-4
+                                .thumb
+                                    img(src='http://placehold.it/360x360', alt='')
+                            .col-md-8
+                                h4.name.font-24.mt-0.mb-0 Zakaria Smith
+                                h5.mt-5 Computer Engineer
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vero expedita fugiat illo quasi doloremque, in unde omnis sint assumenda! Quaerat in, reprehenderit corporis voluptatum natus sequi reiciendis ullam. Quam eaque dolorum voluptates cupiditate explicabo.
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt culpa dicta quaerat qui recusandae possimus placeat quidem ipsam voluptates similique libero tempore, labore quasi delectus vero alias, consectetur blanditiis eum maxime sunt accusantium ipsa doloribus reiciendis. Ea quod reprehenderit deserunt. Veritatis omnis similique tempora delectus a consequuntur, quis.  Adipisicing elit. Nesciunt culpa dicta quaerat qui recusandae possimus placeat quidem ipsam voluptates similique libero tempore, labore quasi delectus vero alias.
+                                ul.styled-icons.icon-dark.icon-theme-colored.icon-sm.mt-15.mb-0
+                                    li
+                                        a(href='#')
+                                            .fab.fa-facebook
+                                    li
+                                        a(href='#')
+                                            .fab.fa-youtube
+                                    li
+                                        a(href='#')
+                                            .fab.fa-instagram
+            // Section: About
+            section#about
+                .container.mt-50.pb-70.pt-0
+                    .section-content
+                        .row.mt-10
+                            .col-sm-12.col-md-6.mb-sm-20.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='0.5s')
+                                h3.text-uppercase.mt-15
+                                    | Welcome To 
+                                    span.text-theme-color-2   LearnPress 
+                                p.lead
+                                    | Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Quos dolo rem consequ untur, natus laudantium commodi earum aliquid in ullam.Lorem ipsum.
+                                p.mb-15
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sunt ut dolorem laboriosam culpa excepturi sed distinctio eius! Ut magnam numquam libero quia vero blanditiis fugit corporis quisquam, debitis quidem laudantium deleniti.
+                                p.mb-10
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sunt ut dolorem laboriosam culpa excepturi sed distinctio eius! Ut magnam numquam libero quia vero blanditiis fugit corporis quisquam, debitis quidem laudantium deleniti.
+                                a.btn.btn-colored.btn-theme-colored.btn-lg.text-uppercase.font-13.mt-0(href='#') View Details
+                            .col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='0.5s')
+                                .video-popup
+                                    a(href='https://www.youtube.com/watch?v=pW1uVUg5wXM', data-lightbox-gallery='youtube-video', title='Video')
+                                        img.img-responsive.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(alt='', src='http://placehold.it/555x330')
+            // Section: courses
+            section
+                .container.pt-70.pb-40
+                    .section-title.text-center
+                        .row
+                            .col-md-8.col-md-offset-2
+                                h2.mt-0.line-height-1.text-center.text-uppercase.mb-10.text-black-333
+                                    | Our 
+                                    span.text-theme-color-2  Courses
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem
+                                    br
+                                    |  voluptatem obcaecati!
+                    .row.multi-row-clearfix
+                        .col-md-12
+                            .owl-carousel-3col.owl-nav-top(data-dots='true')
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+                                .item
+                                    .project.mb-30.border-2px
+                                        .thumb
+                                            img.img-fullwidth(alt='', src='http://placehold.it/370x285')
+                                            .hover-link
+                                                a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                    span $500
+                                        .project-details.p-15.pt-10.pb-10
+                                            h5.font-14.font-weight-500.mb-5 Subtitle place here
+                                            h4.font-weight-700.text-uppercase.mt-0
+                                                a(href='page-courses-accounting-technologies.html') Course Title Here
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                            ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                li.current-fund
+                                                    strong Time
+                                                    |  June 26
+                                                li.target-fund
+                                                    strong Discount
+                                                    | 15%
+                                                li.remaining-days
+                                                    strong Duration
+                                                    | 6 Months
+            section.bg-lighter
+                .container
+                    .row
+                        .col-md-8.col-md-offset-2
+                            #accordion1.panel-group.accordion.transparent
+                                .panel
+                                    .panel-title
+                                        a.active(data-parent='#accordion1', data-toggle='collapse', href='#accordion11', aria-expanded='true')
+                                            span.open-sub
+                                            strong Q. What do you mean by item and end product?
+                                    #accordion11.panel-collapse.collapse.in(role='tablist', aria-expanded='true')
+                                        .panel-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus, maiores officiis vitae fuga sunt repellendus. Molestiae quae, ducimus ut tenetur nobis id quam autem quibusdam commodi inventore laborum libero officiis
+                                            p
+                                                | Accusantium a laboriosam cumque consequatur voluptates fuga assumenda corporis amet. Vitae placeat architecto ipsa cumque fugiat, atque molestiae perferendis quasi quaerat iste voluptate quas dicta corporis, incidunt quibusdam quia odit unde, rem harum quis! Optio debitis veniam quibusdam, culpa quia, aperiam cupiditate perspiciatis repellat similique saepe magnam quaerat iusto obcaecati doloremque, dolor praesentium.
+                                .panel
+                                    .panel-title
+                                        a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion12', aria-expanded='false')
+                                            span.open-sub
+                                            strong Q. What are some examples of permitted end products?
+                                    #accordion12.panel-collapse.collapse(role='tablist', aria-expanded='false', style='height: 0px;')
+                                        .panel-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus, maiores officiis vitae fuga sunt repellendus. Molestiae quae, ducimus ut tenetur nobis id quam autem quibusdam commodi inventore laborum libero officiis
+                                            p
+                                                | Accusantium a laboriosam cumque consequatur voluptates fuga assumenda corporis amet. Vitae placeat architecto ipsa cumque fugiat, atque molestiae perferendis quasi quaerat iste voluptate quas dicta corporis, incidunt quibusdam quia odit unde, rem harum quis! Optio debitis veniam quibusdam, culpa quia, aperiam cupiditate perspiciatis repellat similique saepe magnam quaerat iusto obcaecati doloremque, dolor praesentium.
+                                .panel
+                                    .panel-title
+                                        a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion13', aria-expanded='false')
+                                            span.open-sub
+                                            strong Q. Am I allowed to modify the item that I purchased?
+                                    #accordion13.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                        .panel-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus, maiores officiis vitae fuga sunt repellendus. Molestiae quae, ducimus ut tenetur nobis id quam autem quibusdam commodi inventore laborum libero officiis
+                                            p
+                                                | Accusantium a laboriosam cumque consequatur voluptates fuga assumenda corporis amet. Vitae placeat architecto ipsa cumque fugiat, atque molestiae perferendis quasi quaerat iste voluptate quas dicta corporis, incidunt quibusdam quia odit unde, rem harum quis! Optio debitis veniam quibusdam, culpa quia, aperiam cupiditate perspiciatis repellat similique saepe magnam quaerat iusto obcaecati doloremque, dolor praesentium.
+                                .panel
+                                    .panel-title
+                                        a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion14', aria-expanded='false')
+                                            span.open-sub
+                                            strong Q. What does non-exclusive mean?
+                                    #accordion14.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                        .panel-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus, maiores officiis vitae fuga sunt repellendus. Molestiae quae, ducimus ut tenetur nobis id quam autem quibusdam commodi inventore laborum libero officiis
+                                            p
+                                                | Accusantium a laboriosam cumque consequatur voluptates fuga assumenda corporis amet. Vitae placeat architecto ipsa cumque fugiat, atque molestiae perferendis quasi quaerat iste voluptate quas dicta corporis, incidunt quibusdam quia odit unde, rem harum quis! Optio debitis veniam quibusdam, culpa quia, aperiam cupiditate perspiciatis repellat similique saepe magnam quaerat iusto obcaecati doloremque, dolor praesentium.
+                                .panel
+                                    .panel-title
+                                        a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion15', aria-expanded='false')
+                                            span.open-sub
+                                            strong Q. What is a single application?
+                                    #accordion15.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                        .panel-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus, maiores officiis vitae fuga sunt repellendus. Molestiae quae, ducimus ut tenetur nobis id quam autem quibusdam commodi inventore laborum libero officiis
+                                            p
+                                                | Accusantium a laboriosam cumque consequatur voluptates fuga assumenda corporis amet. Vitae placeat architecto ipsa cumque fugiat, atque molestiae perferendis quasi quaerat iste voluptate quas dicta corporis, incidunt quibusdam quia odit unde, rem harum quis! Optio debitis veniam quibusdam, culpa quia, aperiam cupiditate perspiciatis repellat similique saepe magnam quaerat iusto obcaecati doloremque, dolor praesentium.
+
+        
+        // end main-content
+
+block script

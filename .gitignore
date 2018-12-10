@@ -1,3 +1,4 @@
 *node_modules/*
 fb_pass.js
 ssh.sh
+mongod.sh
