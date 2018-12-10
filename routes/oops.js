@@ -88,6 +88,9 @@ router.get('/career', (req, res, next) => {
 router.get('/kr-index', (req, res, next) => {
     res.render('./oops/kr-index');
 });
+router.get('/kr-index/about', (req, res, next) => {
+    res.render('./oops/kr/about');
+});
 router.get('/kr-index/kr-course-list', (req, res, next) => {
     res.render('./oops/kr/kr-course-list');
 });
@@ -95,6 +98,9 @@ router.get('/kr-index/kr-course-info', (req, res, next) => {
     res.render('./oops/kr/kr-course-info');
 });
 
+router.get('/kr-index/contact-us', (req, res, next) => {
+    res.render('./oops/kr/contact_us');
+});
 
 router.get('/jp-index', (req, res, next) => {
     res.render('./oops/jp-index');
