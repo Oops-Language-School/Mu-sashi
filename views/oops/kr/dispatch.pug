@@ -3,7 +3,9 @@ block title
     title OoPs Language Center
     title #{title}
 block style
-
+    style.
+        #contact_us{padding-bottom:0px;}
+        #no_padding_top{padding-top:0px;}
 block content
     // Start main-content
     .main-content.bg-lighter
@@ -22,7 +24,7 @@ block content
                                     a(href="#") Pages
                                 li.active.text-gray-silver Page Title
         section.divider
-            .container
+            #contact_us.container
                 .row
                     .col-md-4.col-md-push-4
                         .widget.border-1px.p-30
@@ -73,7 +75,7 @@ block content
                                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et adipisci, beatae ad sapiente aspernatur accusamus!
 
         section
-            .container
+            #no_padding_top.container
                 .row
                     .col-md-12
                         // Portfolio Gallery Grid
