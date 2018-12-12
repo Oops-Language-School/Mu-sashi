@@ -97,7 +97,12 @@ router.get('/kr-index/kr-course-list', (req, res, next) => {
 router.get('/kr-index/kr-course-info', (req, res, next) => {
     res.render('./oops/kr/kr-course-info');
 });
-
+router.get('/kr-index/kr-course-detail', (req, res, next) => {
+    res.render('./oops/kr/kr-course-detail');
+});
+router.get('/kr-index/dispatch', (req, res, next) => {
+    res.render('./oops/kr/dispatch');
+});
 router.get('/kr-index/contact-us', (req, res, next) => {
     res.render('./oops/kr/contact_us');
 });
