@@ -1,0 +1,169 @@
+extends L2_layout_kr
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+    style.
+        #contact_us{padding-bottom:0px;}
+        #no_padding_top{padding-top:0px;}
+block content
+    // Start main-content
+    .main-content.bg-lighter
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12
+                            h2.title.text-white.text-center 企業學校派遣
+                            ol.breadcrumb.text-left.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-gray-silver Page Title
+        section.divider
+            #contact_us.container
+                .row
+                    .col-md-4.col-md-push-4
+                        .widget.border-1px.p-30
+                            h5.widget-title.line-bottom Contact Us
+                            form#quick_contact_form.quick-contact-form(name='quick_contact_form', action='includes/quickcontact.php', method='post')
+                                .form-group
+                                    input.form-control(name='form_email', type='text', required='', placeholder='Enter Email')
+                                .form-group
+                                    textarea.form-control(name='form_message', required='', placeholder='Enter Message', rows='3')
+                                .form-group
+                                    input.form-control(name='form_botcheck', type='hidden', value='')
+                                    button.btn.btn-dark.btn-theme-colored.btn-sm.mt-0(type='submit', data-loading-text='Please wait...') Send Message
+                            // Quick Contact Form Validation
+                            script(type='text/javascript').
+                                $("#quick_contact_form").validate({
+                                submitHandler: function(form) {
+                                var form_btn = $(form).find('button[type="submit"]');
+                                var form_result_div = '#form-result';
+                                $(form_result_div).remove();
+                                form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                var form_btn_old_msg = form_btn.html();
+                                form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                $(form).ajaxSubmit({
+                                dataType:  'json',
+                                success: function(data) {
+                                if( data.status == 'true' ) {
+                                $(form).find('.form-control').val('');
+                                }
+                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                $(form_result_div).html(data.message).fadeIn('slow');
+                                setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                                }
+                                });
+                                }
+                                });
+
+        
+        
+        section.bg-white-f7
+            .container.pb-0
+                .section-title
+                    .row
+                        .col-md-6.col-md-offset-3
+                            .text-center
+                                h5.sub-title Sub Title Here
+                                h2.title Title Style Three
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et adipisci, beatae ad sapiente aspernatur accusamus!
+
+        section
+            #no_padding_top.container
+                .row
+                    .col-md-12
+                        // Portfolio Gallery Grid
+                        .gallery-isotope.grid-5.masonry.gutter-small.clearfix(data-lightbox='gallery')
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+
+
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+                            // Portfolio Item Start
+                            .gallery-item
+                                .thumb
+                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                            // Portfolio Item End
+
+
+
+                            // End Portfolio Gallery Grid
+
+    // end main-content
+
+
+block script
+
