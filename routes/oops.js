@@ -27,6 +27,7 @@ router.get('/activity', (req, res, next) => {
 router.get('/exam-info', (req, res, next) => {
     res.render('./oops/blog-classic-left-sidebar');
 });
+// equal to kr-news/jp-news/eng-news
 router.get('/over-sea-info', (req, res, next) => {
     res.render('./oops/over-sea-info');
 });
@@ -85,6 +86,7 @@ router.get('/career', (req, res, next) => {
     res.render('./oops/job-list');
 });
 
+// kr start
 router.get('/kr-index', (req, res, next) => {
     res.render('./oops/kr-index');
 });
@@ -94,6 +96,30 @@ router.get('/kr-index/about', (req, res, next) => {
 
 router.get('/kr-index/announcement', (req, res, next) => {
     res.render('./oops/kr/announcement');
+});
+
+router.get('/kr-index/activity', (req, res, next) => {
+    res.render('./oops/kr/activity');
+});
+router.get('/kr-index/exam-info', (req, res, next) => {
+    res.render('./oops/kr/exam-info');
+});
+router.get('/kr-index/over-sea-info', (req, res, next) => {
+    res.render('./oops/kr/over-sea-info');
+});
+//news-study-abroad
+router.get('/kr-index/kr-news', (req, res, next) => {
+    res.render('./oops/kr/kr-news');
+});
+
+router.get('/kr-index/environment', (req, res, next) => {
+    res.render('./oops/kr/environment');
+});
+router.get('/kr-index/teachers', (req, res, next) => {
+    res.render('./oops/kr/teachers');
+});
+router.get('/kr-index/regulation', (req, res, next) => {
+    res.render('./oops/kr/regulation');
 });
 
 router.get('/kr-index/kr-course-list', (req, res, next) => {
@@ -111,6 +137,10 @@ router.get('/kr-index/dispatch', (req, res, next) => {
 router.get('/kr-index/contact-us', (req, res, next) => {
     res.render('./oops/kr/contact_us');
 });
+router.get('/kr-index/career', (req, res, next) => {
+    res.render('./oops/kr/job-list');
+});
+
 
 router.get('/jp-index', (req, res, next) => {
     res.render('./oops/jp-index');
