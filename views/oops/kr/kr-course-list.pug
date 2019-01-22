@@ -5,13 +5,22 @@ block title
 block style
     style.
         #top-img {background-position: 0 px; background-attachment: initial;}
-        
+        @media (min-width: 992px){
+        .img-fullwidth{background-image: url(../../images/kr-index/course/韓語課程上方banner.jpg)}
+        }
+        @media (max-width: 768px){
+            .img-fullwidth{background-image: url(../../images/kr-index/course/韓語課程上方banner.png)}
+        }
+        @media (max-width: 576px){
+            .img-fullwidth{background-image: url(../../images/kr-index/course/韓語免費聽.jpg)}
+        }
 block content
     // Start main-content
     .main-content
         // Section: inner-header section.inner-header.divider.parallax(data-bg-img="../../images/kr-index/course/韓語課程上方banner.jpg")
-        section.inner-header.divider(data-bg-img="../../images/kr-index/course/韓語課程上方banner.png")
-        
+        section
+        img.img-fullwidth(alt="韓語免費聽" src="../../images/kr-index/course/韓語課程上方banner.jpg")
+        //
             .container.pt-70.pb-20
                 // Section Content
                 .section-content
