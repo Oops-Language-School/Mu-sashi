@@ -6,20 +6,29 @@ block style
     style.
         #top-img {background-position: 0 px; background-attachment: initial;}
         @media (min-width: 992px){
-        .img-fullwidth{background-image: url(../../images/kr-index/course/韓語課程上方banner.jpg)}
+        .img-fullwidth-top{
+                width: 100% !important;
+                
+            }
         }
         @media (max-width: 768px){
-            .img-fullwidth{background-image: url(../../images/kr-index/course/韓語課程上方banner.png)}
+            .img-fullwidth-top{                
+                width: 100% !important;
+                height: 100px;
+            }
         }
         @media (max-width: 576px){
-            .img-fullwidth{background-image: url(../../images/kr-index/course/韓語免費聽.jpg)}
+            .img-fullwidth-top{                
+                width: 100% !important;
+                height: 150px;
+            }
         }
 block content
     // Start main-content
     .main-content
         // Section: inner-header section.inner-header.divider.parallax(data-bg-img="../../images/kr-index/course/韓語課程上方banner.jpg")
         section
-        img.img-fullwidth(alt="韓語免費聽" src="../../images/kr-index/course/韓語課程上方banner.jpg")
+        img.img-fullwidth-top(alt="韓語免費聽" src="../../images/kr-index/course/韓語課程上方banner.jpg")
         //
             .container.pt-70.pb-20
                 // Section Content
