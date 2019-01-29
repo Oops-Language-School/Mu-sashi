@@ -140,10 +140,37 @@ router.get('/kr-index/contact-us', (req, res, next) => {
 router.get('/kr-index/career', (req, res, next) => {
     res.render('./oops/kr/job-list');
 });
-
-
+// jp start
 router.get('/jp-index', (req, res, next) => {
     res.render('./oops/jp-index');
+});
+router.get('/jp-index/about', (req, res, next) => {
+    res.render('./oops/jp/about');
+});
+router.get('/jp-index/announcement', (req, res, next) => {
+    res.render('./oops/jp/announcement');
+});
+router.get('/jp-index/activity', (req, res, next) => {
+    res.render('./oops/jp/activity');
+});
+router.get('/jp-index/exam-info', (req, res, next) => {
+    res.render('./oops/jp/exam-info');
+});
+router.get('/jp-index/over-sea-info', (req, res, next) => {
+    res.render('./oops/jp/over-sea-info');
+});
+//news-study-abroad
+router.get('/jp-index/kr-news', (req, res, next) => {
+    res.render('./oops/jp/jp-news');
+});
+router.get('/jp-index/environment', (req, res, next) => {
+    res.render('./oops/jp/environment');
+});
+router.get('/jp-index/teachers', (req, res, next) => {
+    res.render('./oops/jp/teachers');
+});
+router.get('/jp-index/regulation', (req, res, next) => {
+    res.render('./oops/jp/regulation');
 });
 router.get('/jp-index/jp-course-list', (req, res, next) => {
     res.render('./oops/jp/jp-course-list');
@@ -151,6 +178,19 @@ router.get('/jp-index/jp-course-list', (req, res, next) => {
 router.get('/jp-index/jp-course-info', (req, res, next) => {
     res.render('./oops/jp/jp-course-info');
 });
+router.get('/jp-index/kr-course-detail', (req, res, next) => {
+    res.render('./oops/jp/jp-course-detail');
+});
+router.get('/jp-index/dispatch', (req, res, next) => {
+    res.render('./oops/jp/dispatch');
+});
+router.get('/jp-index/contact-us', (req, res, next) => {
+    res.render('./oops/jp/contact_us');
+});
+router.get('/jp-index/career', (req, res, next) => {
+    res.render('./oops/jp/job-list');
+});
+
 
 
 router.get('/eng-index', (req, res, next) => {
