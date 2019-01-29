@@ -160,7 +160,7 @@ router.get('/jp-index/over-sea-info', (req, res, next) => {
     res.render('./oops/jp/over-sea-info');
 });
 //news-study-abroad
-router.get('/jp-index/kr-news', (req, res, next) => {
+router.get('/jp-index/jp-news', (req, res, next) => {
     res.render('./oops/jp/jp-news');
 });
 router.get('/jp-index/environment', (req, res, next) => {
