@@ -3,12 +3,25 @@ block title
     title OoPs Language Center
     title #{title}
 block style
-
+    style.
+        #top-img {background-position: 0 px; background-attachment: initial;}
+        #top-banner{
+            width:100%;
+        }
+ 
+        
 block content
     // Start main-content
     .main-content
-        // Section: inner-header
-        section.inner-header.divider.parallax(data-bg-img="../../images/kr-index/course/韓語課程上方banner.jpg")
+        // Section: inner-header section.inner-header.divider.parallax(data-bg-img="../../images/kr-index/course/韓語課程上方banner.jpg")
+        section
+            //img.img-fullwidth-top(alt="韓語免費聽" src="../../images/kr-index/course/韓語課程上方banner.jpg")
+            picture
+                source(srcset='../../images/kr-index/course/韓語課程上方banner.jpg', media='(min-width: 992px)')
+                source(srcset='../../images/kr-index/course/韓語課程上方banner.png', media='(max-width: 576px)')
+                source(srcset='../../images/kr-index/course/韓語課程上方banner.png', media='(max-width: 768px)')
+                img#top-banner(src='../../images/kr-index/course/韓語課程上方banner.jpg', alt='韓語課程上方banner_default image')
+        //
             .container.pt-70.pb-20
                 // Section Content
                 .section-content
