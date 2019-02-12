@@ -28,15 +28,15 @@ block content
                 .row
                     .col-md-4.col-md-push-4
                         .widget.border-1px.p-30
-                            h5.widget-title.line-bottom Contact Us
+                            h5.widget-title.line-bottom 聯絡我們
                             form#quick_contact_form.quick-contact-form(name='quick_contact_form', action='includes/quickcontact.php', method='post')
                                 .form-group
-                                    input.form-control(name='form_email', type='text', required='', placeholder='Enter Email')
+                                    input.form-control(name='form_email', type='text', required='', placeholder='Your Email Address...')
                                 .form-group
-                                    textarea.form-control(name='form_message', required='', placeholder='Enter Message', rows='3')
+                                    textarea.form-control(name='form_message', required='', placeholder='Your Message...', rows='3')
                                 .form-group
                                     input.form-control(name='form_botcheck', type='hidden', value='')
-                                    button.btn.btn-dark.btn-theme-colored.btn-sm.mt-0(type='submit', data-loading-text='Please wait...') Send Message
+                                    button.btn.btn-dark.btn-theme-colored.btn-sm.mt-0(type='submit', data-loading-text='Please wait...') 提交
                             // Quick Contact Form Validation
                             script(type='text/javascript').
                                 $("#quick_contact_form").validate({
@@ -69,10 +69,12 @@ block content
                     .row
                         .col-md-6.col-md-offset-3
                             .text-center
-                                h5.sub-title Sub Title Here
-                                h2.title Title Style Three
+                                h5.sub-title 精選合作對象
+                                h2.title 學校/企業/品牌
                                 p
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et adipisci, beatae ad sapiente aspernatur accusamus!
+                                    | 以專業服務、提升彼此效益為宗旨，至今與各式領域合作皆獲好評！
+                                    br
+                                    | 透過與各式文化和外語的交流，讓更多人了解語言的多樣性和重要性，同時也為合作項目增添可看度。
 
         section
             #no_padding_top.container

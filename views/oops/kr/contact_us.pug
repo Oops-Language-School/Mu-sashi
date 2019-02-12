@@ -29,40 +29,40 @@ block content
             .container
                 .row.pt-30
                     .col-md-6
-                        h3.line-bottom.mt-0.mb-30 Interested in discussing?
+                        h3.line-bottom.mt-0.mb-30 連絡我們 Get in touch
                         // Contact Form
                         form#contact_form(name='contact_form', action='includes/sendmail.php', method='post')
                             .row
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Name 
+                                            | 姓名 Name 
                                             small *
                                         input.form-control(name='form_name', type='text', placeholder='Enter Name', required='')
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Email 
+                                            | 信箱 Email 
                                             small *
                                         input.form-control.required.email(name='form_email', type='email', placeholder='Enter Email')
                             .row
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Subject 
+                                            | 事項 Subject 
                                             small *
                                         input.form-control.required(name='form_subject', type='text', placeholder='Enter Subject')
                                 .col-sm-6
                                     .form-group
-                                        label Phone
+                                        label 電話 Phone
                                         input.form-control(name='form_phone', type='text', placeholder='Enter Phone')
                             .form-group
-                                label Message
+                                label 訊息 Message
                                 textarea.form-control.required(name='form_message', rows='5', placeholder='Enter Message')
                             .form-group
                                 input.form-control(name='form_botcheck', type='hidden', value='')
-                                button.btn.btn-dark.btn-theme-colored.btn-flat.mr-5(type='submit', data-loading-text='Please wait...') Send your message
-                                button.btn.btn-default.btn-flat.btn-theme-colored(type='reset') Reset
+                                button.btn.btn-dark.btn-theme-colored.btn-flat.mr-5(type='submit', data-loading-text='Please wait...') 送出
+                                button.btn.btn-default.btn-flat.btn-theme-colored(type='reset') 重填
                         // Contact Form Validation
                         script(type='text/javascript').
                             $("#contact_form").validate({
@@ -87,9 +87,13 @@ block content
                             }
                             });
                     .col-md-6
-                        h3.line-bottom.mt-0 Get in touch with us
+                        h3.line-bottom.mt-0 找到我們 Find us
                         p
-                            | Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus.
+                            | 始終遲遲不前，思索半天仍猶豫不決嗎?
+                            br
+                            | Oops鼓勵還在徬徨的妳/你，不論有興趣，或有目標想深入了解，
+                            br
+                            | 我們隨時歡迎大家前來諮詢，為自己的未來開創新的可能!
                         ul.styled-icons.icon-dark.icon-sm.icon-circled.mb-20
                             li
                                 a(href='#', data-bg-color='#3B5998')
