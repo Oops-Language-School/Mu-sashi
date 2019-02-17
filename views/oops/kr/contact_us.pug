@@ -5,7 +5,17 @@ block title
     title #{title}
     //page-contact6-with-multiple-marker.pug
 block style
-
+    style.
+        section > .container, section > .container-fluid {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        #top-img {background-position: 0 px; background-attachment: initial;}
+        #top-banner{
+            width:100%;
+        }
+        
 block content
     // Start main-content
     .main-content
@@ -25,7 +35,7 @@ block content
                                 li.active.text-gray-silver Page Title
 
         // Divider: Contact
-        section.divider
+        section
             .container
                 .row.pt-30
                     .col-md-6
@@ -133,10 +143,11 @@ block content
                                 p https://www.facebook.com/ilovemusashi
         // Section: Mission
         section#mission
-            .container-fluid.pt-0.pb-0
+            .container
                 .row.equal-height
                     .col-sm-6.col-md-6.xs-pull-none.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='0.3s')
-                        .pt-60.pb-40.pl-30.pr-20.p-md-30
+                        //pl-30
+                        .pt-60.pb-40.pl-0.pr-20.p-md-30
                             h3.title.text-black.text-uppercase.line-bottom.mt-0.mb-30 交通資訊 Traffic Information
                             .icon-box.clearfix.m-0.p-0.pb-10
                                 a.icon.icon-bordered.icon-circled.icon-border-effect.effect-circled.bg-white.icon-lg.pull-left(href='#')
@@ -176,11 +187,11 @@ block content
                                         li 彰化客運 : 99 
                                         li 中台灣客 : 1 / 25 / 31
                                         li 579快線 : 500 / 700 / 900
-                    .col-sm-6.col-md-6.p-0.bg-img-cover.wow.fadeInRight.hidden-xs(data-bg-img='http://placehold.it/800x455', data-wow-duration='1s', data-wow-delay='0.3s')
-
+                    .col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-bg-img='http://placehold.it/585x812', data-wow-duration='1s', data-wow-delay='0.5s')
+                        //.col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-bg-img='http://placehold.it/800x455', data-wow-duration='1s', data-wow-delay='0.3s')              
         // Divider: Google Map
         section
-            .container-fluid.pt-0.pb-0
+            .container-fluid.pt-20.pb-0
                 .row
                     // Google Map HTML Codes
                     iframe.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(frameborder='0', height='500', width='457.5', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5079518909933!2d120.68343291541954!3d24.15391237915732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d6656f75385%3A0xf88e88e7c292a50e!2zNDA05Y-w5Lit5biC5YyX5Y2A5LiJ5rCR6Lev5LiJ5q61MjE36Jmf!5e0!3m2!1szh-TW!2stw!4v1450667171231')
