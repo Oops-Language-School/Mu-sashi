@@ -3,29 +3,29 @@ const router = express.Router();
 
 
 router.get('/', (req, res, next) => {
-    res.render('./oops/index-home-variation-video-background');
+    res.render('./oops/index');
 });
 
 router.get('/about', (req, res, next) => {
-    res.render('./oops/page-about-style2');
+    res.render('./oops/about');
 });
 router.get('/environment', (req, res, next) => {
-    res.render('./oops/page-services-details');
+    res.render('./oops/environment');
 });
 router.get('/teachers', (req, res, next) => {
-    res.render('./oops/page-teachers-style2');
+    res.render('./oops/teachers');
 });
 router.get('/regulation', (req, res, next) => {
-    res.render('./oops/features-header-style1');
+    res.render('./oops/regulation');
 });
 router.get('/announcement', (req, res, next) => {
-    res.render('./oops/blog-classic-both-sidebar');
+    res.render('./oops/announcement');
 });
 router.get('/activity', (req, res, next) => {
-    res.render('./oops/blog-timeline');
+    res.render('./oops/activity');
 });
 router.get('/exam-info', (req, res, next) => {
-    res.render('./oops/blog-classic-left-sidebar');
+    res.render('./oops/exam-info');
 });
 // equal to kr-news/jp-news/eng-news
 router.get('/over-sea-info', (req, res, next) => {
@@ -79,7 +79,7 @@ router.get('/study-abroad-my', (req, res, next) => {
     res.render('./oops/study-abroad-my');
 });
 router.get('/contact-us', (req, res, next) => {
-    res.render('./oops/page-contact6-with-multiple-marker');
+    res.render('./oops/contact_us');
 });
 
 router.get('/career', (req, res, next) => {
