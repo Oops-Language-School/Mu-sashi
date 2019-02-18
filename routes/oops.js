@@ -88,7 +88,7 @@ router.get('/career', (req, res, next) => {
 
 // kr start
 router.get('/kr-index', (req, res, next) => {
-    res.render('./oops/kr-index');
+    res.render('./oops/kr/kr-index');
 });
 router.get('/kr-index/about', (req, res, next) => {
     res.render('./oops/kr/about');
@@ -140,9 +140,10 @@ router.get('/kr-index/contact-us', (req, res, next) => {
 router.get('/kr-index/career', (req, res, next) => {
     res.render('./oops/kr/job-list');
 });
+
 // jp start
 router.get('/jp-index', (req, res, next) => {
-    res.render('./oops/jp-index');
+    res.render('./oops/jp/jp-index');
 });
 router.get('/jp-index/about', (req, res, next) => {
     res.render('./oops/jp/about');

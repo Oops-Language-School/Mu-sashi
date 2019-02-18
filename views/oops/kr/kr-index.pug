@@ -1,6 +1,6 @@
-extends L1_layout_jp
+extends L2_layout_kr
 block title
-    title OoPs Japanese
+    title OoPs Korean
     title #{title}
 block style
 
@@ -11,7 +11,7 @@ block content
             // Start main-content
             .main-content
                 // Section: home
-                section#home.divider.no-bg.layer-overlay.overlay-dark-light(data-bg-img='../images/jp-index/main/recent-act/background1920x1280.jpg')
+                section#home.divider.no-bg.layer-overlay.overlay-dark-light(data-bg-img='https://placehold.it/1920x1280')
                     .bg-video
                         #home-video.video
                             .player.video-container(data-property="{videoURL:'pW1uVUg5wXM',containment:'#home-video',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}")
@@ -74,22 +74,22 @@ block content
                                     h2.text-uppercase.mt-0
                                         | 歡迎加入 
                                         span.text-theme-color-2   Oops Family 
-                                    p.lead 在這裡我們提供完善的日語教學。更針對未來打算要出國的同學，提供海外長短期留遊學諮詢。
+                                    p.lead 在這裡我們提供完善的日語.韓語.美語教學。更針對未來打算要出國的同學，提供海外長短期留遊學諮詢。
                                     .row.mt-40
                                         .col-md-6.wow.fadeInUp(data-wow-duration='1s')
                                             .mb-sm-30
-                                                img.img-fullwidth(src='../images/jp-index/main/jp-intensive360x210.jpg', alt='')
+                                                img.img-fullwidth(src='../images/kr-index/main/韓_課程360_210.jpg', alt='')
                                                 h4.letter-space-1.mt-10
-                                                    | Oops
-                                                    span.text-theme-color-2  日語課程
-                                                p 陪你一起快樂輕鬆學
+                                                    | Oops美.日.韓
+                                                    span.text-theme-color-2  暑密課程
+                                                p 2018陪你一起FUN暑假
                                                 a.btn.btn-sm.bg-theme-colored-angel-3(href='#') 了解更多
                                         .col-md-6.wow.fadeInUp(data-wow-duration='1.2s')
                                             .mb-sm-30
-                                                img.img-fullwidth(src='../images/jp-index/main/study-abroad360x210.jpg', alt='')
-                                                //img.img-fullwidth(src='https://placehold.it/360x210', alt='')
+                                                //img.img-fullwidth(src='https://i.imgur.com/zgpLaCR.jpg', alt='')
+                                                img.img-fullwidth(src='../images/kr-index/main/韓_留遊學360_210.jpg', alt='')
                                                 h4.letter-space-1.mt-10
-                                                    | Oops日本
+                                                    | Oops日.韓.美.加
                                                     span.text-theme-color-2  長短期留遊學免費諮詢
                                                 p 量身打造專屬您的長短期課程，青春不留白加值100%
                                                 a.btn.btn-sm.bg-theme-colored-angel-3(href='#') 了解更多
@@ -177,7 +177,8 @@ block content
                                         .ml-120.ml-sm-0
                                             h4.icon-box-title.text-white.mt-5.mb-10.letter-space-1 高CP值的銅板價
                                             p.text-white 讓您買的安心、讀的放心、說的開心。回購率百分百 
-                            .col-sm-6.col-md-6.p-0.bg-img-cover.wow.fadeInRight.hidden-xs(data-bg-img='../images/jp-index/main/WhyOops800x455.jpg', data-wow-duration='1s', data-wow-delay='0.3s')
+                            .col-sm-6.col-md-6.p-0.bg-img-cover.wow.fadeInRight.hidden-xs(data-bg-img='../images/kr-index/main/why_Oops.jpg', data-wow-duration='1s', data-wow-delay='0.3s')
+                            //.col-sm-6.col-md-6.p-0.bg-img-cover.wow.fadeInRight.hidden-xs(data-bg-img='https://placehold.it/800x455', data-wow-duration='1s', data-wow-delay='0.3s')
                 // Section: courses
                 section
                     .container.pt-70.pb-40
@@ -185,89 +186,23 @@ block content
                             .row
                                 .col-md-8.col-md-offset-2
                                     h2.mt-0.line-height-1.text-center.text-uppercase.mb-10.text-black-333
-                                        | Oops日語
+                                        | Oops韓語
                                         span.text-theme-color-2  熱門課程
-                                    p 日語熱門課程任君挑選。實體線上一次購入，讓您躺著學、坐著讀、趴著看通通滿足。
+                                    p 韓語熱門課程任君挑選。實體線上一次購入，讓您躺著學、坐著讀、趴著看通通滿足。
                         .row.multi-row-clearfix
                             .col-md-12
                                 .owl-carousel-3col.owl-nav-top(data-dots='true')
                                     .item
                                         .project.mb-30.border-2px
                                             .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-pron370x285.jpg')
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]韓語免費聽.jpg')
                                                 .hover-link
                                                     a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
                                                         span $3999起
                                             .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
                                                 h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 發音班
-                                                p 快閃8周密集班，加值您的精彩人生
-                                                ul.list-inline.project-conditions.text-center.m-0.p-10
-                                                    li.current-fund
-                                                        strong 上課時間
-                                                        |  7~8月
-                                                    li.target-fund
-                                                        strong 限時倒數
-                                                        | 5折起
-                                                    li.remaining-days
-                                                        strong 課程週數
-                                                        | 8周
-                                    .item
-                                        .project.mb-30.border-2px
-                                            .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-sum-intensive370x285.jpg')
-                                                .hover-link
-                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
-                                                        span $3999起
-                                            .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
-                                                h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 2018暑假密集班
-                                                p 快閃8周密集班，加值您的精彩人生
-                                                ul.list-inline.project-conditions.text-center.m-0.p-10
-                                                    li.current-fund
-                                                        strong 上課時間
-                                                        |  7~8月
-                                                    li.target-fund
-                                                        strong 限時倒數
-                                                        | 5折起
-                                                    li.remaining-days
-                                                        strong 課程週數
-                                                        | 8周
-                                    .item
-                                        .project.mb-30.border-2px
-                                            .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-fall-intensive370x285.jpg')
-                                                .hover-link
-                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
-                                                        span $3999起
-                                            .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
-                                                h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 2018寒假密集班
-                                                p 外師帶您深入淺出聽說讀寫，讓您輕鬆學習無負擔。
-                                                ul.list-inline.project-conditions.text-center.m-0.p-10
-                                                    li.current-fund
-                                                        strong 上課時間
-                                                        |  7~8月
-                                                    li.target-fund
-                                                        strong 限時倒數
-                                                        | 5折起
-                                                    li.remaining-days
-                                                        strong 課程週數
-                                                        | 8周
-                                    .item
-                                        .project.mb-30.border-2px
-                                            .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-individual370x285.jpg')
-                                                .hover-link
-                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
-                                                        span $3999起
-                                            .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
-                                                h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 個別班
+                                                    a(href='page-courses-accounting-technologies.html') 免費聽
                                                 p 外師與您面對面，大聲說韓語
                                                 ul.list-inline.project-conditions.text-center.m-0.p-10
                                                     li.current-fund
@@ -279,42 +214,226 @@ block content
                                                     li.remaining-days
                                                         strong 課程週數
                                                         | 8周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]寒密班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $3999起
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 寒密班
+                                                p 外師與您面對面，大聲說韓語
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  7~8月
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 5折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 8周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]商用韓語班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 商用韓語班
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]實用會話班 初級.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 實用會話班 - 初級
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]實用會話班 中級.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 實用會話班 - 中級
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]實用會話班 高級.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 實用會話班 - 高級
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]打工度假先修班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 打工度假先修班
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]留遊學先修班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 留遊學先修班
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]暑密班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 暑密班
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]韓語 寒暑密集班.jpg')
+                                                .hover-link
+                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='page-courses-accounting-technologies.html') 寒暑密集班
+                                                p
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 上課時間
+                                                        |  每周四
+                                                    li.target-fund
+                                                        strong 限時倒數
+                                                        | 6折起
+                                                    li.remaining-days
+                                                        strong 課程週數
+                                                        | 4周
 
                                     .item
                                         .project.mb-30.border-2px
                                             .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-speak370x285.jpg')
-                                                .hover-link
-                                                    a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
-                                                        span $99元起/每堂
-                                            .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
-                                                h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 會話班
-                                                p 正統關東腔、小班教學，全面加強無死角 
-                                                ul.list-inline.project-conditions.text-center.m-0.p-10
-                                                    li.current-fund
-                                                        strong 上課時間
-                                                        |  每周四
-                                                    li.target-fund
-                                                        strong 限時倒數
-                                                        | 6折起
-                                                    li.remaining-days
-                                                        strong 課程週數
-                                                        | 4周
-                                    .item
-                                        .project.mb-30.border-2px
-                                            .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-formal370x285.jpg')
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]韓語會話 TOPIK 1.jpg')
                                                 .hover-link
                                                     a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
                                                         span $500
                                             .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
                                                 h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 正規班
+                                                    a(href='page-courses-accounting-technologies.html') 韓語會話 TOPIK 1
                                                 p
-                                                    | 正統關東腔、小班教學，全面加強無死角
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
                                                 ul.list-inline.project-conditions.text-center.m-0.p-10
                                                     li.current-fund
                                                         strong 上課時間
@@ -325,19 +444,20 @@ block content
                                                     li.remaining-days
                                                         strong 課程週數
                                                         | 4周
+
                                     .item
                                         .project.mb-30.border-2px
                                             .thumb
-                                                img.img-fullwidth(alt='', src='../images/jp-index/main/course/jp-business370x285.jpg')
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/course/[370x285]韓語會話 TOPIK 2.jpg')
                                                 .hover-link
                                                     a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
                                                         span $500
                                             .project-details.p-15.pt-10.pb-10
-                                                h5.font-14.font-weight-500.mb-5 日語課程
+                                                h5.font-14.font-weight-500.mb-5 韓語課程
                                                 h4.font-weight-700.text-uppercase.mt-0
-                                                    a(href='page-courses-accounting-technologies.html') 企業派遣
+                                                    a(href='page-courses-accounting-technologies.html') 韓語會話 TOPIK 2
                                                 p
-                                                    | 正統關東腔、小班教學，全面加強無死角
+                                                    | 正統首爾腔、小班教學，全面加強無死角 
                                                 ul.list-inline.project-conditions.text-center.m-0.p-10
                                                     li.current-fund
                                                         strong 上課時間
@@ -348,6 +468,7 @@ block content
                                                     li.remaining-days
                                                         strong 課程週數
                                                         | 4周
+
                 // Divider: Funfact
                 section.divider.parallax.layer-overlay1(data-bg-img='https://placehold.it/1920x1280', data-parallax-ratio='0.7')
                     .container.pt-70.pb-60
@@ -390,7 +511,51 @@ block content
                                     .item
                                         .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
                                             .team-thumb
-                                                img.img-fullwidth(alt='', src='../images/teachers/Miko.jpg')
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/teachers/Bae.jpg')
+                                                .team-overlay
+                                            .team-details.bg-silver-light.pt-10.pb-10
+                                                h4.text-uppercase.font-weight-600.m-5
+                                                    a(href='page-teachers-details.html') 裴老師
+                                                h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳人氣獎
+                                                ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-instagram
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-skype
+                                    .item
+                                        .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                            .team-thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/teachers/Peter Han.jpg')
+                                                .team-overlay
+                                            .team-details.bg-silver-light.pt-10.pb-10
+                                                h4.text-uppercase.font-weight-600.m-5
+                                                    a(href='page-teachers-details.html') Peter韓老師
+                                                h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳幽默獎
+                                                ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-instagram
+                                                    li
+                                                        a(href='#')
+                                                            .fab.fa-skype
+                                    .item
+                                        .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
+                                            .team-thumb
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/teachers/Miko.jpg')
                                                 .team-overlay
                                             .team-details.bg-silver-light.pt-10.pb-10
                                                 h4.text-uppercase.font-weight-600.m-5
@@ -412,7 +577,7 @@ block content
                                     .item
                                         .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
                                             .team-thumb
-                                                img.img-fullwidth(alt='', src='../images/teachers/Angel.jpg')
+                                                img.img-fullwidth(alt='', src='../images/kr-index/main/teachers/Angel.jpg')
                                                 .team-overlay
                                             .team-details.bg-silver-light.pt-10.pb-10
                                                 h4.text-uppercase.font-weight-600.m-5
@@ -431,56 +596,10 @@ block content
                                                     li
                                                         a(href='#')
                                                             .fab.fa-skype
-                                    .item
-                                        .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
-                                            .team-thumb
-                                                img.img-fullwidth(alt='', src='../images/teachers/Shimato.jpg')
-                                                .team-overlay
-                                            .team-details.bg-silver-light.pt-10.pb-10
-                                                h4.text-uppercase.font-weight-600.m-5
-                                                    a(href='page-teachers-details.html') 島本老師
-                                                h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳氣質獎
-                                                ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-facebook
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-twitter
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-instagram
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-skype
-                                    .item
-                                        .team-members.border-bottom-theme-color-2px.text-center.maxwidth400
-                                            .team-thumb
-                                                img.img-fullwidth(alt='', src='../images/teachers/Fujimoto.jpg')
-                                                .team-overlay
-                                            .team-details.bg-silver-light.pt-10.pb-10
-                                                h4.text-uppercase.font-weight-600.m-5
-                                                    a(href='page-teachers-details.html') 藤本老師
-                                                h6.text-theme-colored.font-15.font-weight-400.mt-0 最佳勤奮獎
-                                                ul.styled-icons.icon-theme-colored.icon-dark.icon-circled.icon-sm
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-facebook
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-twitter
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-instagram
-                                                    li
-                                                        a(href='#')
-                                                            .fab.fa-skype
                 // Section: events
-                //section#events.divider.parallax.layer-overlay-oops(data-stellar-background-ratio='0.5', data-bg-img='../images/jp-index/main/recent-act/background1920x1280.jpg')
-                
-                section#events.divider.parallax.layer-overlay.overlay-dark-6(data-stellar-background-ratio='0.5', data-bg-img='../images/jp-index/main/recent-act/background1920x1280.jpg')
-                
-                
+                //section#events.divider.parallax.layer-overlay.overlay-dark-8(data-stellar-background-ratio='0.5', data-bg-img='https://placehold.it/1920x1280')
+                section#events.divider.parallax.layer-overlay.overlay-dark-6(data-stellar-background-ratio='0.5', data-bg-img='../images/kr-index/main/recent-act/1920X1280底.jpg')    
+                    
                     .container.pt-70.pb-40
                         .section-title.mb-30
                             .row
@@ -493,68 +612,14 @@ block content
                         .section-content
                             .row
                                 .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
-                                    .pricing.table-horizontal1.maxwidth400
-                                        .row
-                                            .col-md-6
-                                                .thumb
-                                                    img.img-fullwidth.mb-sm-0(src='../images/jp-index/main/recent-act/11花壽司.jpg', alt='')
-                                            .col-md-6.p-30.pl-sm-50
-                                                h4.mt-0.mb-5
-                                                    a.text-white(href='#') 日式花壽司
-                                                ul.list-inline.mb-5.text-white
-                                                    li.pr-0
-                                                        i.fa.fa-calendar.mr-5
-                                                        |  2018.07.25 |
-                                                    li.pl-5
-                                                        i.fa.fa-map-marker.mr-5
-                                                        | Oops一中校
-                                                p.mb-15.mt-15.text-white 愛妻便當自己動手DIY，龍貓、鯉魚、花壽司
-                                                a.text-white.font-weight-600(href='#') 我要報名 →
-                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
-                                    .pricing.table-horizontal2.maxwidth400
-                                        .row
-                                            .col-md-6
-                                                .thumb
-                                                    img.img-fullwidth.mb-sm-0(src='../images/jp-index/main/recent-act/08浴衣.jpg', alt='')
-                                            .col-md-6.p-30.pl-sm-50
-                                                h4.mt-0.mb-5
-                                                    a.text-white(href='#') 日式浴衣體驗
-                                                ul.list-inline.mb-5.text-white
-                                                    li.pr-0
-                                                        i.fa.fa-calendar.mr-5
-                                                        |  2018.8.27 |
-                                                    li.pl-5
-                                                        i.fa.fa-map-marker.mr-5
-                                                        | Oops一中校
-                                                p.mb-15.mt-15.text-white 心花怒放當網紅，浴衣體驗強強滾！！
-                                                a.text-white.font-weight-600(href='#') 我要報名 →
-                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
-                                    .pricing.table-horizontal3.maxwidth400
-                                        .row
-                                            .col-md-6
-                                                .thumb
-                                                    img.img-fullwidth.mb-sm-0(src='../images/jp-index/main/recent-act/03節分會.jpg', alt='')
-                                            .col-md-6.p-30.pl-sm-50
-                                                h4.mt-0.mb-5
-                                                    a.text-white(href='#') 節分會
-                                                ul.list-inline.mb-5.text-white
-                                                    li.pr-0
-                                                        i.fa.fa-calendar.mr-5
-                                                        |  2018.09.14 |
-                                                    li.pl-5
-                                                        i.fa.fa-map-marker.mr-5
-                                                        | Oops一中校
-                                                p.mb-15.mt-15.text-white 只要2張小朋友， 邊玩邊學賺很大
-                                                a.text-white.font-weight-600(href='#') 我要報名 →
-                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
                                     .pricing.table-horizontal4.maxwidth400
                                         .row
                                             .col-md-6
                                                 .thumb
-                                                    img.img-fullwidth.mb-sm-0(src='../images/jp-index/main/recent-act/15壽喜燒.jpg', alt='')
+                                                    img.img-fullwidth.mb-sm-0(src='../images/kr-index/main/recent-act/[270x250]韓服.jpg', alt='')
                                             .col-md-6.p-30.pl-sm-50
                                                 h4.mt-0.mb-5
-                                                    a.text-white(href='#') 壽喜燒來報到
+                                                    a.text-white(href='#') 韓服體驗
                                                 ul.list-inline.mb-5.text-white
                                                     li.pr-0
                                                         i.fa.fa-calendar.mr-5
@@ -562,8 +627,65 @@ block content
                                                     li.pl-5
                                                         i.fa.fa-map-marker.mr-5
                                                         | Oops一中校
-                                                p.mb-15.mt-15.text-white 只要2張小朋友， 邊吃邊學賺很大
+                                                p.mb-15.mt-15.text-white 心花怒放當網紅，韓服體驗強強滾！！
                                                 a.text-white.font-weight-600(href='#') 我要報名 →
+                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    .pricing.table-horizontal1.maxwidth400
+                                        .row
+                                            .col-md-6
+                                                .thumb
+                                                    img.img-fullwidth.mb-sm-0(src='../images/kr-index/main/recent-act/[270x250]紫菜飯捲.jpg', alt='')
+                                            .col-md-6.p-30.pl-sm-50
+                                                h4.mt-0.mb-5
+                                                    a.text-white(href='#') 韓式紫菜飯捲
+                                                ul.list-inline.mb-5.text-white
+                                                    li.pr-0
+                                                        i.fa.fa-calendar.mr-5
+                                                        |  2018.07.25 |
+                                                    li.pl-5
+                                                        i.fa.fa-map-marker.mr-5
+                                                        | Oops一中校
+                                                p.mb-15.mt-15.text-white 飯捲自己動手DIY
+                                                a.text-white.font-weight-600(href='#') 我要報名 →
+                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    .pricing.table-horizontal2.maxwidth400
+                                        .row
+                                            .col-md-6
+                                                .thumb
+                                                    img.img-fullwidth.mb-sm-0(src='../images/kr-index/main/recent-act/[270x250]花牌.jpg', alt='')
+                                                    //img.img-fullwidth.mb-sm-0(src='https://placehold.it/270x250', alt='')
+                                            .col-md-6.p-30.pl-sm-50
+                                                h4.mt-0.mb-5
+                                                    a.text-white(href='#') 韓國花牌來報到
+                                                ul.list-inline.mb-5.text-white
+                                                    li.pr-0
+                                                        i.fa.fa-calendar.mr-5
+                                                        |  2018.8.27 |
+                                                    li.pl-5
+                                                        i.fa.fa-map-marker.mr-5
+                                                        | Oops一中校
+                                                p.mb-15.mt-15.text-white 只要2張小朋友， 邊玩邊學賺很大
+                                                a.text-white.font-weight-600(href='#') 我要報名 →
+                                .col-xs-12.col-sm-6.col-md-6.mb-30.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    .pricing.table-horizontal3.maxwidth400
+                                        .row
+                                            .col-md-6
+                                                .thumb
+                                                    img.img-fullwidth.mb-sm-0(src='../images/kr-index/main/recent-act/[270x250]石子.jpg', alt='')
+                                                    //img.img-fullwidth.mb-sm-0(src='https://placehold.it/270x250', alt='')
+                                            .col-md-6.p-30.pl-sm-50
+                                                h4.mt-0.mb-5
+                                                    a.text-white(href='#') 韓式石子
+                                                ul.list-inline.mb-5.text-white
+                                                    li.pr-0
+                                                        i.fa.fa-calendar.mr-5
+                                                        |  2018.09.14 |
+                                                    li.pl-5
+                                                        i.fa.fa-map-marker.mr-5
+                                                        | Oops一中校
+                                                p.mb-15.mt-15.text-white 韓式造型更勝一籌
+                                                a.text-white.font-weight-600(href='#') 我要報名 →
+
                 // Gallery Grid 3
                 section#gallery
                     .container.pt-70.pb-70
@@ -583,174 +705,173 @@ block content
                                     // Portfolio Filter
                                     div(class='portfolio-filter font-alt align-center text-center mb-6 0')
                                         a.active(href='#', data-filter='*') 全部
-                                        a(href='#jp-food', data-filter='.jp-food') 日料DIY
-                                        a(href='#child-day', data-filter='.child-day') 日本兒童節
-                                        a.mt-10(href='#jp-bathrobe', data-filter='.jp-bathrobe') 日式浴衣體驗
-                                        a.mt-10(href='#setsubun', data-filter='.setsubun') 日本節分會
+                                        a(href='#kr-food', data-filter='.kr-food') 韓國料理DIY
+                                        a(href='#kr-cloth', data-filter='.kr-cloth') 韓服體驗
+                                        a.mt-10(href='#makeup', data-filter='.makeup') 心機彩妝
                                     // End Portfolio Filter
                                     // Portfolio Gallery Grid
                                     .gallery-isotope.grid-4.gutter-small.clearfix(data-lightbox='gallery')
                                         // Portfolio Item Start
-                                        .gallery-item.child-day
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/兒童節03.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/04.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日本兒童節
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/兒童節03.jpg', data-lightbox-gallery='gallery', title='日本兒童節')
+                                                            a(href='../images/kr-index/main/memory/04.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        //.gallery-item.photos.jp-bathrobe
-                                        .gallery-item.jp-bathrobe
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/浴衣活動01.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/05.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式浴衣體驗
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/浴衣活動01.jpg', data-lightbox-gallery='gallery', title='日式浴衣體驗')
+                                                            a(href='../images/kr-index/main/memory/05.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.child-day
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/兒童節05.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/06.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日本兒童節
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/兒童節05.jpg', data-lightbox-gallery='gallery', title='日本兒童節')
+                                                            a(href='../images/kr-index/main/memory/06.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-food
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/章魚燒04.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/07.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式章魚燒
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/章魚燒04.jpg', data-lightbox-gallery='gallery', title='日式章魚燒')
+                                                            a(href='../images/kr-index/main/memory/07.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-bathrobe
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/浴衣活動03.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/08.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式浴衣體驗
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/浴衣活動03.jpg', data-lightbox-gallery='gallery', title='日式浴衣體驗')
+                                                            a(href='../images/kr-index/main/memory/08.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-food
+                                        .gallery-item.kr-cloth
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/章魚燒06.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/09.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式章魚燒
+                                                    .title.text-center 韓服體驗
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/章魚燒06.jpg', data-lightbox-gallery='gallery', title='日式章魚燒')
+                                                            a(href='../images/kr-index/main/memory/09.jpg', data-lightbox-gallery='gallery', title='韓服體驗')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-bathrobe
+                                        .gallery-item.makeup
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/浴衣活動05.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/10.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式浴衣體驗
+                                                    .title.text-center 心機彩妝
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/浴衣活動05.jpg', data-lightbox-gallery='gallery', title='Your Title Here')
+                                                            a(href='../images/kr-index/main/memory/10.jpg', data-lightbox-gallery='gallery', title='心機彩妝')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-food
+                                        .gallery-item.makeup
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/造型壽司02.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/11.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式造型壽司
+                                                    .title.text-center 心機彩妝
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/造型壽司02.jpg', data-lightbox-gallery='gallery', title='日式造型壽司')
+                                                            a(href='../images/kr-index/main/memory/10.jpg', data-lightbox-gallery='gallery', title='心機彩妝')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.setsubun
+                                        .gallery-item.kr-food
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/節分會01.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/12.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日本節分會
+                                                    .title.text-center 韓國料理DIY
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/節分會01.jpg', data-lightbox-gallery='gallery', title='日本節分會')
+                                                            a(href='../images/kr-index/main/memory/12.jpg', data-lightbox-gallery='gallery', title='韓國料理DIY')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-food
+                                        .gallery-item.kr-food
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/造型壽司09.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/13.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式造型壽司
+                                                    .title.text-center 韓國料理DIY
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/造型壽司09.jpg', data-lightbox-gallery='gallery', title='日式造型壽司')
+                                                            a(href='../images/kr-index/main/memory/13.jpg', data-lightbox-gallery='gallery', title='韓國料理DIY')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.setsubun
+                                        .gallery-item.kr-food
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/節分會02.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/14.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日本節分會
+                                                    .title.text-center 韓國料理DIY
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/節分會02.jpg', data-lightbox-gallery='gallery', title='日本節分會')
+                                                            a(href='../images/kr-index/main/memory/14.jpg', data-lightbox-gallery='gallery', title='韓國料理DIY')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
                                         // Portfolio Item Start
-                                        .gallery-item.jp-food
+                                        .gallery-item.kr-food
                                             .thumb
-                                                img.img-fullwidth(src='../images/jp-index/main/memory/造型壽司08.jpg', alt='project')
+                                                img.img-fullwidth(src='../images/kr-index/main/memory/15.jpg', alt='project')
                                                 .overlay-shade
                                                 .text-holder
-                                                    .title.text-center 日式造型壽司
+                                                    .title.text-center 韓國料理DIY
                                                 .icons-holder
                                                     .icons-holder-inner
                                                         .styled-icons.icon-sm.icon-dark.icon-circled.icon-theme-colored
-                                                            a(href='../images/jp-index/main/memory/造型壽司08.jpg', data-lightbox-gallery='gallery', title='日式造型壽司')
+                                                            a(href='../images/kr-index/main/memory/15.jpg', data-lightbox-gallery='gallery', title='韓國料理DIY')
                                                                 i.fa.fa-picture-o
                                         // Portfolio Item End
+
                                     // End Portfolio Gallery Grid
                 // Section: Client Say
                 //section.divider.parallax.layer-overlay.overlay-dark-4(data-background-ratio='0.5', data-bg-img='https://placehold.it/1920x1280')
-                section.divider.parallax.layer-overlay.overlay-dark-4(data-background-ratio='0.5', data-bg-img='../images/jp-index/main/學生感想-背景圖.jpg')
+                section.divider.parallax.layer-overlay-oops(data-background-ratio='0.5', data-bg-img='../images/kr-index/main/feedback/[1920X1080]background.jpg')
                     .container.pt-60.pb-60
                         .row
                             .col-md-8.col-md-offset-2
@@ -802,41 +923,25 @@ block content
                                         article.post.clearfix.maxwidth600.mb-sm-30.wow.fadeInRight(data-wow-delay='.2s')
                                             .entry-header
                                                 .post-thumb.thumb
-                                                    img.img-responsive.img-fullwidth(src='https://placehold.it/370x247', alt='')
-                                                //.entry-meta.meta-absolute.text-center.pl-10.pr-10
-                                                    .display-table
-                                                        .display-table-cell
-                                                            ul
-                                                                li
-                                                                    a.text-white(href='#')
-                                                                        i.fa.fa-comments.mt-0.pt-0
-                                                                        |  85個
-                                                                        br
-                                                                        |  留言
-                                                                li
-                                                                    a.text-white(href='#')
-                                                                        i.fa.fa-thumbs-up1.mt-20
-                                                                        |  250個
-                                                                        br
-                                                                        |  讚
+                                                    img.img-responsive.img-fullwidth(src='../images/kr-index/main/news/打工度假先修班370x247.jpg', alt='')
                                             .entry-content.border-1px.p-20
                                                 h4.entry-title.mt-0.pt-0
-                                                    a(href='#') 日語會話課程
+                                                    a(href='#') 日語免費聽
                                                 span.text-theme-colored.mr-10.font-14
                                                     | OoPs 
                                                     i.fa.fa-calendar.mr-5.text-theme-colored
                                                     | 2018.07.28
-                                                p.text-left.mb-20.mt-5.font-13 了解文法卻無法有自信地開口說，參加OoPs會話班讓您不再害怕開口說
+                                                p.text-left.mb-20.mt-5.font-13 了解文法卻無法有自信地開口說，參加OoPs免費班讓您不再害怕開口說
                                                 a.btn.btn-flat.btn-dark.bg-theme-colored-angel-3.btn-sm.pull-left(href='blog-single-left-sidebar.html') 了解更多
                                                 .clearfix
                                     .item
                                         article.post.clearfix.maxwidth600.mb-sm-30.wow.fadeInRight(data-wow-delay='.4s')
                                             .entry-header
                                                 .post-thumb.thumb
-                                                    img.img-responsive.img-fullwidth(src='https://placehold.it/370x247', alt='')
+                                                    img.img-responsive.img-fullwidth(src='../images/kr-index/main/news/韓語免費聽370x247.jpg', alt='')
                                             .entry-content.border-1px.p-20
                                                 h4.entry-title.mt-0.pt-0
-                                                    a(href='#') 韓語會話班
+                                                    a(href='#') 韓語免費聽
                                                 span.text-theme-colored.mr-10.font-14
                                                     | OoPs 
                                                     i.fa.fa-calendar.mr-5.text-theme-colored
@@ -848,47 +953,34 @@ block content
                                         article.post.clearfix.maxwidth600.mb-sm-30.wow.fadeInRight(data-wow-delay='.6s')
                                             .entry-header
                                                 .post-thumb.thumb
-                                                    img.img-responsive.img-fullwidth(src='https://placehold.it/370x247', alt='')
+                                                    img.img-responsive.img-fullwidth(src='../images/kr-index/main/news/韓語寒密班370x247.jpg', alt='')
                                             .entry-content.border-1px.p-20
                                                 h4.entry-title.mt-0.pt-0
-                                                    a(href='#') 英語會話班
+                                                    a(href='#') 美語免費聽
                                                 span.text-theme-colored.mr-10.font-14
                                                     | OoPs 
                                                     i.fa.fa-calendar.mr-5.text-theme-colored
                                                     | 2018.09.22
-                                                p.text-left.mb-20.mt-5.font-13 還在說台灣Style英語嗎?想說得一口道地的英語就要選擇OoPs英語課程。
+                                                p.text-left.mb-20.mt-5.font-13 還在說台灣Style英語嗎?想說得一口道地的美語就要選擇OoPs英語課程。
                                                 a.btn.btn-flat.btn-dark.bg-theme-colored-angel-3.btn-sm.pull-left(href='blog-single-left-sidebar.html') 了解更多
                                                 .clearfix
                                     .item
-                                        article.post.clearfix.maxwidth600.mb-sm-30
+                                        article.post.clearfix.maxwidth600.mb-sm-30.wow.fadeInRight(data-wow-delay='.2s')
                                             .entry-header
                                                 .post-thumb.thumb
-                                                    img.img-responsive.img-fullwidth(src='https://placehold.it/370x247', alt='')
+                                                    img.img-responsive.img-fullwidth(src='../images/kr-index/main/news/韓語正規班370x247.jpg', alt='')
+
                                             .entry-content.border-1px.p-20
                                                 h4.entry-title.mt-0.pt-0
-                                                    a(href='#') 韓語正規班
-                                                span.text-theme-colored.mr-10.font-14
-                                                    | OoPS 
-                                                    i.fa.fa-calendar.mr-5.text-theme-colored
-                                                    | 2018.11.30
-                                                p.text-left.mb-20.mt-5.font-13 養成韓語基礎實力，創造你的國際競爭力。
-                                                a.btn.btn-flat.btn-dark.bg-theme-colored-angel-3.btn-sm.pull-left(href='blog-single-left-sidebar.html') 了解更多
-                                                .clearfix
-                                    .item
-                                        article.post.clearfix.maxwidth600.mb-sm-30
-                                            .entry-header
-                                                .post-thumb.thumb
-                                                    img.img-responsive.img-fullwidth(src='https://placehold.it/370x247', alt='')
-                                            .entry-content.border-1px.p-20
-                                                h4.entry-title.mt-0.pt-0
-                                                    a(href='#') 日語正規班
+                                                    a(href='#') 日語暑密班
                                                 span.text-theme-colored.mr-10.font-14
                                                     | OoPs 
                                                     i.fa.fa-calendar.mr-5.text-theme-colored
-                                                    | 2018.10.21
-                                                p.text-left.mb-20.mt-5.font-13 5-10個月晉級1個Level，讓您就算出國旅遊、打工度假、赴日升學無煩惱。
+                                                    | 2018.07.28
+                                                p.text-left.mb-20.mt-5.font-13 了解文法卻無法有自信地開口說，參加OoPs暑密班讓您不再害怕開口說
                                                 a.btn.btn-flat.btn-dark.bg-theme-colored-angel-3.btn-sm.pull-left(href='blog-single-left-sidebar.html') 了解更多
                                                 .clearfix
+                                   
                 // Divider: Clients
                 section.clients.bg-theme-colored
                     .container.pt-10.pb-10.pb-sm-0.pt-sm-0
@@ -898,56 +990,53 @@ block content
                                 .owl-carousel-6col.transparent.text-center.owl-nav-top
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/JLPT 200x120.jpg', alt='')
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/EJU日語檢定 200x120.jpg', alt='')  
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/J test日語檢定 200x120.jpg', alt='')
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/BJT 200x120.jpg', alt='')
-                                    
-
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/JLPT 200x120.jpg', alt='')
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/EJU日語檢定 200x120.jpg', alt='')  
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/J test日語檢定 200x120.jpg', alt='')
+                                            img(src='https://placehold.it/200x120', alt='')
                                     .item
                                         a(href='#')
-                                            //img(src='https://placehold.it/200x120', alt='')
-                                            img(src='../images/jp-index/main/last_part/BJT 200x120.jpg', alt='')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
+                                    .item
+                                        a(href='#')
+                                            img(src='https://placehold.it/200x120', alt='')
             // end main-content
 
         // end wrapper
         // Footer Scripts
         // JS | Custom script for all pages
 block script
-        script(src='../js/custom_L1_JP.js')
         //
-            SLIDER REVOLUTION 5.0 EXTENSIONS
-            (Load Extensions only on Local File Systems !
-            The following part can be removed on Server for On Demand Loading)
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.actions.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.carousel.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.migration.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.navigation.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.parallax.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js')
-        script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.video.min.js')
+            script(src='../js/custom_L1_JP.js')
+            //
+                SLIDER REVOLUTION 5.0 EXTENSIONS
+                (Load Extensions only on Local File Systems !
+                The following part can be removed on Server for On Demand Loading)
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.actions.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.carousel.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.migration.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.navigation.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.parallax.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js')
+            script(type='text/javascript', src='../js/revolution-slider/js/extensions/revolution.extension.video.min.js')
 
