@@ -5,7 +5,17 @@ block title
     title #{title}
     //page-contact6-with-multiple-marker.pug
 block style
-
+    style.
+        section > .container, section > .container-fluid {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        #top-img {background-position: 0 px; background-attachment: initial;}
+        #top-banner{
+            width:100%;
+        }
+        
 block content
     // Start main-content
     .main-content
@@ -25,44 +35,44 @@ block content
                                 li.active.text-gray-silver Page Title
 
         // Divider: Contact
-        section.divider
+        section
             .container
                 .row.pt-30
                     .col-md-6
-                        h3.line-bottom.mt-0.mb-30 Interested in discussing?
+                        h3.line-bottom.mt-0.mb-30 連絡我們 Get in touch
                         // Contact Form
                         form#contact_form(name='contact_form', action='includes/sendmail.php', method='post')
                             .row
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Name 
+                                            | 姓名 Name 
                                             small *
                                         input.form-control(name='form_name', type='text', placeholder='Enter Name', required='')
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Email 
+                                            | 信箱 Email 
                                             small *
                                         input.form-control.required.email(name='form_email', type='email', placeholder='Enter Email')
                             .row
                                 .col-sm-6
                                     .form-group
                                         label
-                                            | Subject 
+                                            | 事項 Subject 
                                             small *
                                         input.form-control.required(name='form_subject', type='text', placeholder='Enter Subject')
                                 .col-sm-6
                                     .form-group
-                                        label Phone
+                                        label 電話 Phone
                                         input.form-control(name='form_phone', type='text', placeholder='Enter Phone')
                             .form-group
-                                label Message
+                                label 訊息 Message
                                 textarea.form-control.required(name='form_message', rows='5', placeholder='Enter Message')
                             .form-group
                                 input.form-control(name='form_botcheck', type='hidden', value='')
-                                button.btn.btn-dark.btn-theme-colored.btn-flat.mr-5(type='submit', data-loading-text='Please wait...') Send your message
-                                button.btn.btn-default.btn-flat.btn-theme-colored(type='reset') Reset
+                                button.btn.btn-dark.btn-theme-colored.btn-flat.mr-5(type='submit', data-loading-text='Please wait...') 送出
+                                button.btn.btn-default.btn-flat.btn-theme-colored(type='reset') 重填
                         // Contact Form Validation
                         script(type='text/javascript').
                             $("#contact_form").validate({
@@ -87,90 +97,101 @@ block content
                             }
                             });
                     .col-md-6
-                        h3.line-bottom.mt-0 Get in touch with us
+                        h3.line-bottom.mt-0 找到我們 Find us
                         p
-                            | Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus.
+                            | 始終遲遲不前，思索半天仍猶豫不決嗎?
+                            br
+                            | Oops鼓勵還在徬徨的妳/你，不論有興趣，或有目標想深入了解，
+                            br
+                            | 我們隨時歡迎大家前來諮詢，為自己的未來開創新的可能!
                         ul.styled-icons.icon-dark.icon-sm.icon-circled.mb-20
                             li
-                                a(href='#', data-bg-color='#3B5998')
+                                a(href='https://www.facebook.com/ilovemusashi', data-bg-color='#3B5998')
                                     i.fab.fa-facebook
                             li
-                                a(href='#', data-bg-color='#02B0E8')
-                                    i.fab.fa-twitter
-                            li
-                                a(href='#', data-bg-color='#4C75A3')
-                                    i.fab.fa-vk
-                            li
-                                a(href='#', data-bg-color='#D9CCB9')
+                                a(href='https://www.instagram.com/oops.top/', data-bg-color='#D9CCB9')
                                     i.fab.fa-instagram
                             li
-                                a(href='#', data-bg-color='#D71619')
-                                    i.fab.fa-google-plus
-                            li
-                                a(href='#', data-bg-color='#A4CA39')
-                                    i.fab.fa-android
-                            li
-                                a(href='#', data-bg-color='#4C75A3')
-                                    i.fab.fa-vk
+                                a(href='Info@mu-sashi.com.tw', data-bg-color='#D71619')
+                                    i.fa.fa-envelope
                         .icon-box.media.mb-0.pb-0
-                            a.media-left.pull-left.flip.mr-20(href='#')
+                            a.media-left.pull-left.flip.mr-20(href='https://goo.gl/maps/6kbF6S4vVYm')
                                 i.pe-7s-map-2.text-theme-colored
                             .media-body
-                                h5.mt-0 Our Office Location
-                                p #405, Lan Streen, Los Vegas, USA
+                                h5.mt-0 上課地址
+                                p 
+                                | 台中市北區三民路三段217號10樓之6 
+                                br 
+                                | (一中商圈中友百貨附近)
                         .icon-box.media.mb-0.pb-0.pt-0.mt-0
-                            a.media-left.pull-left.flip.mr-15(href='#')
+                            a.media-left.pull-left.flip.mr-15(href='tel:0422211568')
                                 i.pe-7s-call.text-theme-colored
                             .media-body
-                                h5.mt-0 Contact Number
-                                p
-                                    a(href='tel:+325-12345-65478') +325-12345-65478
+                                h5.mt-0 諮詢電話
+                                p (04)2221-1568
                         .icon-box.media.mb-0.pb-0.pt-0.mt-0
-                            a.media-left.pull-left.flip.mr-15(href='#')
+                            a.media-left.pull-left.flip.mr-15(href='Info@mu-sashi.com.tw')
                                 i.pe-7s-mail.text-theme-colored
                             .media-body
-                                h5.mt-0 Email Address
-                                p
-                                    a(href='mailto:supporte@yourdomin.com') supporte@yourdomin.com
+                                h5.mt-0 連絡郵件
+                                p Info@mu-sashi.com.tw
                         .icon-box.media.mb-0.pb-0.pt-0.mt-0
-                            a.media-left.pull-left.flip.mr-20(href='#')
-                                i.fab.fa-skype.text-theme-colored
+                            a.media-left.pull-left.flip.mr-20(href='https://www.facebook.com/ilovemusashi')
+                                i.fab.fa-facebook.text-theme-colored
                             .media-body
-                                h5.mt-0 Make a Video Call
-                                p ThemeMascotSkype
+                                h5.mt-0 粉絲專頁
+                                p https://www.facebook.com/ilovemusashi
         // Section: Mission
         section#mission
-            .container-fluid.pt-0.pb-0
+            .container
                 .row.equal-height
-                    .col-sm-6.col-md-6.xs-pull-none.bg-theme-colored.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='0.3s')
-                        .pt-60.pb-40.pl-90.pr-160.p-md-30
-                            h2.title.text-white.text-uppercase.line-bottom.mt-0.mb-30 Why Choose Us?
+                    .col-sm-6.col-md-6.xs-pull-none.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='0.3s')
+                        //pl-30
+                        .pt-60.pb-40.pl-0.pr-20.p-md-30
+                            h3.title.text-black.text-uppercase.line-bottom.mt-0.mb-30 交通資訊 Traffic Information
                             .icon-box.clearfix.m-0.p-0.pb-10
-                                a.icon.icon-circled.bg-white.icon-lg.pull-left.flip.sm-pull-none(href='#')
-                                    i.fa.fa-desktop.text-theme-color-2.font-36
+                                a.icon.icon-bordered.icon-circled.icon-border-effect.effect-circled.bg-white.icon-lg.pull-left(href='#')
+                                    i.fa.fa-home.faa-tada.animated-hover.text-theme-color-2.font-36
                                 .ml-120.ml-sm-0
-                                    h4.icon-box-title.text-white.mt-5.mb-10.letter-space-1 Best Lab
-                                    p.text-white
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                    h4.icon-box-title.text-black.mt-5.mb-10.letter-space-1 中心位置
+                                    p.text-black
+                                        | 台中市北區三民路三段217號10樓之6
+                                        br
+                                        | (一中商圈中友百貨附近)
                             .icon-box.clearfix.m-0.p-0.pb-10
-                                a.icon.icon-circled.bg-white.icon-lg.pull-left.flip.sm-pull-none(href='#')
-                                    i.fa.fa-user.text-theme-color-2.font-36
+                                a.icon.icon-bordered.icon-circled.icon-border-effect.effect-circled.bg-white.icon-lg.pull-left(href='#')
+                                    i.fa.fa-car.faa-tada.animated-hover.text-theme-color-2.font-36
                                 .ml-120.ml-sm-0
-                                    h4.icon-box-title.text-white.mt-5.mb-10.letter-space-1 Best Teachers
-                                    p.text-white
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
+                                    h4.icon-box-title.text-black.mt-5.mb-10.letter-space-1 停車場參考資訊 (步行約3~5分鐘)
+                                    p.text-black
+                                        li 錦新街 (五權立體停車場)
+                                        li 錦新街 (五順平面停車場 ) 
+                                        li 錦新街&錦南街 (一中新天地停車場)
+                                        li 育才北路 (一中街停車場) 
+                                        li 育才北路 (中友百貨停車場)
                             .icon-box.clearfix.m-0.p-0.pb-10
-                                a.icon.icon-circled.bg-white.icon-lg.pull-left.flip.sm-pull-none(href='#')
-                                    i.fa.fa-money.text-theme-color-2.font-36
+                                a.icon.icon-bordered.icon-circled.icon-border-effect.effect-circled.bg-white.icon-lg.pull-left(href='#')
+                                    i.fa.fa-bus.faa-tada.animated-hover.text-theme-color-2.font-36
                                 .ml-120.ml-sm-0
-                                    h4.icon-box-title.text-white.mt-5.mb-10.letter-space-1 Low Cost Services
-                                    p.text-white
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam.
-                    .col-sm-6.col-md-6.p-0.bg-img-cover.wow.fadeInRight.hidden-xs(data-bg-img='http://placehold.it/800x455', data-wow-duration='1s', data-wow-delay='0.3s')
-
+                                    h4.icon-box-title.text-black.mt-5.mb-10.letter-space-1 公車參考資訊 (一心市場 -下車即是本中心大樓)
+                                    p.text-black
+                                        li 仁友客運 : 21 / 105
+                                        li 台中客運 : 
+                                        br
+                                        | 6 / 8 / 9 / 14 / 14副 / 15 / 16 / 26 / 29 / 35 / 70 / 71
+                                        br
+                                        | / 82 /100 / 100副 / 108 / 132 / 304 / 307 / 324
+                                        li 豐原客運 :55 / 200 / 203 / 280 / 285 / 286 / 288 / 289
+                                        li 統聯客運 : 18 / 61 / 73 / 301 / 303 / 308 / 326
+                                        li 全航客運 :  5 / 12 / 58 / 58副  
+                                        li 彰化客運 : 99 
+                                        li 中台灣客 : 1 / 25 / 31
+                                        li 579快線 : 500 / 700 / 900
+                    .col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-bg-img='http://placehold.it/585x812', data-wow-duration='1s', data-wow-delay='0.5s')
+                        //.col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-bg-img='http://placehold.it/800x455', data-wow-duration='1s', data-wow-delay='0.3s')              
         // Divider: Google Map
         section
-            .container-fluid.pt-0.pb-0
+            .container-fluid.pt-20.pb-0
                 .row
                     // Google Map HTML Codes
                     iframe.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(frameborder='0', height='500', width='457.5', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5079518909933!2d120.68343291541954!3d24.15391237915732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d6656f75385%3A0xf88e88e7c292a50e!2zNDA05Y-w5Lit5biC5YyX5Y2A5LiJ5rCR6Lev5LiJ5q61MjE36Jmf!5e0!3m2!1szh-TW!2stw!4v1450667171231')
