@@ -1,0 +1,233 @@
+extends L2_layout_eng
+block title
+    title OoPs English
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img='http://placehold.it/1920x1280')
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12
+                            h2.title.text-white.text-center Product Details
+                            ol.breadcrumb.text-left.text-black.mt-10
+                                li
+                                    a(href='#') Home
+                                li
+                                    a(href='#') Pages
+                                li.active.text-gray-silver Page Title
+        section
+            .container
+                .section-content
+                    .row
+                        .product
+                            .col-md-5
+                                .product-image
+                                    .zoom-gallery
+                                        a(href='http://placehold.it/460x460', title='Title Here 1')
+                                            img(src='http://placehold.it/460x460', alt='')
+                            .col-md-7
+                                .product-summary
+                                    h2.product-title Engish Book
+                                    .product_review
+                                        ul.review_text.list-inline
+                                            li
+                                                .star-rating(title='Rated 4.50 out of 5')
+                                                    span(style='width: 90%;') 4.50
+                                            li
+                                                a(href='#')
+                                                    span 2
+                                                    | Reviews
+                                            li
+                                                a(href='#') Add reviews
+                                    .price
+                                        del
+                                            span.amount $165.00
+                                        ins
+                                            span.amount $160.00
+                                    .short-description
+                                        p
+                                            | Donec volutpat purus tempor sem molestie, sed blandit lacus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere mollis nulla ut consectetur.
+                                    .tags
+                                        strong SKU:
+                                        |  EA34
+                                    .category
+                                        strong Category:
+                                        a(href='#') Book
+                                        | , 
+                                        a(href='#') Note Book
+                                    .tags
+                                        strong Tags:
+                                        a(href='#') Bag
+                                        | , 
+                                        a(href='#') Ladies Bag
+                                    .cart-form-wrapper.mt-30
+                                        form.cart(enctype='multipart/form-data', method='post')
+                                            input(type='hidden', value='productID', name='add-to-cart')
+                                            table.table.variations.no-border
+                                                tbody
+                                                    tr
+                                                        td.name Amount
+                                                        td.value
+                                                            .quantity.buttons_added
+                                                                input.minus(type='button', value='-')
+                                                                input.input-text.qty.text(type='number', size='4', title='Qty', value='1', name='quantity', min='1', step='1')
+                                                                input.plus(type='button', value='+')
+                                            button.single_add_to_cart_button.btn.btn-theme-colored(type='submit') Add to cart
+                            .col-md-12
+                                .horizontal-tab.product-tab
+                                    ul.nav.nav-tabs
+                                        li.active
+                                            a(href='#tab1', data-toggle='tab') Description
+                                        li
+                                            a(href='#tab2', data-toggle='tab') Additional Information
+                                        li
+                                            a(href='#tab3', data-toggle='tab') Reviews
+                                    .tab-content
+                                        #tab1.tab-pane.fade.in.active
+                                            h3 Product Description
+                                            p
+                                                | One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                                            p
+                                                | One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                                        #tab2.tab-pane.fade
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        th Brand
+                                                        td
+                                                            p Envato
+                                                    tr
+                                                        th Color
+                                                        td
+                                                            p Black
+                                                    tr
+                                                        th Size
+                                                        td
+                                                            p Large, Medium
+                                                    tr
+                                                        th Weight
+                                                        td 27 kg
+                                                    tr
+                                                        th Dimensions
+                                                        td 16 x 22 x 123 cm
+                                        #tab3.tab-pane.fade
+                                            .reviews
+                                                ol.commentlist
+                                                    li.comment
+                                                        .media
+                                                            a.media-left(href='#')
+                                                                img.img-circle(alt='', src='https://placehold.it/75x75', width='75')
+                                                            .media-body
+                                                                ul.review_text.list-inline
+                                                                    li
+                                                                        .star-rating(title='Rated 5.00 out of 5')
+                                                                            span(style='width: 100%;') 5.00
+                                                                    li
+                                                                        h5.media-heading.meta
+                                                                            span.author Tom Joe
+                                                                            |  – Mar 15, 2015:
+                                                                |                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat purus tempor sem molestie, sed blandit lacus posuere. Lorem ipsum dolor sit amet.
+                                                    li.comment
+                                                        .media
+                                                            a.media-left(href='#')
+                                                                img.img-circle(alt='', src='https://placehold.it/75x75', width='75')
+                                                            .media-body
+                                                                ul.review_text.list-inline
+                                                                    li
+                                                                        .star-rating(title='Rated 4.00 out of 5')
+                                                                            span(style='width: 80%;') 4.00
+                                                                    li
+                                                                        h5.media-heading.meta
+                                                                            span.author Mark Doe
+                                                                            |  – Jan 23, 2015:
+                                                                |                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat purus tempor sem molestie, sed blandit lacus posuere. Lorem ipsum dolor sit amet.
+                        .col-md-12
+                            h3.line-bottom Related Products
+                            .row.multi-row-clearfix
+                                .products.related
+                                    .col-sm-6.col-md-3.col-lg-3.mb-sm-30
+                                        .product
+                                            span.tag-sale Sale!
+                                            .product-thumb
+                                                img.img-responsive.img-fullwidth(alt='', src='http://placehold.it/285x300')
+                                                .overlay
+                                                    .btn-add-to-cart-wrapper
+                                                        a.btn.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') Add To Cart
+                                                    .btn-product-view-details
+                                                        a.btn.btn-default.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') View detail
+                                            .product-details.text-center
+                                                a(href='#')
+                                                    h5.product-title Watch
+                                                .star-rating(title='Rated 3.50 out of 5')
+                                                    span(style='width: 80%;') 3.50
+                                                .price
+                                                    del
+                                                        span.amount $165.00
+                                                    ins
+                                                        span.amount $160.00
+                                    .col-sm-6.col-md-3.col-lg-3.mb-sm-30
+                                        .product
+                                            span.tag-sale Sale!
+                                            .product-thumb
+                                                img.img-responsive.img-fullwidth(alt='', src='http://placehold.it/285x300')
+                                                .overlay
+                                                    .btn-add-to-cart-wrapper
+                                                        a.btn.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') Add To Cart
+                                                    .btn-product-view-details
+                                                        a.btn.btn-default.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') View detail
+                                            .product-details.text-center
+                                                a(href='#')
+                                                    h5.product-title Color Box
+                                                .star-rating(title='Rated 3.50 out of 5')
+                                                    span(style='width: 32%;') 3.50
+                                                .price
+                                                    del
+                                                        span.amount $120.00
+                                                    ins
+                                                        span.amount $110.00
+                                    .col-sm-6.col-md-3.col-lg-3.mb-sm-30
+                                        .product
+                                            .product-thumb
+                                                img.img-responsive.img-fullwidth(alt='', src='http://placehold.it/285x300')
+                                                .overlay
+                                                    .btn-add-to-cart-wrapper
+                                                        a.btn.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') Add To Cart
+                                                    .btn-product-view-details
+                                                        a.btn.btn-default.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') View detail
+                                            .product-details.text-center
+                                                a(href='#')
+                                                    h5.product-title Pen
+                                                .star-rating(title='Rated 3.50 out of 5')
+                                                    span(style='width: 85%;') 3.50
+                                                .price
+                                                    ins
+                                                        span.amount $240.00
+                                    .col-sm-6.col-md3.col-lg-3
+                                        .product
+                                            .product-thumb
+                                                img.img-responsive.img-fullwidth(alt='', src='http://placehold.it/285x300')
+                                                .overlay
+                                                    .btn-add-to-cart-wrapper
+                                                        a.btn.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') Add To Cart
+                                                    .btn-product-view-details
+                                                        a.btn.btn-default.btn-theme-colored.btn-sm.btn-flat.pl-20.pr-20.btn-add-to-cart.text-uppercase.font-weight-700(href='#') View detail
+                                            .product-details.text-center
+                                                a(href='#')
+                                                    h5.product-title Table Lamp
+                                                .star-rating(title='Rated 3.50 out of 5')
+                                                    span(style='width: 56%;') 3.50
+                                                .price
+                                                    ins
+                                                        span.amount $480.00
+    // end main-content
+
+
+
+block script
+

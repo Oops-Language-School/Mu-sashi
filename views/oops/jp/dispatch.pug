@@ -10,33 +10,40 @@ block content
     // Start main-content
     .main-content.bg-lighter
         // Section: inner-header
-        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
-            .container.pt-70.pb-20
+            section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="../../images/kr-index/main/企業派遣上方banner_1903x227-01.jpg")
+        section
+            picture
+                source(srcset='../../images/kr-index/main/dispatch/企業派遣上方banner_1903x227-01.jpg', media='(min-width: 992px)')
+                source(srcset='../../images/kr-index/main/dispatch/企業派遣上方banner_1903x227-01.jpg', media='(max-width: 576px)')
+                source(srcset='../../images/kr-index/main/dispatch/企業派遣上方banner_1903x227-01.jpg', media='(max-width: 768px)')
+                img#top-banner(src='../../images/kr-index/main/dispatch/企業派遣上方banner_1903x227-01.jpg', alt='韓語課程上方banner_default image')
+        //    .container.pt-70.pb-20
                 // Section Content
                 .section-content
                     .row
                         .col-md-12
                             h2.title.text-white.text-center 企業學校派遣
                             ol.breadcrumb.text-left.text-black.mt-10
-                                li
+                                //li
                                     a(href="#") Home
-                                li
+                                //li
                                     a(href="#") Pages
-                                li.active.text-gray-silver Page Title
+                                //li.active.text-gray-silver Page Title
+        
         section.divider
             #contact_us.container
                 .row
                     .col-md-4.col-md-push-4
                         .widget.border-1px.p-30
-                            h5.widget-title.line-bottom Contact Us
+                            h5.widget-title.line-bottom 聯絡我們
                             form#quick_contact_form.quick-contact-form(name='quick_contact_form', action='includes/quickcontact.php', method='post')
                                 .form-group
-                                    input.form-control(name='form_email', type='text', required='', placeholder='Enter Email')
+                                    input.form-control(name='form_email', type='text', required='', placeholder='Your Email Address...')
                                 .form-group
-                                    textarea.form-control(name='form_message', required='', placeholder='Enter Message', rows='3')
+                                    textarea.form-control(name='form_message', required='', placeholder='Your Message...', rows='3')
                                 .form-group
                                     input.form-control(name='form_botcheck', type='hidden', value='')
-                                    button.btn.btn-dark.btn-theme-colored.btn-sm.mt-0(type='submit', data-loading-text='Please wait...') Send Message
+                                    button.btn.btn-dark.btn-theme-colored.btn-sm.mt-0(type='submit', data-loading-text='Please wait...') 提交
                             // Quick Contact Form Validation
                             script(type='text/javascript').
                                 $("#quick_contact_form").validate({
@@ -69,10 +76,12 @@ block content
                     .row
                         .col-md-6.col-md-offset-3
                             .text-center
-                                h5.sub-title Sub Title Here
-                                h2.title Title Style Three
+                                h5.sub-title 精選合作對象
+                                h2.title 學校/企業/品牌
                                 p
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et adipisci, beatae ad sapiente aspernatur accusamus!
+                                    | 以專業服務、提升彼此效益為宗旨，至今與各式領域合作皆獲好評！
+                                    br
+                                    | 透過與各式文化和外語的交流，讓更多人了解語言的多樣性和重要性，同時也為合作項目增添可看度。
 
         section
             #no_padding_top.container
@@ -83,79 +92,79 @@ block content
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/三柱股份有限公司.png', alt='project')
                             // Portfolio Item End
 
 
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/佳能股份有限公司.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/國立公共資訊圖書館.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/運通旅行社.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/凱昇科技股份有限公司.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/台中一中熱音社.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/有春茶館.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/衛道中學.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
                             .gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/dispatch/上石國小.png', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
                             // Portfolio Item Start
-                            .gallery-item
+                            //.gallery-item
                                 .thumb
-                                    img.img-fullwidth(src='http://placehold.it/400x300', alt='project')
+                                    img.img-fullwidth(src='../../images/kr-index/main/', alt='project')
                             // Portfolio Item End
 
 
