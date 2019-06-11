@@ -1,0 +1,75 @@
+extends L2_layout
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    // Start main-content
+    .main-content
+        // Section: inner-header
+        section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+            .container.pt-70.pb-20
+                // Section Content
+                .section-content
+                    .row
+                        .col-md-12.text-center
+                            h2.title.text-white 補教法規
+                            ol.breadcrumb.text-center.text-black.mt-10
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Pages
+                                li.active.text-gray-silver Page Title
+        // Section: About
+        section
+            .container
+                .row
+                    .col-md-12
+                        img.pull-left.flip.mr-15.thumbnail(src="https://placehold.it/430x240" alt="")
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                        .clearfix
+                        h5 退費標準
+                        p
+                            | 依據台中市臺中市短期補習班管理規則（中華民國101年9月14日府授法規字第1010160384號令訂定發布）第三十六條規定退費標準如下。 
+                            br
+                            | 補習班學生繳納費用後離班者，補習班應依下列規定辦理退費： 
+                            br
+                            | 一、學生於開課日三十日前提出退費申請者，退還當期開班約定繳納費用總額百分之九十五，惟補習班所收取之百分之五部分最高不得超過新臺幣一千元。 
+                            br
+                            | 二、學生於開課日前三十日內提出退費申請者，退還當期開班約定繳納費用總額百分之九十。 
+                            br
+                            | 三、學生於實際開課日起至第十日前，且未逾全期（或總課程時數）三分之一期間內提出退費申請者，退還當期開班約定繳納費用總額百分之八十。 
+                            br
+                            | 四、學生於實際開課日第十日起且未逾全期（或總課程時數）三分之一期間內提出退費申請者，退還約定繳納費用總額百分之六十。 
+                            br
+                            | 五、學生於全期（或總課程時數）三分之一以上且未逾全期(或總課程時數)二分之一期間內提出退費申請 者，退還約定繳納費用總額百分之四十。 
+                            br
+                            | 六、學生於全期（或總課程時數）二分之一以上提出退費申請者，所收取之當期費用得全數不予退還。 
+                        .separator.separator-rouned
+                            i.fa.fa-cog.fa-spin
+                        .row
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href="#")
+                                    img.img-fullwidth(alt="..." src="https://placehold.it/200x200")
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href="#")
+                                    img.img-fullwidth(alt="..." src="https://placehold.it/200x200")
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href="#")
+                                    img.img-fullwidth(alt="..." src="https://placehold.it/200x200")
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href="#")
+                                    img.img-fullwidth(alt="..." src="https://placehold.it/200x200")
+                        .separator.separator-rouned
+                            i.fa.fa-cog
+                        h5 Sub Heading
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                        p
+                            | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+    // end main-content
+    // end wrapper
+block script
+

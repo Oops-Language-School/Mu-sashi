@@ -1,0 +1,265 @@
+extends ../nav_layout
+block title
+    title #{title}
+block style
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500')
+    link(rel='stylesheet', href='/assets/bootstrap/css/bootstrap.min.css')
+    //link(rel='stylesheet', href='/assets/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/assets/css/form-elements.css')
+    link(rel='stylesheet', href='/assets/css/style.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+        script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+        script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    // Favicon and touch icons
+    link(rel='shortcut icon', href='/assets/ico/favicon.png')
+    link(rel='stylesheet', href='/css/nav.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+
+        }
+        label{
+            width: 30%;
+        }
+        input,select{
+            width: 70%;
+        }
+        textarea {
+            resize: none;
+            width: 70%;
+        }
+        select{
+            height: 4.7vh;
+        }
+        body {
+            transition: background-color .5s;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+block script
+   
+    // jQuery library
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
+    // Latest compiled JavaScript
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js", integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D", crossorigin="anonymous")
+    //script(src='/assets/js/jquery-1.11.1.min.js')
+    //script(src='/assets/bootstrap/js/bootstrap.min.js')
+    script(src='/assets/js/jquery.backstretch.min.js')
+    script(src='/assets/js/scripts.js')
+    script.
+        $('document').ready(function(){
+            var today = new Date();
+            today = today.toISOString().split('T')[0];
+            var max = new Date();
+            max.setFullYear(max.getFullYear() + 1);   
+            max = max.toISOString().split('T')[0];       
+            document.getElementsByName("course_date")[0].setAttribute('min', today);
+            document.getElementsByName("course_date")[0].setAttribute('max', max);
+            //console.log(document.getElementById("lang_type").value);
+            if(document.getElementById("lang_type").value==='韓語'){
+                $("#jp_type1").hide();
+                $("#jp_type2").hide();
+                $("#jp_type3").hide();
+                $("#jp_type4").hide();
+                $("#jp_type5").hide();
+                $("#jp_type6").hide();
+                $("#jp_type7").hide();
+                $("#jp_type8").hide();
+                $("#jp_type9").hide();
+                $("#jp_level1").hide();
+                $("#jp_level2").hide();
+                $("#jp_level3").hide();
+                $("#jp_level4").hide();
+                $("#jp_level5").hide();
+                $("#jp_level6").hide();
+                $("#jp_level7").hide();
+                $("#type_input").remove();
+                $("#level_input").remove();
+            }else if(document.getElementById("lang_type").value==='日語'){
+                $("#kr_type1").hide();
+                $("#kr_type2").hide();
+                $("#kr_type3").hide();
+                $("#kr_type4").hide();
+                $("#kr_type5").hide();
+                $("#kr_type6").hide();
+                $("#kr_type7").hide();
+                $("#kr_type8").hide();
+                $("#kr_type9").hide();
+                $("#kr_type10").hide();
+                $("#kr_type11").hide();
+                $("#kr_type12").hide();
+                $("#kr_type13").hide();
+                $("#kr_type14").hide();
+                $("#kr_type15").hide();
+                $("#kr_type16").hide();
+                
+                $("#kr_level1").hide();
+                $("#kr_level2").hide();
+                $("#kr_level3").hide();
+                $("#kr_level4").hide();
+                $("#kr_level5").hide();
+                $("#kr_level6").hide();
+                $("#kr_level7").hide();
+                $("#kr_level8").hide();
+
+                $("#type_input").remove();
+                $("#level_input").remove();
+            }else{
+                //console.log("HERE");
+                $("#course_type").remove();
+                $("#level").remove();
+            }
+            
+            //document.getElementsByName("end_date")[0].setAttribute('min', today);
+            //document.getElementsByName("end_date")[0].setAttribute('max', max);
+        });
+        function myDayOfWeek() {
+            const myDate= new Date(document.getElementById('date').value)
+            const days = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+            const dayName = days[myDate.getUTCDay()];
+            //console.log(dayName);
+            document.getElementById('dayOfWeek').value = dayName;
+        }
+block content
+    input#lang_type( type="hidden" value=`${subtitle}`)
+
+    .top-content
+            .container
+                .row
+                    .col-sm-8.col-sm-offset-2.text
+                        h1
+                            |   武藏#{trial.lang_type}試聽課程後台
+                            strong (非正式課程)
+                .row
+                    .col-sm-6.col-sm-offset-3.form-box
+                        .form-top
+                            .form-top-left
+                                h3 修改#{trial.lang_type}試聽課程(非正式課程!)
+                                p 請輸入試聽課程相關資料:
+                            .form-top-right
+                                i.fa.fa-lock
+                        .form-bottom
+                            form.login-form(role='form', action=`/admin/${link}/${trial._id}`, method='post')
+                                input(name="lang_type" type="hidden" value=`${trial.lang_type}`)
+                                .form-group
+                                    label 課程內容 
+                                    input#type_input(type='text', name='course_type', required='required' value=trial.course_type)
+                                    select#course_type(name='course_type' required='required')
+                                        option(value=`${trial.course_type}` hidden)=trial.course_type
+                                        option#jp_type1(value='日語發音') 日語發音
+                                        option#jp_type2(value='日語初級(N5)') 日語初級(N5)
+                                        option#jp_type3(value='日語初中級(N4)') 日語初中級(N4)
+                                        option#jp_type4(value='日語中級(N3)') 日語中級(N3)
+                                        option#jp_type5(value='日語中高級(N2)') 日語中高級(N2)
+                                        option#jp_type6(value='日語高級(N1)') 日語高級(N1)
+                                        option#jp_type7(value='商用日語') 商用日語
+                                        option#jp_type8(value='日語寒假密集班') 日語寒假密集班
+                                        option#jp_type9(value='日語暑假密集班') 日語暑假密集班
+
+                                        option#kr_type1(value='韓語發音') 韓語發音
+                                        option#kr_type2(value='韓語初級(TOPIK I Level 1)') 韓語初級(TOPIK I Level 1)
+                                        option#kr_type3(value='韓語進階(TOPIK I Level 2)') 韓語進階(TOPIK I Level 2)
+                                        option#kr_type4(value='韓語中級(TOPIK II Level 3)') 韓語中級(TOPIK II Level 3)
+                                        option#kr_type5(value='韓語中高級(TOPIK II Level 4)') 韓語中高級(TOPIK II Level 4)
+                                        option#kr_type6(value='韓語高級(TOPIK II Level 5)') 韓語高級(TOPIK II Level 5)
+                                        option#kr_type7(value='韓語優級(TOPIK II Level 6)') 韓語優級(TOPIK II Level 6)
+
+
+                                        option#kr_type8(value='韓語寒假密集班') 韓語寒假密集班
+                                        option#kr_type9(value='韓語暑假密集班') 韓語暑假密集班
+                                        option#kr_type10(value='商用韓語') 商用韓語
+                                        option#kr_type11(value='韓語初級會話') 韓語初級會話
+                                        option#kr_type12(value='韓語進階會話') 韓語進階會話
+                                        option#kr_type13(value='韓語中級會話') 韓語中級會話
+                                        option#kr_type14(value='韓語中高級會話') 韓語中高級會話
+                                        option#kr_type15(value='韓語高級會話') 韓語高級會話
+                                        option#kr_type16(value='韓語優級會話') 韓語優級會話
+                                .form-group
+                                    label 適用對象 
+                                    input#level_input(type='text', name='level' , required='required' value=trial.level)
+                                    select#level(name='level' required='required')
+                                        option(value=`${trial.level}` hidden)=trial.level
+                                        option#jp_level1(value='適合初學者') 適合初學者
+                                        option#jp_level2(value='學過基礎發音') 學過基礎發音
+                                        option#jp_level3(value='已具備N5程度') 已具備N5程度
+                                        option#jp_level4(value='已具備N4程度') 已具備N4程度
+                                        option#jp_level5(value='已具備N3程度') 已具備N3程度
+                                        option#jp_level6(value='已具備N2程度') 已具備N2程度
+                                        option#jp_level7(value='已具備N2以上程度') 已具備N2以上程度
+
+                                        option#kr_level1(value='適合初學者') 適合初學者
+                                        option#kr_level2(value='學過基礎發音') 學過基礎發音
+                                        option#kr_level3(value='已具備TOPIK I Level 1程度') 已具備TOPIK I Level 1程度
+                                        option#kr_level4(value='已具備TOPIK I Level 2程度') 已具備TOPIK I Level 2程度
+                                        option#kr_level5(value='已具備TOPIK II Level 3程度') 已具備TOPIK II Level 3程度
+                                        option#kr_level6(value='已具備TOPIK II Level 4程度') 已具備TOPIK II Level 4程度
+                                        option#kr_level7(value='已具備TOPIK II Level 5程度') 已具備TOPIK II Level 5程度
+
+                                .form-group
+                                    label 上課日期 
+                                    input(type='date', name='course_date', placeholder='開課日期' , required='required' id="date" onchange="myDayOfWeek()", min="", max="",autocomplete="off"
+                                        value=  `${trial.course_date.getFullYear()}-${
+                                                ('0'+ (1 + trial.course_date.getMonth())).substr(-2)}-${
+                                                ('0'+trial.course_date.getDate()).substr(-2)}`
+                                    )
+                                    input(name="dayOfWeek" type="hidden" id="dayOfWeek" value=`${trial.dayOfWeek}`)
+                                .form-group
+                                    label 開始時間 
+                                    input(type='time', name='begin_time', placeholder='課程開始時間' , required='required' ,autocomplete="off" value= trial.begin_time )
+                                .form-group
+                                    label 結束時間 
+                                    input(type='time', name='end_time', placeholder='課程結束時間' , required='required' ,autocomplete="off" value= trial.end_time)
+                                .form-group
+                                    label 其他說明(選填) 
+                                    //- input(type='text' name='content' placeholder='備註方式顯示給學生看' ,autocomplete="off" value= trial.content)
+                                    textarea(name='content', placeholder='備註方式顯示給學生看'  ,autocomplete="off")=trial.content
+                                button.btn(type='submit') 送出

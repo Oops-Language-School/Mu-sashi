@@ -1,0 +1,185 @@
+extends ../nav_layout
+block title
+    title #{title}
+block style
+    link(rel='stylesheet', href='/css/nav.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+        }
+        body {
+            background-image: url("../assets/img/backgrounds/1.jpg");
+        }
+        table 
+        { 
+            width: 90%; 
+            margin:50px auto;
+            border-spacing: 0px;
+        }
+
+        th 
+        { 
+            background: #3498db; 
+            color: white; 
+            font-weight: bold; 
+        }
+        td{
+            background: grey;
+        }
+        td, th 
+        { 
+            position: static;
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            text-align: center; 
+            background-clip: padding-box;
+            font-size: 18px;
+            
+        }
+
+        .labels tr td {
+            background-color: #2cc16a;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .label tr td label {
+            display: block;
+        }
+
+        [data-toggle="toggle"] {
+            display: none;
+        }
+        h1{
+            margin:50px auto;
+            color: #fff;
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+block content
+    h1(align="center") #{title}
+    form#delFrom(action='/abroad/delete', method='post')
+        table
+            thead
+                tr  
+                    th
+                        input(type='checkbox', onclick='toggle(this)')
+                    th FB ID
+                    th 國家 
+                    th 地區
+                    th 其他地區
+                    th 學校類型
+                    th 出發時間 
+                    th 就讀長度
+                    th 可連絡時間
+                    th 指定學校
+                    th 指定學校名稱
+                    th 姓名
+                    th 電話
+                    th Line ID
+                    th 建立時間
+            tbody
+                tbody.labels
+                    tr
+                        td(colspan='15')
+                            label.title(for='jp') 日本
+                            input#jp(type='checkbox', name='jp', data-toggle='toggle')
+                tbody.hideContent
+                    each jpAbroad in abroadJP
+                        tr
+                            td
+                                input(type='checkbox', name='abroad', value=`${jpAbroad._id} 日語`)
+                            td=jpAbroad.fb_psid
+                            td=jpAbroad.country
+                            td=jpAbroad.location
+                            td
+                            td=jpAbroad.school_type
+                            td=jpAbroad.departure_time
+                            td=jpAbroad.study_length
+                            td=jpAbroad.contact_time
+                            td=jpAbroad.selected_school
+                            td=jpAbroad.selected_school_name
+                            td=jpAbroad.name
+                            td=jpAbroad.phone
+                            td=jpAbroad.lineID                
+                            <!-- str.substr(-3) is treated as str.substr(str.length - 3)  -->
+                            td=`${jpAbroad.createdAt.getFullYear()}-${jpAbroad.createdAt.getMonth()+1}-${jpAbroad.createdAt.getDate()} ${('0'+jpAbroad.createdAt.getHours()).substr(-2)}:${('0'+jpAbroad.createdAt.getMinutes()).substr(-2)}`
+                tbody.labels
+                    tr
+                        td(colspan='15')
+                            label.title(for='kr') 韓國
+                            input#kr(type='checkbox', name='kr', data-toggle='toggle')
+                tbody.hideContent
+                    each krAbroad in abroadKR
+                        tr
+                            td
+                                input(type='checkbox', name='abroad', value=`${krAbroad._id} 韓語`)
+                            td=krAbroad.fb_psid
+                            td=krAbroad.country
+                            td=krAbroad.location
+                            td=krAbroad.selected_location_name
+                            td=krAbroad.school_type
+                            td=krAbroad.departure_time
+                            td=krAbroad.study_length
+                            td=krAbroad.contact_time
+                            td=krAbroad.selected_school
+                            td=krAbroad.selected_school_name
+                            td=krAbroad.name
+                            td=krAbroad.phone
+                            td=krAbroad.lineID                
+                            <!-- str.substr(-3) is treated as str.substr(str.length - 3)  -->
+                            td=`${krAbroad.createdAt.getFullYear()}-${krAbroad.createdAt.getMonth()+1}-${krAbroad.createdAt.getDate()} ${('0'+krAbroad.createdAt.getHours()).substr(-2)}:${('0'+krAbroad.createdAt.getMinutes()).substr(-2)}`
+                tbody.labels
+                    tr
+                        td(colspan='15')
+                            label.title(for='eng') 英語系國家
+                            input#eng(type='checkbox', name='eng', data-toggle='toggle')
+                tbody.hideContent
+                    each engAbroad in abroadENG
+                        tr
+                            td
+                                input(type='checkbox', name='abroad', value=`${engAbroad._id} 英語`)
+                            td=engAbroad.fb_psid
+                            td=engAbroad.country
+                            td
+                            td
+                            td=engAbroad.school_type
+                            td=`${engAbroad.departure_time.getFullYear()}-${engAbroad.departure_time.getMonth()+1}-${engAbroad.departure_time.getDate()}`
+                            td=engAbroad.study_length
+                            td=engAbroad.contact_time
+                            td=engAbroad.selected_school
+                            td=engAbroad.selected_school_name
+                            td=engAbroad.name
+                            td=engAbroad.phone
+                            td=engAbroad.lineID                
+                            <!-- str.substr(-3) is treated as str.substr(str.length - 3)  -->
+                            td=`${engAbroad.createdAt.getFullYear()}-${engAbroad.createdAt.getMonth()+1}-${engAbroad.createdAt.getDate()} ${('0'+engAbroad.createdAt.getHours()).substr(-2)}:${('0'+engAbroad.createdAt.getMinutes()).substr(-2)}`
+                    td(colspan='50%')  
+                        input.center(type='button', onclick='myFormClear()', value='清除勾選')
+                        input.center(type='submit', value='刪除')
+block script
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.5/js/jquery.tablesorter.js")
+    script.
+        $(document).ready(function() {
+            $("table").tablesorter();
+            $('[data-toggle="toggle"]').change(function(){
+                $(this).parents().next('.hideContent').toggle();
+            });
+        });
+        function myFormClear() {
+            document.getElementById("delFrom").reset();
+        }
+        function toggle(source) {
+            checkboxes = document.getElementsByName('abroad');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+
+
+
+

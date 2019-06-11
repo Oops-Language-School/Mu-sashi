@@ -1,0 +1,231 @@
+extends ../nav_layout
+block title
+    title #{title}
+block style
+    link(rel='stylesheet', href='/css/nav.css')
+    style.
+        * 
+        {
+            font-family: Microsoft JhengHei;
+        }
+        body {
+            background-image: url("../assets/img/backgrounds/1.jpg");
+        }
+        table 
+        { 
+            width: 85%; 
+            margin:10px auto;
+            border-spacing: 0px;
+        }
+
+        th 
+        { 
+            background: #3498db; 
+            color: white; 
+            font-weight: bold; 
+        }
+        td{
+            background: grey;
+        }
+        td, th 
+        { 
+            position: static;
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            text-align: center; 
+            background-clip: padding-box;
+            font-size: 16px;
+            
+        }
+
+        .labels tr td {
+            background-color: #2cc16a;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .label tr td label {
+            display: block;
+        }
+
+        [data-toggle="toggle"] {
+            display: none;
+        }
+        h1{
+            margin:30px auto;
+            color: #fff;
+        }
+        .color{
+            color:black;
+            font-weight: bold;
+        }
+        .color:hover{
+            color:white;
+            font-weight: bold;
+            
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .selectbox{
+            margin: auto;
+            width: 85%;
+        }
+        .intro{
+            width:15%;
+            text-align:left;
+        }
+block content
+    h1(align="center") #{title}
+    .selectbox
+        select#filter(onchange="myFilter()")
+            option(value='') 顯示全部
+            option(value='日語發音') 日語發音
+            option(value='日語初級(N5)') 日語初級(N5)
+            option(value='日語初中級(N4)') 日語初中級(N4)
+            option(value='日語中級(N3)') 日語中級(N3)
+            option(value='日語中高級(N2)') 日語中高級(N2)
+            option(value='日語高級(N1)') 日語高級(N1)
+            option(value='商用日語') 商用日語
+            option(value='日語寒假密集班') 日語寒假密集班
+            option(value='日語暑假密集班') 日語暑假密集班
+
+            option(value='韓語發音') 韓語發音
+            option(value='韓語初級(TOPIK I Level 1)') 韓語初級(TOPIK I Level 1)
+            option(value='韓語進階(TOPIK I Level 2)') 韓語進階(TOPIK I Level 2)
+            option(value='韓語中級(TOPIK II Level 3)') 韓語中級(TOPIK II Level 3)
+            option(value='韓語中高級(TOPIK II Level 4)') 韓語中高級(TOPIK II Level 4)
+            option(value='韓語高級(TOPIK II Level 5)') 韓語高級(TOPIK II Level 5)
+            option(value='韓語優級(TOPIK II Level 6)') 韓語優級(TOPIK II Level 6)
+
+            option(value='商用韓語') 商用韓語
+            option(value='韓語初級會話') 韓語初級會話
+            option(value='韓語進階會話') 韓語進階會話
+            option(value='韓語中級會話') 韓語中級會話
+            option(value='韓語中高級會話') 韓語中高級會話
+            option(value='韓語高級會話') 韓語高級會話
+            option(value='韓語優級會話') 韓語優級會話
+            option(value='韓語寒假密集班') 韓語寒假密集班
+            option(value='韓語暑假密集班') 韓語暑假密集班
+
+
+    form#delFrom(action='/trial/delete', method='post')
+        table#mytable
+            thead
+                tr  
+                    th 
+                        input(type='checkbox', onclick='toggle(this)')
+                    th 語言
+                    th 課程內容 
+                    th 適用對象
+                    th 開課日期
+                    th 開始時間
+                    th 結束時間 
+                    th 其他說明
+                    th 建立時間
+            tbody
+                
+                tbody.labels
+                    tr
+                        td(colspan='9')
+                            label.title(for='jp') 日語
+                            input#jp(type='checkbox', name='jp', data-toggle='toggle')
+                tbody.hideContent
+                    each jp_trial in jp_trials
+                        tr#allCourses
+                            td
+                                input(type='checkbox', name='trial', value=`${jp_trial._id} ${jp_trial.lang_type}`)
+                            td
+                                a.color(href=`/admin/edit_jp_trial/${jp_trial._id}`)=jp_trial.lang_type
+                            td.content=jp_trial.course_type
+                            td=jp_trial.level
+                            td=`${jp_trial.course_date.getFullYear()}-${jp_trial.course_date.getMonth()+1}-${jp_trial.course_date.getDate()} (${jp_trial.dayOfWeek})`
+                            td=jp_trial.begin_time
+                            td=jp_trial.end_time
+                            td.intro=jp_trial.content
+                            td=`${jp_trial.createdAt.getFullYear()}-${jp_trial.createdAt.getMonth()+1}-${jp_trial.createdAt.getDate()} ${('0'+jp_trial.createdAt.getHours()).substr(-2)}:${('0'+jp_trial.createdAt.getMinutes()).substr(-2)}`
+                            //td=`${jp_trial.createdAt.getUTCFullYear()}-${jp_trial.createdAt.getUTCMonth()+1}-${jp_trial.createdAt.getUTCDate()} ${('0'+jp_trial.createdAt.getUTCHours()).substr(-2)}:${('0'+jp_trial.createdAt.getUTCMinutes()).substr(-2)}`
+                tbody.labels
+                    tr
+                        td(colspan='9')
+                            label(for='kr') 韓語
+                            input#kr(type='checkbox', name='kr', data-toggle='toggle')
+                tbody.hideContent
+                    each kr_trial in kr_trials
+                        tr#allCourses
+                            td
+                                input(type='checkbox', name='trial',  value=`${kr_trial._id} ${kr_trial.lang_type}`)
+                            td
+                                a.color(href=`/admin/edit_kr_trial/${kr_trial._id}`)=kr_trial.lang_type
+                            td.content=kr_trial.course_type
+                            td=kr_trial.level
+                            td=`${kr_trial.course_date.getFullYear()}-${kr_trial.course_date.getMonth()+1}-${kr_trial.course_date.getDate()} (${kr_trial.dayOfWeek})`
+                            td=kr_trial.begin_time
+                            td=kr_trial.end_time
+                            td.intro=kr_trial.content
+                            td=`${kr_trial.createdAt.getFullYear()}-${kr_trial.createdAt.getMonth()+1}-${kr_trial.createdAt.getDate()} ${('0'+kr_trial.createdAt.getHours()).substr(-2)}:${('0'+kr_trial.createdAt.getMinutes()).substr(-2)}`
+                tbody.labels
+                    tr
+                        td(colspan='9')
+                            label(for='eng') 英語
+                            input#eng(type='checkbox', name='eng', data-toggle='toggle')
+                tbody.hideContent
+                    each eng_trial in eng_trials
+                        tr#allCourses
+                            td
+                                input(type='checkbox', name='trial',  value=`${eng_trial._id} ${eng_trial.lang_type}`)
+                            td
+                                a.color(href=`/admin/edit_eng_trial/${eng_trial._id}`)=eng_trial.lang_type
+                            td=eng_trial.course_type
+                            td=eng_trial.level
+                            td=`${eng_trial.course_date.getFullYear()}-${eng_trial.course_date.getMonth()+1}-${eng_trial.course_date.getDate()} (${eng_trial.dayOfWeek})`
+                            td=eng_trial.begin_time
+                            td=eng_trial.end_time
+                            td.intro=eng_trial.content
+                            td=`${eng_trial.createdAt.getFullYear()}-${eng_trial.createdAt.getMonth()+1}-${eng_trial.createdAt.getDate()} ${('0'+eng_trial.createdAt.getHours()).substr(-2)}:${('0'+eng_trial.createdAt.getMinutes()).substr(-2)}`
+                    td(colspan='50%')  
+                        input.center(type='button', onclick='myFormClear()', value='清除勾選')
+                        input.center(type='submit', value='刪除')
+
+
+                        
+
+block script
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.5/js/jquery.tablesorter.js")
+    script.
+        $(document).ready(function() {
+            $("table").tablesorter();
+            $('[data-toggle="toggle"]').change(function(){
+                $(this).parents().next('.hideContent').toggle();
+            });
+        });
+        function myFormClear() {
+            document.getElementById("delFrom").reset();
+        }
+        function toggle(source) {
+            checkboxes = document.getElementsByName('trial');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+        function myFilter() {
+            var choice = document.getElementById("filter").value.toUpperCase();
+            $("table tr").each(function (index) {
+                        if (index !== 0) {
+                            $row = $(this);
+                            var id = $row.find("td.content").text().toUpperCase();
+                            if (id.indexOf(choice) == -1) {
+                                $row.hide();
+                            }
+                            else {
+                                $row.show();
+                            }
+                        }
+                    });
+        };
+
+
+
+

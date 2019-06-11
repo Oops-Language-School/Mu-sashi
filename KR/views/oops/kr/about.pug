@@ -1,0 +1,331 @@
+extends about_layout_kr
+block title
+    title OoPs Korean
+    title #{title}
+
+block style
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css')
+    link(rel='stylesheet', href='../../slick/style.css')
+block content
+
+        #wrapper.clearfix
+            // Start main-content
+            .main-content
+                // Section: home
+                section.variable.slider
+                    div
+                        a(href='#')
+                            img(src='../../images/kr-index/main/about/首頁_Banner線上課程_1903x620-01.jpg')
+                    div
+                        a(href='#')
+                            img(src='../../images/kr-index/main/about/首頁_Banner留遊學諮詢_1903x620-01.jpg')
+                    div
+                        a(href='#')
+                            img(src='../../images/kr-index/main/about/首頁_Banner線上課程_1903x620-01.jpg')
+                // Section: Experts Details
+                section.bg-lighter
+                    .container
+                        .section-content
+                            .row
+                                .col-md-4
+                                    .thumb
+                                        img(src='../../images/kr-index/main/about/首頁_Oops美日韓_360x360-01.jpg', alt='')
+                                .col-md-8
+                                    h4.name.font-24.mt-0.mb-0 美日韓外語中心
+                                    h4.mt-5.text-theme-color-2 ★ 關於我們
+                                    p
+                                        | 『OOPS日韓美外語中心』於2012年成立至今，由『台中武藏日韓語教學中心』延續。 創辦人由多位熱愛日韓美文化的教育家組成，透過大家多年遊歷海外的經驗，深刻體悟日韓美語與國際間接軌的重要性，因此共同創立外語短期補習班，希望藉以提供管道，提升國內語言競爭力，也回歸台灣為國家盡一份力。
+                                    p
+                                    h4.mt-5.text-theme-color-2 ★ 提供優質學習體驗
+                                    li 由深具教學經驗的日韓美籍菁英外語師資，專業規劃日語、韓語、美語課程。
+                                    li 提供『原汁原味』的學習環境，從發音、詞彙、文法一條龍式的教學課程，讓聽、說、讀、寫表現優異，更有效率。
+                                    li 成人班採小班制教學，以道地外語開口說，和陪伴閱讀寫作方式，強化學員表達及書寫能力。
+                                    li 提供未來打算出國的學員，海外長短期留遊學及打工度假諮詢和代辦服務。
+                                    li 針對未來計畫進入日商、韓商工作的學員，開辦商用日文、韓文的實用訓練學習課程。
+                                    li 特別增設了『日本語能力試驗(JLPT)』以及『韓國語檢定考(TOPIK)』實力養成課程，讓語言融入生活，考試更順手。
+                                    ul.styled-icons.icon-dark.icon-theme-colored.icon-sm.mt-15.mb-0
+                                        li
+                                            a(href='https://www.facebook.com/ilovemusashi')
+                                                .fab.fa-facebook
+                                        li
+                                            a(href='https://www.instagram.com/oops.top/')
+                                                .fab.fa-instagram
+                                        li
+                                            a(href='Info@mu-sashi.com.tw')
+                                                .fa.fa-envelope
+                // Section: About
+                section.bg-lighter#about
+                    .container.pt-20.pb-40
+                        .section-content
+                            .row.mt-10
+                                .col-sm-12.col-md-6.mb-sm-20.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    h3.text-uppercase.mt-15
+                                        | Oops美日韓外語中心
+                                        span.text-theme-color-2 環境介紹 
+                                    p
+                                    h4.mt-5.text-theme-color-2 ★ 優質地段
+                                    li 中心位於台中中友百貨附近交叉口。
+                                    li 距離台中車站約10分鐘車程/一中商圈約5分鐘步程。
+                                    li 公車停靠點多，路程經過台中車站，交通相當便利。
+                                    li 鄰近臺中科技大學、台中體大、台中一中、中國醫藥大學..等學區。   
+                                    p
+                                    h4.mt-5.text-theme-color-2 ★ 舒適空間制度
+                                    li 消防設備檢驗合格，安全有保障。
+                                    li 提供補課電腦設備，不怕請假，進度跟得上。
+                                    li 乾淨明亮的學習環境，近距離的座位安排，師生互動更緊密。
+                                    li 採用韓國、日本語言學校教育，針對學員程度進行課程安排。
+                                    li 課程採小班制教學，選擇性豐富、開班時段多，滿足各式需求。
+                                    p
+                                    a.btn.btn-colored.btn-theme-colored.btn-lg.text-uppercase.font-13.mt-0(href='https://chatbot.mu-sashi.com.tw/oops/kr-index/kr-course-list') 我要上課→
+                                .col-sm-12.col-md-6.mt-10.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='0.5s')
+                                    .video-popup
+                                        a(href='https://www.youtube.com/watch?v=pW1uVUg5wXM', data-lightbox-gallery='youtube-video', title='Video')
+                                            img.img-responsive.img-fullwidth.mt-10.ml-30.ml-xs-0.ml-sm-0(alt='', src='../../images/kr-index/main/about/首頁_Oops環境介紹_555x330-01.jpg')
+                // Section: courses
+                section
+                    .container.pt-70.pb-40
+                        .section-title.text-center
+                            .row
+                                .col-md-8.col-md-offset-2
+                                    h2.mt-0.line-height-1.text-center.text-uppercase.mb-10.text-black-333
+                                        | Oops
+                                        span.text-theme-color-2  師資陣容
+                                    p
+                                        | 專業台外籍師資
+                                        br
+                                        | 以輕鬆的教學模式，揪出學習外語盲點，變成學霸從這裡開始!
+                        .row.multi-row-clearfix
+                            .col-md-12
+                                .owl-carousel-3col.owl-nav-top(data-dots='true')
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/Angel主任.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a(href='https://www.facebook.com/ilovemusashi')
+                                                    //img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                       // span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳團結獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') Angel(台灣)
+                                                p
+                                                    | Oops核心領導群之一。擅長日語文法解析、日語檢定閱讀解題。創造日語開口輕鬆說的幽默詼諧上課方式，讓您的學習力持續百分百，打通學習日語的任督二脈。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  雙子座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 唱歌演戲
+                                                    li.remaining-days
+                                                        strong 歡樂度
+                                                        | ⭐⭐⭐
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/Miko老師.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        //span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳領導獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') Miko老師(台灣)
+                                                p
+                                                    | 老師將自己學習的經驗法則透過課程有效率的整理給大家，讓大家學習時能夠事半功倍。愛演戲的老師更是讓課程歡笑不斷，趣味十足喔。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  處女座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 小說閱讀
+                                                    li.remaining-days
+                                                        strong 輕鬆感
+                                                        | ⭐⭐⭐
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/Aaron老師.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        //span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳幽默獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') Aaron(美國)
+                                                p
+                                                    | 360度無死角學習美語。除了全美語上課環境以外，正統美式發音的授課教師可依照學員程度，調整授課方式與程度，達到因材施教學習美語的學習成果。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  天瓶座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 研究學生
+                                                    li.remaining-days
+                                                        strong 專業度
+                                                        | ⭐⭐⭐
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/裴老師.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        //span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳人氣獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') 裴老師(韓國)
+                                                p
+                                                    | 擅長韓國語文法解析、韓國語會話及韓檢TOPIK教學。以一步一腳印的教學方法，建構每位學員的韓語基礎軟實力。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  獅子座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 聚會燒酒
+                                                    li.remaining-days
+                                                        strong 認真感
+                                                        | ⭐⭐⭐
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/韓老師.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        //span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳幽默獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') Peter(韓國)
+                                                p
+                                                    | 注重聽說及幽默的上課氛圍、讓學員想不開口說韓文都很難。引導學員輕鬆開口說，並搭配課後其他線下自學方式，讓您無時無刻都想說韓語。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  雙子座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 品嘗美食
+                                                    li.remaining-days
+                                                        strong 幽默感
+                                                        | ⭐⭐⭐
+                                    .item
+                                        .project.mb-30.border-2px
+                                            .thumb
+                                                img.img-fullwidth(alt='', src='../../images/kr-index/main/teachers/Nao老師.png')
+                                                .hover-link
+                                                    a(href='https://www.facebook.com/ilovemusashi')
+                                                        img(src='../../images/kr-index/main/teachers/teachers_icon.png', title='FB')
+                                                    //a.btn.btn-flat.btn-dark.btn-theme-colored.btn-md.pull-left.font-20(href='#')
+                                                        //span $500
+                                            .project-details.p-15.pt-10.pb-10
+                                                h5.font-14.font-weight-500.mb-5 最佳勤奮獎
+                                                h4.font-weight-700.text-uppercase.mt-0
+                                                    a(href='https://www.facebook.com/ilovemusashi') NAO老師(日本)
+                                                p
+                                                    | 透過活潑歡樂的教學方式，並運用視覺化教材和學習過的單字引導，模擬情景加深大家在學習日語的印象，即便身處台灣也如同身處在日本。
+                                                ul.list-inline.project-conditions.text-center.m-0.p-10
+                                                    li.current-fund
+                                                        strong 星座
+                                                        |  天蠍座
+                                                    li.target-fund
+                                                        strong 最愛
+                                                        | 游泳健身
+                                                    li.remaining-days
+                                                        strong 豐富度
+                                                        | ⭐⭐⭐
+                section.bg-lighter
+                    .container
+                        .row
+                            .col-md-8.col-md-offset-2
+                                #accordion1.panel-group.accordion.transparent
+                                    .panel
+                                        .panel-title
+                                            a.active(data-parent='#accordion1', data-toggle='collapse', href='#accordion11', aria-expanded='true')
+                                                span.open-sub
+                                                strong Q. 於開課三十日前申請退費，應退還多少呢？
+                                        #accordion11.panel-collapse.collapse.in(role='tablist', aria-expanded='true')
+                                            .panel-content
+                                                p
+                                                    | 學生於開課日三十日前提出退費申請者，退還當期開班約定繳納費用總額百分之九十五，惟補習班所收取之百分之五部分最高不得超過新臺幣一千元。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion12', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 於開課日前三十日申請退費，應退還多少呢？
+                                        #accordion12.panel-collapse.collapse(role='tablist', aria-expanded='false', style='height: 0px;')
+                                            .panel-content
+                                                p
+                                                    | 學生於開課日前三十日內提出退費申請者，退還當期開班約定繳納費用總額百分之九十。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion13', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 於開課日起至第十日前申請退費，應退還多少呢？
+                                        #accordion13.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                            .panel-content
+                                                p
+                                                    | 學生於實際開課日起至第十日前，且未逾全期（或總課程時數）三分之一期間內提出退費申請者，退還當期開班約定繳納費用總額百分之八十。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion14', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 於實際開課日第十日起且未逾全期（或總課程時數）三分之一期間申請退費，應退還多少呢？
+                                        #accordion14.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                            .panel-content
+                                                p
+                                                    | 學生於實際開課日第十日起且未逾全期（或總課程時數）三分之一期間內提出退費申請者，退還約定繳納費用總額百分之六十。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion15', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 於全期（或總課程時數）三分之一以上且未逾全期(或總課程時數)二分之一期間申請退費，應退還多少呢？
+                                        #accordion15.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                            .panel-content
+                                                p
+                                                    | 學生於全期（或總課程時數）三分之一以上且未逾全期(或總課程時數)二分之一期間內提出退費申請 者，退還約定繳納費用總額百分之四十。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion14', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 於全期（或總課程時數）二分之一以上提出退費申請者，應退還多少呢？
+                                        #accordion14.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                            .panel-content
+                                                p
+                                                    | 學生於全期（或總課程時數）二分之一以上提出退費申請者，所收取之當期費用得全數不予退還。
+                                    .panel
+                                        .panel-title
+                                            a.collapsed(data-parent='#accordion1', data-toggle='collapse', href='#accordion14', aria-expanded='false')
+                                                span.open-sub
+                                                strong Q. 關於報名費、訂位金或其他收費項目該如何辦理呢？
+                                        #accordion14.panel-collapse.collapse(role='tablist', aria-expanded='false')
+                                            .panel-content
+                                                p
+                                                    | 第一項約定繳納費用總額，不得扣除補習班訂定之報名費、訂位金或其他收費項目。 補習班所收取之代辦費應全額退還。但已購置成品者，發給成品。
+            // end main-content
+
+        // end wrapper
+        // Footer Scripts
+        // JS | Custom script for all pages
+block script
+    script(src='../../js/custom_L1_JP.js')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js')
+    script(src='../../slick/index.js')
+

@@ -1,0 +1,176 @@
+body{
+    background: url("../assets/img/backgrounds/1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a,a.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+
+}
+.form-group>a {
+    font-size:25px;
+    text-align:center;
+}
+.navbar {
+    background: black;
+}
+.dropdown-menu{
+    text-align:center;
+}
+/* Navbar Toggle */
+
+.navsticky .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #333333;
+    border-radius: 0px;
+}
+
+.navsticky .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 0px;
+    background-color: #333333;
+}
+
+.navsticky .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navsticky .navbar-toggle {
+    border-color: #ddd;
+}
+
+.navsticky .navbar-toggle:hover,
+.navsticky .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.navsticky .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navsticky .navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+
+.navsticky .navbar-inverse .navbar-toggle:hover,
+.navsticky .navbar-inverse .navbar-toggle:focus {
+    background-color: #333;
+}
+
+.navsticky .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navsticky .navbar-collapse {
+    max-height: 1200px;
+}
+
+.menu_dark1 .navbar-collapse {
+    max-height: 1200px;
+}
+
+.menu_dark3 .navbar-toggle,
+.menu_dark2 .navbar-toggle,
+.menu_dark1 .navbar-toggle {
+    border-color: #555;
+}
+
+.menu_dark1 .navsticky .navbar-toggle:hover,
+.menu_dark1 .navsticky .navbar-toggle:focus,
+.menu_dark2 .navsticky .navbar-toggle:hover,
+.menu_dark2 .navsticky .navbar-toggle:focus,
+.menu_dark3 .navsticky .navbar-toggle:hover,
+.menu_dark3 .navsticky .navbar-toggle:focus {
+    background-color: #FFF;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    background-color: #3ac570;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover,
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: #3ac570;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.menu_dark3 .navbar-topaz {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+}
+
+.menu_dark3 .navbar a {
+    color: white;
+}
+
+.menu_dark3 .dropdown-menu {
+    background-color: #333333;
+}
+
+.menu_dark3 .dropdown-menu>li>a,
+.menu_dark3 .dropdown-menu>li>a {
+    color: white;
+}
+
+.menu_dark3 .navsticky .nav>li>a {
+/*line-height: 65px;*/
+}

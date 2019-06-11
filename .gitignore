@@ -2,3 +2,5 @@
 fb_pass.js
 ssh.sh
 mongod.sh
+node_modules
+./KR/*node_modules/*

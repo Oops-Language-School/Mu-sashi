@@ -1,0 +1,100 @@
+doctype html
+
+html
+    head    
+        block title
+        
+        link(rel='shortcut icon', href='/assets/ico/favicon.png')
+        link(rel='stylesheet', href='/css/nav.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        block style 
+
+        
+    body
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
+        block script
+        
+        #navigation.menu_dark3
+            .navsticky
+                nav.navbar.navbar-topaz(role='navigation')
+                    .container
+                        // Brand and toggle get grouped for better mobile display
+                        .navbar-header
+                            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+
+                            .logo.hvr-rectangle-out
+                                a(href='/') 武藏外語
+                        // Collect the nav links, forms, and other content for toggling
+                        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                            ul.nav.navbar-nav.navbar-right
+                                li.dropdown
+                                    a.dropdown-toggle(href='/', data-toggle='dropdown')
+                                        | 諮詢總表 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a.linkz_transition(href='/abroad/report') 留遊學
+                                        li
+                                            a.linkz_transition(href='/course/report') 正式課程
+                                        li
+                                            a.linkz_transition(href="/trial/report") 試聽課程
+                                li.dropdown
+                                    a.dropdown-toggle(href='/', data-toggle='dropdown')
+                                        | 開課總表 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li                            
+                                            a.linkz_transition(href="/course/available") 正式課程
+                                        li
+                                            a.linkz_transition(href="/trial/available") 試聽課程
+                                li.dropdown
+                                    a.dropdown-toggle(href='/', data-toggle='dropdown')
+                                        | 新增正式課程 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a.linkz_transition(href="/admin/add_jp_course") 新增日語正式課程
+                                        li
+                                            a.linkz_transition(href="/admin/add_kr_course") 新增韓語正式課程
+                                li.dropdown
+                                    a.dropdown-toggle(href='/', data-toggle='dropdown')
+                                        | 新增試聽課程 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a.linkz_transition(href="/admin/add_jp_trial") 新增日語試聽課程
+                                        li
+                                            a.linkz_transition(href="/admin/add_kr_trial") 新增韓語試聽課程
+                                        li
+                                            a.linkz_transition(href="/admin/add_eng_trial") 新增英語試聽課程
+                                li.dropdown
+                                    a.dropdown-toggle(href='/', data-toggle='dropdown')
+                                        | FB表格預覽 
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a.linkz_transition(href="/course/jp") 日語正式課程
+                                        li
+                                            a.linkz_transition(href="/trial/jp") 日語試聽課程
+                                        li
+                                            a.linkz_transition(href="/abroad/jp") 日本留遊學諮詢
+                                        li
+                                            a.linkz_transition(href="/course/kr") 韓語正式課程
+                                        li
+                                            a.linkz_transition(href="/trial/kr") 韓語試聽課程
+                                        li
+                                            a.linkz_transition(href="/abroad/kr") 韓國留遊學諮詢
+                                        li
+                                            a.linkz_transition(href="/trial/eng") 英語正式/試聽課程
+                                        li
+                                            a.linkz_transition(href="/abroad/eng") 英語系留遊學諮詢
+                                        li
+                                li
+                                    a(href="/admin/logout") 登出
+                        // /.navbar-collapse
+                    // /.container
+        block content
+        
+
+

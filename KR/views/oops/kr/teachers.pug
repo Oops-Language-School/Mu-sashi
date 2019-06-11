@@ -1,0 +1,363 @@
+extends L2_layout_kr
+block title
+    title OoPs Language Center
+    title #{title}
+block style
+
+block content
+    #wrapper.clearfix
+        // Start main-content
+        .main-content.bg-lighter
+            // Section: inner-header
+            section.inner-header.divider.parallax.layer-overlay.overlay-dark-5(data-bg-img="https://placehold.it/1920x1280")
+                .container.pt-70.pb-20
+                    // Section Content
+                    .section-content
+                        .row
+                            .col-md-12
+                                h2.title.text-white.text-center 教師介紹
+                                ol.breadcrumb.text-left.text-black.mt-10
+                                    li
+                                        a(href="#") Home
+                                    li
+                                        a(href="#") Pages
+                                    li.active.text-gray-silver Page Title
+            // Section: Teachers
+            section
+                .container.pb-50
+                    .section-title.text-center
+                        .row
+                            .col-md-8.col-md-offset-2
+                                h2.mt-0.line-height-1.text-uppercase
+                                    | 我們的
+                                    span.text-theme-color-2 師資團隊
+                                p
+                                    | 授課時數超過3000小時的專業外籍教師及留學經驗豐富的台籍教師聯合執教
+                                    br
+                                    |  讓學生無後顧之憂的上課、學習、準備考試、以及留遊學。
+                    .row.multi-row-clearfix
+                        .col-md-12
+                            .owl-carousel-4col(data-nav="true")
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Bae.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 裴老師
+                                            h5.sub-title.mt-0.mb-15 最佳人氣獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Peter Han.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 Peter韓老師
+                                            h5.sub-title.mt-0.mb-15 最佳幽默獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Aaron.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 Aaron老師
+                                            h5.sub-title.mt-0.mb-15 最佳幽默獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Shimato.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 島本老師
+                                            h5.sub-title.mt-0.mb-15 最佳氣質獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Fujimoto.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 藤本老師
+                                            h5.sub-title.mt-0.mb-15 最佳勤奮獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Miko.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 Miko主任
+                                            h5.sub-title.mt-0.mb-15 最佳領導獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="../../images/teachers/Angel.jpg")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 Angel
+                                            h5.sub-title.mt-0.mb-15 最佳團結獎
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+                                .item
+                                    .hover-effect.mb-30
+                                        .thumb
+                                            img.img-fullwidth(alt="" src="https://placehold.it/290x330")
+                                            .hover-link
+                                                ul.styled-icons.icon-dark.icon-theme-colored.icon-circled.icon-sm
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-facebook
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-twitter
+                                                    li
+                                                        a(href="#")
+                                                            .fab.fa-skype
+                                        .details.p-15.pt-10.pb-10
+                                            h4.title.mb-5 TEST
+                                            h5.sub-title.mt-0.mb-15 TEST
+                                            a.btn.btn-theme-colored.btn-sm(href="page-doctor-details.html") 了解更多
+
+                                            
+            // Divider: Funfact
+            section.divider.parallax.layer-overlay1(data-bg-img="https://placehold.it/1920x1280" data-parallax-ratio="0.7")
+                .container.pt-70.pb-60
+                    .row
+                        .col-xs-12.col-sm-6.col-md-3.mb-md-50
+                            .funfact.text-center
+                                i.fa.fa-users.mt-5.text-white
+                                h2.animate-number.text-white.mt-0.font-38.font-weight-500(data-animation-duration="2000" data-value="12") 0
+                                h4.text-white.text-uppercase 教師人數
+                        .col-xs-12.col-sm-6.col-md-3.mb-md-50
+                            .funfact.text-center
+                                i.fa.fa-calendar-alt.mt-5.text-white
+                                h2.animate-number.text-white.mt-0.font-38.font-weight-500(data-animation-duration="2000" data-value="115") 0
+                                h4.text-white.text-uppercase 課外活動
+                        .col-xs-12.col-sm-6.col-md-3.mb-md-50
+                            .funfact.text-center
+                                i.fa.fa-home.mt-5.text-white
+                                h2.animate-number.text-white.mt-0.font-38.font-weight-500(data-animation-duration="2000" data-value="523") 0
+                                h4.text-white.text-uppercase 合作學校
+                        .col-xs-12.col-sm-6.col-md-3.mb-md-50
+                            .funfact.text-center
+                                i.fa.fa-graduation-cap.mt-5.text-white
+                                h2.animate-number.text-white.mt-0.font-38.font-weight-500(data-animation-duration="2000" data-value="823") 0
+                                h4.text-white.text-uppercase 學生人數
+            // Section: Why Choose Us
+            
+            section.bg-lighter
+                .container
+                    .section-content
+                        .row
+                            .col-md-6
+                                h3.text-uppercase.title.line-bottom
+                                    | 我們的
+                                    span.text-black.font-weight-300 特色
+                                .row
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                                i.fa.fa-coin.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 高CP值的銅板價
+                                                p.text-gray 高品質教學，低於預期的銅板價。讓您買的安心、讀的放心、說的開心。
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                               i.fa.fa-chalkboard-teacher.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 經驗豐富的名師
+                                                p.text-gray 授課時數超過3000小時的專業外籍教師及留學經驗豐富的台籍教師聯合執教
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                                i.fa.fa-book.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 深入淺出的教材
+                                                p.text-gray 淺顯易懂的教材及補充資料，帶您輕鬆攻克難關。
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                                i.fa.fa-users.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 專業輔助團隊
+                                                p.text-gray 讓學生無後顧之憂的上課、學習、準備考試、以及留遊學。
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                                i.fa.fa-school.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 小班制教學
+                                                p.text-gray 小班制教學，讓學生們能有更多和老師互動的機會，提升學習效率。
+                                    .col-md-6
+                                        .icon-box.p-0.mb-30
+                                            a.icon.bg-theme-colored.icon-circled.icon-border-effect.effect-circle.icon-sm.pull-left.sm-pull-none.flip(href="#")
+                                                i.fa.fa-globe.text-white
+                                            .icon-box-details.ml-sm-0
+                                                h5.icon-box-title.mt-15.text-uppercase.letter-space-2.mb-0 多元的活動
+                                                p.text-gray Oops提供多元化活動，讓學生在愉快的環境下學習，並從各種活動中深入了解不同文化，提升對學習的興趣。
+                            .col-md-5.wow.fadeInRight(data-wow-duration="1s" data-wow-delay="0.3s")
+                                h3.text-uppercase.title.line-bottom
+                                    | 我們的
+                                    span.text-theme-color-2.font-weight-700 評價
+                                .bxslider.bx-nav-top
+                                    .testimonial.bg-theme-colored.border-radius-10px.p-20.mb-15
+                                        .comment
+                                            p.text-white
+                                                | 很喜歡武藏的日文小班制學習，有很棒的教師，而且也有很多文化活動能參加！真心推薦想學習外語的朋友可以考慮武藏喔👍👍👍
+                                        .content.mt-20
+                                            .thumb.pull-left.flip
+                                                img.img-circle(width="64" src="https://placehold.it/100x100" alt="")
+                                            .testimonials-details.pull-left.flip.ml-20
+                                                h5.author.text-theme-color-2.mt-0.mb-0.font-weight-600 Feng Abby
+                                                h6.title.font-14.m-0.mt-5.mb-5.text-gray-darkgray 2018
+                                                ul.review_text.list-inline
+                                                    li
+                                                        .star-rating(title="Rated 4.50 out of 5")
+                                                            span(data-width="90%") 4.50
+                                            .clearfix
+                                    .testimonial.bg-theme-colored.border-radius-10px.p-20.mb-15
+                                        .comment
+                                            p.text-white
+                                                | 항상 여기에서 즐겁게 한국어를 배우고 있어요. ❤ 배 선생님은 정말 가르치는 것을 잘 해요 👍👍👍 특히 어려운 문법도 잘 해석해 줘서 감사합니다 🤓 계속 계속 여기에서 한국어를 배우고 싶어요 ❤
+                                        .content.mt-20
+                                            .thumb.pull-left.flip
+                                                img.img-circle(width="64" src="https://placehold.it/100x100" alt="")
+                                            .testimonials-details.pull-left.flip.ml-20
+                                                h5.author.text-theme-color-2.mt-0.mb-0.font-weight-600 Connie Liao
+                                                h6.title.font-14.m-0.mt-5.mb-5.text-gray-darkgray 2018
+                                                ul.review_text.list-inline
+                                                    li
+                                                        .star-rating(title="Rated 4.50 out of 5")
+                                                            span(data-width="90%") 4.50
+                                            .clearfix
+                                    .testimonial.bg-theme-colored.border-radius-10px.p-20.mb-15
+                                        .comment
+                                            p.text-white
+                                                | とでも素晴らしいね〜親しみやすい環境
+                                        .content.mt-20
+                                            .thumb.pull-left.flip
+                                                img.img-circle(width="64" src="https://lh3.googleusercontent.com/-4ORsQ7ID4T8/AAAAAAAAAAI/AAAAAAAAAiM/m6wBbkyLfNo/s40-c0x00000000-cc-rp-mo/photo.jpg" alt="")
+                                            .testimonials-details.pull-left.flip.ml-20
+                                                h5.author.text-theme-color-2.mt-0.mb-0.font-weight-600 陳敔
+                                                h6.title.font-14.m-0.mt-5.mb-5.text-gray-darkgray 2018
+                                                ul.review_text.list-inline
+                                                    li
+                                                        .star-rating(title="Rated 4.50 out of 5")
+                                                            span(data-width="90%") 4.50
+                                            .clearfix
+            // Divider: Clients
+            section.clients.bg-theme-colored
+                .container.pt-10.pb-0.pt-sm-0.pb-sm-0
+                    .row
+                        .col-md-12
+                            // Section: Clients
+                            .owl-carousel-6col.transparent.text-center.owl-nav-top
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+                                .item
+                                    a(href="#")
+                                        img(src="https://placehold.it/200x120" alt="")
+        // end main-content
+        // end wrapper
+block script
+
