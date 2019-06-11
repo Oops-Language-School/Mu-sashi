@@ -37,9 +37,10 @@ html
         // Google Font
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic")
         block style
-    body.hold-transition.skin-blue.sidebar-mini
-        block content
+
         block script
+    body.hold-transition.skin-blue.sidebar-mini
+
         // Site wrapper
         
         .wrapper
@@ -778,7 +779,8 @@ html
                                 |  Home
                         li.active Dashboard
                 // Main content
-                section.content
+                block content
+                //section.content
                     // Default box
                     .box
                         .box-header.with-border
