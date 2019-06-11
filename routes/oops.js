@@ -85,7 +85,7 @@ router.get('/contact-us', (req, res, next) => {
 router.get('/career', (req, res, next) => {
     res.render('./oops/job-list');
 });
-
+/*
 // kr start
 router.get('/kr-index', (req, res, next) => {
     res.render('./oops/kr/kr-index');
@@ -203,7 +203,7 @@ router.get('/eng-index/eng-course-list', (req, res, next) => {
 router.get('/eng-index/eng-course-info', (req, res, next) => {
     res.render('./oops/eng/eng-course-info');
 });
-
+*/
 
 router.get('/ajax-load/bootstrap-parent-modal.html', (req, res, next) => {
     res.render('./oops/bootstrap-parent-modal');

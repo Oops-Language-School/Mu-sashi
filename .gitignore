@@ -3,4 +3,11 @@ fb_pass.js
 ssh.sh
 mongod.sh
 node_modules
-./KR/*node_modules/*
+=======
+./SubDomain/KR/*node_modules/*
+./SubDomain/KR/.vscode
+./SubDomain/JP/*node_modules/*
+./SubDomain/JP/.vscode
+./SubDomain/ENG/*node_modules/*
+./SubDomain/ENG/.vscode
+node_modules
