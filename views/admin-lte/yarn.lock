@@ -413,9 +413,9 @@ bootstrap-timepicker@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/bootstrap-timepicker/-/bootstrap-timepicker-0.5.2.tgz#10ed9f2a2f0b8ccaefcde0fcf6a0738b919a3835"
 
-bootstrap@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+bootstrap@>=4.1.2:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.3.tgz#c6a72b355aaf323920be800246a6e4ef30997fe6"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
@@ -995,9 +995,15 @@ datatables.net-bs@^1.10.15:
     datatables.net "1.10.16"
     jquery ">=1.7"
 
-datatables.net@1.10.16, datatables.net@^1.10.15:
+datatables.net@1.10.16:
   version "1.10.16"
   resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-1.10.16.tgz#4b052d1082824261b68eed9d22741b711d3d2469"
+  dependencies:
+    jquery ">=1.7"
+
+datatables.net@^1.10.15:
+  version "1.10.22"
+  resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-1.10.22.tgz#975d4ffb1eb40dec5fb772eaf93796ec1a948b55"
   dependencies:
     jquery ">=1.7"
 
